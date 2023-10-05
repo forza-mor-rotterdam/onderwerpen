@@ -56,6 +56,7 @@ INSTALLED_APPS = (
     "rest_framework_gis",
     "drf_spectacular",
     "django_filters",
+    "webpack_loader",
     "corsheaders",
     "django_extensions",
     "django_spaghetti",
@@ -75,6 +76,9 @@ INSTALLED_APPS = (
     "apps.groups",
     "apps.questions",
     "apps.health",
+    "apps.authorisatie",
+    "apps.beheer",
+    "apps.rotterdam_formulier_html",
 )
 
 
@@ -116,6 +120,13 @@ PERMISSIONS_POLICY = {
     "usb": [],
 }
 
+STATICFILES_DIRS = (
+    [
+        "/app/frontend/public/build/",
+    ]
+    if DEBUG
+    else []
+)
 
 STATIC_URL = "/static/"
 STATIC_ROOT = os.path.normpath(join(os.path.dirname(BASE_DIR), "static"))
@@ -123,6 +134,18 @@ STATIC_ROOT = os.path.normpath(join(os.path.dirname(BASE_DIR), "static"))
 MEDIA_URL = "/media/"
 MEDIA_ROOT = os.path.normpath(join(os.path.dirname(BASE_DIR), "media"))
 
+WEBPACK_LOADER = {
+    "DEFAULT": {
+        "CACHE": not DEBUG,
+        "POLL_INTERVAL": 0.1,
+        "IGNORE": [r".+\.hot-update.js", r".+\.map"],
+        "LOADER_CLASS": "webpack_loader.loader.WebpackLoader",
+        "STATS_FILE": "/static/webpack-stats.json"
+        if not DEBUG
+        else "/app/frontend/public/build/webpack-stats.json",
+    }
+}
+DEV_SOCKET_PORT = os.getenv("DEV_SOCKET_PORT", "9000")
 
 # Database settings
 DATABASE_NAME = os.getenv("DATABASE_NAME")
@@ -369,7 +392,9 @@ try:
 except Exception as e:
     logger.error(f"OPENID_CONFIG FOUT, url: {OPENID_CONFIG_URI}, error: {e}")
 
+OIDC_ENABLED = False
 if OPENID_CONFIG and OIDC_RP_CLIENT_ID:
+    OIDC_ENABLED = True
     OIDC_VERIFY_SSL = os.getenv("OIDC_VERIFY_SSL", True) in TRUE_VALUES
     OIDC_USE_NONCE = os.getenv("OIDC_USE_NONCE", True) in TRUE_VALUES
 
@@ -385,9 +410,6 @@ if OPENID_CONFIG and OIDC_RP_CLIENT_ID:
     OIDC_OP_JWKS_ENDPOINT = os.getenv(
         "OIDC_OP_JWKS_ENDPOINT", OPENID_CONFIG.get("jwks_uri")
     )
-    CHECK_SESSION_IFRAME = os.getenv(
-        "CHECK_SESSION_IFRAME", OPENID_CONFIG.get("check_session_iframe")
-    )
     OIDC_RP_SCOPES = os.getenv(
         "OIDC_RP_SCOPES",
         " ".join(OPENID_CONFIG.get("scopes_supported", ["openid", "email", "profile"])),
@@ -402,10 +424,9 @@ if OPENID_CONFIG and OIDC_RP_CLIENT_ID:
 
     AUTHENTICATION_BACKENDS = [
         "django.contrib.auth.backends.ModelBackend",
-        "apps.authenticatie.auth.OIDCAuthenticationBackend",
+        "apps.authentication.auth.OIDCAuthenticationBackend",
     ]
 
-    OIDC_OP_LOGOUT_URL_METHOD = "apps.authentication.views.provider_logout"
     ALLOW_LOGOUT_GET_METHOD = True
     OIDC_STORE_ID_TOKEN = True
     OIDC_RENEW_ID_TOKEN_EXPIRY_SECONDS = int(
