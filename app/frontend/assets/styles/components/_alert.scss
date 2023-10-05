@@ -1,0 +1,32 @@
+.alert{
+    position: relative;
+    padding: 1em 1em;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0;
+    display: flex;
+    font-size: 16px;
+
+    svg {
+        padding-right: $input-padding-x;
+        margin-top: -6px;
+    }
+
+    &--info {
+        background-color: rgba(23, 145, 212, 0.1);
+        border-color: rgba(23, 145, 212, 0.25);
+
+        a {
+            color: inherit;
+        }
+    }
+
+    &--warning {
+        background-color: rgba(237, 181, 0, 0.1);
+        border-color: rgba(237, 181, 0, 0.25);
+
+        a {
+            color: inherit;
+        }
+    }
+}

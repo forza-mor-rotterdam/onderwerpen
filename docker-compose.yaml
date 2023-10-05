@@ -16,10 +16,7 @@ services:
       - .env.local
 
   onderwerpen_app:
-    # container_name: onderwerpen_app
     build: ./app
-    ports:
-      - "8000"
     env_file:
       - .env.local
     volumes:
@@ -38,7 +35,7 @@ services:
     image: postgis/postgis:11-3.3
     shm_size: '1024m'
     ports:
-      - "6006:5432"
+      - "5432"
     env_file:
       - .env.local
     volumes:

@@ -31,3 +31,4 @@ class Category(BaseModel):
 
     class Meta:
         abstract = False
+        ordering = ("group__name", "name")

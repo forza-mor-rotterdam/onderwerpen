@@ -50,6 +50,7 @@ mozilla-django-oidc==3.0.0
 PyJWT<2.4.0
 django-session-timeout-joinup==1.0.0
 django_redis
+django-webpack-loader==1.7.0
 
 # development
 django-debug-toolbar==4.0.0

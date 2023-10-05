@@ -1,11 +1,13 @@
 from apps.categories.models import Category
 from apps.categories.serializers import CategorySerializer
+from apps.groups.filtersets import GroupFilter
 from apps.groups.models import Group
 from apps.groups.serializers import GroupListSerializer, GroupSerializer
 from apps.questions.models import Question
 from apps.questions.serializers import QuestionSerializer
 from django.http import Http404
 from django.shortcuts import get_object_or_404
+from django_filters import rest_framework as filters
 from rest_framework import mixins, status, viewsets
 from rest_framework.decorators import action
 from rest_framework.response import Response
@@ -25,6 +27,9 @@ class GroupViewSet(
     serializer_class = GroupListSerializer
     serializer_detail_class = GroupSerializer
     lookup_field = "group_uuid"
+
+    filter_backends = (filters.DjangoFilterBackend,)
+    filterset_class = GroupFilter
 
     def get_serializer_class(self):
         if self.action == "retrieve":
