@@ -1,3327 +1,992 @@
 [
   {
-    "model": "categories.category",
-    "pk": "01754c96-0c0b-492e-9a42-f929a69eec1a",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.592Z",
-      "updated_at": "2023-08-21T13:28:58.592Z",
-      "name": "verlichting brandt ook overdag                ",
-      "slug": "verlichting-brandt-ook-overdag",
-      "public_name": "verlichting brandt ook overdag                ",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "172",
-          "magMelden": true,
-          "omschrijving": "verlichting brandt ook overdag                ",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "43d598d9-3446-46ae-be62-ef6480cb4d67"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "020f5372-3f30-4038-9fe9-e77640580abe",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.538Z",
-      "updated_at": "2023-08-21T13:28:58.538Z",
-      "name": "prullenbak kapot",
-      "slug": "prullenbak-kapot",
-      "public_name": "prullenbak kapot",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "149",
-          "magMelden": true,
-          "omschrijving": "prullenbak kapot",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "cbc97f98-b0e7-44c3-a577-3317826ffc3f"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "022cf8ab-2702-4e31-8a32-966d994e9a15",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.567Z",
-      "updated_at": "2023-08-21T13:28:58.567Z",
-      "name": "onbekende stoffen",
-      "slug": "onbekende-stoffen",
-      "public_name": "onbekende stoffen",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "122",
-          "magMelden": true,
-          "omschrijving": "onbekende stoffen",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "53fff76c-6a62-4928-bbb8-ca2653dd0067"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "03fc816f-3389-4bf9-959b-1f5ea209cb9e",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.594Z",
-      "updated_at": "2023-08-21T13:28:58.594Z",
-      "name": "Ganzen- of eendenpoep",
-      "slug": "ganzen-of-eendenpoep",
-      "public_name": "Ganzen- of eendenpoep",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "280",
-          "magMelden": true,
-          "omschrijving": "Ganzen- of eendenpoep",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "bea01995-797d-4907-9cbe-d77e88d1c714"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "07709606-f09a-49c1-9f38-5e60eed3c070",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.622Z",
-      "updated_at": "2023-08-21T13:28:58.622Z",
-      "name": "Sandwichborden",
-      "slug": "sandwichborden",
-      "public_name": "Sandwichborden",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "169",
-          "magMelden": true,
-          "omschrijving": "Sandwichborden",
-          "magDoorverwijzen": false,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "95112c42-16a5-4be6-a741-75494fd813e8"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "0e669813-4db0-49b6-b243-c99c57d7adbd",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.528Z",
-      "updated_at": "2023-08-21T13:28:58.528Z",
-      "name": "Bouw/puincontainer",
-      "slug": "bouwpuincontainer",
-      "public_name": "Bouw/puincontainer",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "275",
-          "magMelden": true,
-          "omschrijving": "Bouw/puincontainer",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "cbc97f98-b0e7-44c3-a577-3317826ffc3f"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "10b99f52-84d8-4c2b-8b57-c9d44aa3d10d",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.609Z",
-      "updated_at": "2023-08-21T13:28:58.609Z",
-      "name": "brug",
-      "slug": "brug",
-      "public_name": "brug",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "129",
-          "magMelden": true,
-          "omschrijving": "brug",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "48f211d6-8d12-4868-97dd-64b2bca9f552"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "114b8cc1-abfc-4696-8ef2-4a7d33fb5e7d",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.622Z",
-      "updated_at": "2023-08-21T13:28:58.622Z",
-      "name": "Reclamebord",
-      "slug": "reclamebord",
-      "public_name": "Reclamebord",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "170",
-          "magMelden": true,
-          "omschrijving": "Reclamebord",
-          "magDoorverwijzen": false,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "95112c42-16a5-4be6-a741-75494fd813e8"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "1432c3c7-c894-4fa9-8889-3c872478a13d",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.512Z",
-      "updated_at": "2023-08-21T13:28:58.512Z",
-      "name": "bedrijfsafval",
-      "slug": "bedrijfsafval",
-      "public_name": "bedrijfsafval",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "86",
-          "magMelden": true,
-          "omschrijving": "bedrijfsafval",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "e1ed2b53-add6-4bb3-a41d-7e36f2fa96e4"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "157d2ec5-98e6-4795-a57f-e14ca8ed9306",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.547Z",
-      "updated_at": "2023-08-21T13:28:58.547Z",
-      "name": "Bomen",
-      "slug": "bomen",
-      "public_name": "Bomen",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "12",
-          "magMelden": true,
-          "omschrijving": "Bomen",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "4c6a8038-1c14-482f-abf9-340875a86573"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "15f39f2f-a6fe-4050-be0d-bc8f6b9d2b95",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.539Z",
-      "updated_at": "2023-08-21T13:28:58.539Z",
-      "name": "prullenbak vol ",
-      "slug": "prullenbak-vol",
-      "public_name": "prullenbak vol ",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "45",
-          "magMelden": true,
-          "omschrijving": "prullenbak vol ",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "cbc97f98-b0e7-44c3-a577-3317826ffc3f"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "19762590-7b16-41c2-a130-f73fdae088f0",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.557Z",
-      "updated_at": "2023-08-21T13:28:58.557Z",
-      "name": "Eikenprocessierups",
-      "slug": "eikenprocessierups",
-      "public_name": "Eikenprocessierups",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "223",
-          "magMelden": true,
-          "omschrijving": "Eikenprocessierups",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "7699ad53-7232-45e6-81f2-594af2c07da0"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "1a3b2e16-25f8-41c5-8863-5b7300363022",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.589Z",
-      "updated_at": "2023-08-21T13:28:58.589Z",
-      "name": "beschadigde lichtmast",
-      "slug": "beschadigde-lichtmast",
-      "public_name": "beschadigde lichtmast",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "165",
-          "magMelden": true,
-          "omschrijving": "beschadigde lichtmast",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "43d598d9-3446-46ae-be62-ef6480cb4d67"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "1bf2afd9-b5c2-49c4-aa2d-347b270cacf6",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.559Z",
-      "updated_at": "2023-08-21T13:28:58.559Z",
-      "name": "Rat in woning of tuin (dood of levend)",
-      "slug": "rat-in-woning-of-tuin-dood-of-levend",
-      "public_name": "Rat in woning of tuin (dood of levend)",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "197",
-          "magMelden": true,
-          "omschrijving": "Rat in woning of tuin (dood of levend)",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "7699ad53-7232-45e6-81f2-594af2c07da0"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "1e0ef036-e1fb-4bc7-8009-370acbe4951d",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.592Z",
-      "updated_at": "2023-08-21T13:28:58.592Z",
-      "name": "scheefstaande lichtmast",
-      "slug": "scheefstaande-lichtmast",
-      "public_name": "scheefstaande lichtmast",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "166",
-          "magMelden": true,
-          "omschrijving": "scheefstaande lichtmast",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "43d598d9-3446-46ae-be62-ef6480cb4d67"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "1e4aba0d-0cd2-4e63-8561-d1433ca70f68",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.570Z",
-      "updated_at": "2023-08-21T13:28:58.570Z",
-      "name": "graffiti-overig",
-      "slug": "graffiti-overig",
-      "public_name": "graffiti-overig",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "10",
-          "magMelden": true,
-          "omschrijving": "graffiti-overig",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "259b79ef-2d5b-4ca6-a65d-b8539c24e947"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "1e8ddcc3-1e18-4eaa-8d2d-1a4d0359dcda",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.617Z",
-      "updated_at": "2023-08-21T13:28:58.617Z",
-      "name": "verkeersdrempel",
-      "slug": "verkeersdrempel",
-      "public_name": "verkeersdrempel",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "78",
-          "magMelden": true,
-          "omschrijving": "verkeersdrempel",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "48f211d6-8d12-4868-97dd-64b2bca9f552"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "1f0935c0-25b3-4943-a841-1555e512eead",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.617Z",
-      "updated_at": "2023-08-21T13:28:58.617Z",
-      "name": "tunnels/viaducten",
-      "slug": "tunnelsviaducten",
-      "public_name": "tunnels/viaducten",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "132",
-          "magMelden": true,
-          "omschrijving": "tunnels/viaducten",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "48f211d6-8d12-4868-97dd-64b2bca9f552"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "1f7105b3-c7be-4c66-a3bb-52f8f4d1ec70",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.564Z",
-      "updated_at": "2023-08-21T13:28:58.564Z",
-      "name": "(klein) chemisch afval",
-      "slug": "klein-chemisch-afval",
-      "public_name": "(klein) chemisch afval",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "92",
-          "magMelden": true,
-          "omschrijving": "(klein) chemisch afval",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "53fff76c-6a62-4928-bbb8-ca2653dd0067"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "218463e9-6d30-414e-9f4e-c890be521ce6",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.545Z",
-      "updated_at": "2023-08-21T13:28:58.545Z",
-      "name": "Wijkcontainer (gfe) vol",
-      "slug": "wijkcontainer-gfe-vol",
-      "public_name": "Wijkcontainer (gfe) vol",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "292",
-          "magMelden": true,
-          "omschrijving": "Wijkcontainer (gfe) vol",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "cbc97f98-b0e7-44c3-a577-3317826ffc3f"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "21e9829b-0b12-4638-afb2-4ba01c335c30",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.554Z",
-      "updated_at": "2023-08-21T13:28:58.554Z",
-      "name": "Dood dier in/aan water (geen rat/duif)",
-      "slug": "dood-dier-inaan-water-geen-ratduif",
-      "public_name": "Dood dier in/aan water (geen rat/duif)",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "135",
-          "magMelden": true,
-          "omschrijving": "Dood dier in/aan water (geen rat/duif)",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "7699ad53-7232-45e6-81f2-594af2c07da0"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "22e52b6e-a6d4-447e-8036-e25eacf36548",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.542Z",
-      "updated_at": "2023-08-21T13:28:58.542Z",
-      "name": "textielcontainer kapot",
-      "slug": "textielcontainer-kapot",
-      "public_name": "textielcontainer kapot",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "150",
-          "magMelden": true,
-          "omschrijving": "textielcontainer kapot",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "cbc97f98-b0e7-44c3-a577-3317826ffc3f"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "23232c09-8f90-43a2-82fe-ed4b5ac69932",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.595Z",
-      "updated_at": "2023-08-21T13:28:58.595Z",
-      "name": "glas op straat",
-      "slug": "glas-op-straat",
-      "public_name": "glas op straat",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "46",
-          "magMelden": true,
-          "omschrijving": "glas op straat",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "bea01995-797d-4907-9cbe-d77e88d1c714"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "26be0f5f-efe6-4b6c-bbf5-5f4645987010",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.536Z",
-      "updated_at": "2023-08-21T13:28:58.536Z",
-      "name": "papiercontainer kapot",
-      "slug": "papiercontainer-kapot",
-      "public_name": "papiercontainer kapot",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "148",
-          "magMelden": true,
-          "omschrijving": "papiercontainer kapot",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "cbc97f98-b0e7-44c3-a577-3317826ffc3f"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "291e3e52-cb42-45cc-8475-d95dc695a61b",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.615Z",
-      "updated_at": "2023-08-21T13:28:58.615Z",
-      "name": "rijweg",
-      "slug": "rijweg",
-      "public_name": "rijweg",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "73",
-          "magMelden": true,
-          "omschrijving": "rijweg",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "48f211d6-8d12-4868-97dd-64b2bca9f552"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "29c9398e-60cc-4886-bebe-2894129c5a56",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.561Z",
-      "updated_at": "2023-08-21T13:28:58.561Z",
-      "name": "asbest",
-      "slug": "asbest",
-      "public_name": "asbest",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "91",
-          "magMelden": true,
-          "omschrijving": "asbest",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "53fff76c-6a62-4928-bbb8-ca2653dd0067"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "2a32f5b9-219a-4ad8-9dda-4eb4416b1cd5",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.566Z",
-      "updated_at": "2023-08-21T13:28:58.566Z",
-      "name": "(olie)lekkage/morsing",
-      "slug": "olielekkagemorsing",
-      "public_name": "(olie)lekkage/morsing",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "88",
-          "magMelden": true,
-          "omschrijving": "(olie)lekkage/morsing",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "53fff76c-6a62-4928-bbb8-ca2653dd0067"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "2c2e0661-712d-42aa-82b7-6c4a1eda706c",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.532Z",
-      "updated_at": "2023-08-21T13:28:58.532Z",
-      "name": "glascontainer vol",
-      "slug": "glascontainer-vol",
-      "public_name": "glascontainer vol",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "82",
-          "magMelden": true,
-          "omschrijving": "glascontainer vol",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "cbc97f98-b0e7-44c3-a577-3317826ffc3f"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "2e5608f2-f152-4ab0-8ac9-15bf6bfe4147",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.550Z",
-      "updated_at": "2023-08-21T13:28:58.550Z",
-      "name": "Dieren overig",
-      "slug": "dieren-overig",
-      "public_name": "Dieren overig",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "24",
-          "magMelden": true,
-          "omschrijving": "Dieren overig",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "7699ad53-7232-45e6-81f2-594af2c07da0"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "30a66101-c253-46f1-b204-ab097966dcd6",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.586Z",
-      "updated_at": "2023-08-21T13:28:58.586Z",
-      "name": "openbaar oplaadpunt elektrische auto",
-      "slug": "openbaar-oplaadpunt-elektrische-auto",
-      "public_name": "openbaar oplaadpunt elektrische auto",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "171",
-          "magMelden": true,
-          "omschrijving": "openbaar oplaadpunt elektrische auto",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": true
-        }
-      },
-      "group": "b2009fdb-4c4b-471d-9dd9-d654951b6f78"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "32f5f17f-2f8d-45fa-963f-15ca3bfe0f77",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.606Z",
-      "updated_at": "2023-08-21T13:28:58.606Z",
-      "name": "straatkolk (verstopt)",
-      "slug": "straatkolk-verstopt",
-      "public_name": "straatkolk (verstopt)",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "55",
-          "magMelden": true,
-          "omschrijving": "straatkolk (verstopt)",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "30df10e5-d2f0-41da-809c-5c4d3d9e8c51"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "334a46b2-231a-45a9-8ca6-9bc1b277db5f",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.602Z",
-      "updated_at": "2023-08-21T13:28:58.602Z",
-      "name": "zwerfvuil op straat",
-      "slug": "zwerfvuil-op-straat",
-      "public_name": "zwerfvuil op straat",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "47",
-          "magMelden": true,
-          "omschrijving": "zwerfvuil op straat",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "bea01995-797d-4907-9cbe-d77e88d1c714"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "36917a67-80de-468b-9ef7-223f5f6d5489",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.584Z",
-      "updated_at": "2023-08-21T13:28:58.584Z",
-      "name": "speelplaats",
-      "slug": "speelplaats",
-      "public_name": "speelplaats",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "40",
-          "magMelden": true,
-          "omschrijving": "speelplaats",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "e2232100-0ea8-41a3-876b-77702090e5e0"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "390c5fed-8a4e-484c-9184-a2db9a035ec2",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.578Z",
-      "updated_at": "2023-08-21T13:28:58.578Z",
-      "name": "Parkeeroverlast",
-      "slug": "parkeeroverlast",
-      "public_name": "Parkeeroverlast",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "216",
-          "magMelden": true,
-          "omschrijving": "Parkeeroverlast",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "341b616c-ae10-4234-87c2-52dac4493387"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "3953fe08-78ff-4a3f-bb46-77c7e95a5931",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.547Z",
-      "updated_at": "2023-08-21T13:28:58.547Z",
-      "name": "Gras",
-      "slug": "gras",
-      "public_name": "Gras",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "151",
-          "magMelden": true,
-          "omschrijving": "Gras",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "4c6a8038-1c14-482f-abf9-340875a86573"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "3bab5dbe-898a-43d9-b760-0fe91e2bdd3a",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.582Z",
-      "updated_at": "2023-08-21T13:28:58.582Z",
-      "name": "singel ",
-      "slug": "singel",
-      "public_name": "singel ",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "35",
-          "magMelden": true,
-          "omschrijving": "singel ",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "27043605-1cc2-4315-bbf3-070f1a9ed212"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "3bb7d189-05e9-4f05-8537-3dd469524265",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.589Z",
-      "updated_at": "2023-08-21T13:28:58.589Z",
-      "name": "brandt geen verlichting in gehele straat",
-      "slug": "brandt-geen-verlichting-in-gehele-straat",
-      "public_name": "brandt geen verlichting in gehele straat",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "173",
-          "magMelden": true,
-          "omschrijving": "brandt geen verlichting in gehele straat",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "43d598d9-3446-46ae-be62-ef6480cb4d67"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "3dc62b5f-e0de-4254-a6e6-efd6fe73aa1f",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.523Z",
-      "updated_at": "2023-08-21T13:28:58.523Z",
-      "name": "Klein Afval",
-      "slug": "klein-afval",
-      "public_name": "Klein Afval",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "284",
-          "magMelden": true,
-          "omschrijving": "Klein Afval",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "e1ed2b53-add6-4bb3-a41d-7e36f2fa96e4"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "3edf5164-2f79-49ba-8851-dcb9bafef976",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.625Z",
-      "updated_at": "2023-08-21T13:28:58.625Z",
-      "name": "wrak - auto",
-      "slug": "wrak-auto",
-      "public_name": "wrak - auto",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "117",
-          "magMelden": true,
-          "omschrijving": "wrak - auto",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "5722e9c5-99e6-45d3-8335-69c623b3710f"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "467339d3-28da-40bf-bac0-cd08876675da",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.611Z",
-      "updated_at": "2023-08-21T13:28:58.611Z",
-      "name": "invalide-oprit",
-      "slug": "invalide-oprit",
-      "public_name": "invalide-oprit",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "85",
-          "magMelden": true,
-          "omschrijving": "invalide-oprit",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "48f211d6-8d12-4868-97dd-64b2bca9f552"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "46e0bbf5-1b46-4bf0-9693-beb53f807f7a",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.604Z",
-      "updated_at": "2023-08-21T13:28:58.604Z",
-      "name": "Rioolaansluiting (verstopping)",
-      "slug": "rioolaansluiting-verstopping",
-      "public_name": "Rioolaansluiting (verstopping)",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "218",
-          "magMelden": false,
-          "omschrijving": "Rioolaansluiting (verstopping)",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "30df10e5-d2f0-41da-809c-5c4d3d9e8c51"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "48ead9ab-047f-4b2b-bdec-4f7dd95a5ce7",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.597Z",
-      "updated_at": "2023-08-21T13:28:58.597Z",
-      "name": "Kerstboom op straat",
-      "slug": "kerstboom-op-straat",
-      "public_name": "Kerstboom op straat",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "299",
-          "magMelden": true,
-          "omschrijving": "Kerstboom op straat",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "bea01995-797d-4907-9cbe-d77e88d1c714"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "49c19718-a0e6-46f8-82a4-9b3d470b8124",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.560Z",
-      "updated_at": "2023-08-21T13:28:58.560Z",
-      "name": "accu",
-      "slug": "accu",
-      "public_name": "accu",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "119",
-          "magMelden": true,
-          "omschrijving": "accu",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "53fff76c-6a62-4928-bbb8-ca2653dd0067"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "4ba0f23a-c8ae-48bc-af2c-f218be033ee4",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.546Z",
-      "updated_at": "2023-08-21T13:28:58.546Z",
-      "name": "bloembakken",
-      "slug": "bloembakken",
-      "public_name": "bloembakken",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "11",
-          "magMelden": true,
-          "omschrijving": "bloembakken",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "4c6a8038-1c14-482f-abf9-340875a86573"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "4c389b5e-dcd2-4f16-af17-49131e8e39c6",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.537Z",
-      "updated_at": "2023-08-21T13:28:58.537Z",
-      "name": "papiercontainer vol",
-      "slug": "papiercontainer-vol",
-      "public_name": "papiercontainer vol",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "4",
-          "magMelden": true,
-          "omschrijving": "papiercontainer vol",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "cbc97f98-b0e7-44c3-a577-3317826ffc3f"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "52830b77-b180-4404-aef3-d98e7472f118",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.520Z",
-      "updated_at": "2023-08-21T13:28:58.520Z",
-      "name": "huisvuil verkeerd aangeboden",
-      "slug": "huisvuil-verkeerd-aangeboden",
-      "public_name": "huisvuil verkeerd aangeboden",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "5",
-          "magMelden": true,
-          "omschrijving": "huisvuil verkeerd aangeboden",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "e1ed2b53-add6-4bb3-a41d-7e36f2fa96e4"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "55dad8d6-8f6b-4a58-8d00-2885b44e953c",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.565Z",
-      "updated_at": "2023-08-21T13:28:58.565Z",
-      "name": "Lachgasfles(sen)",
-      "slug": "lachgasflessen",
-      "public_name": "Lachgasfles(sen)",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "305",
-          "magMelden": true,
-          "omschrijving": "Lachgasfles(sen)",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "53fff76c-6a62-4928-bbb8-ca2653dd0067"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "56b9de6f-f607-4ae7-bb73-5581ea459210",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.612Z",
-      "updated_at": "2023-08-21T13:28:58.612Z",
-      "name": "POK Asfalt: Gieten",
-      "slug": "pok-asfalt-gieten",
-      "public_name": "POK Asfalt: Gieten",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "195",
-          "magMelden": true,
-          "omschrijving": "POK Asfalt: Gieten",
-          "magDoorverwijzen": false,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "48f211d6-8d12-4868-97dd-64b2bca9f552"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "5860fe91-42e2-46e2-80c7-7bfdf411011e",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.540Z",
-      "updated_at": "2023-08-21T13:28:58.540Z",
-      "name": "restafvalcontainer kapot",
-      "slug": "restafvalcontainer-kapot",
-      "public_name": "restafvalcontainer kapot",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "109",
-          "magMelden": true,
-          "omschrijving": "restafvalcontainer kapot",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "cbc97f98-b0e7-44c3-a577-3317826ffc3f"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "59a1ad52-ed03-4caf-a8ee-2e373a1bb3c6",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.575Z",
-      "updated_at": "2023-08-21T13:28:58.575Z",
-      "name": "Toezicht & Handhaving algemeen",
-      "slug": "toezicht-handhaving-algemeen",
-      "public_name": "Toezicht & Handhaving algemeen",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "152",
-          "magMelden": true,
-          "omschrijving": "Toezicht & Handhaving algemeen",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "3925aebe-e96c-42c1-b27b-bbb3369fb7f4"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "5a052e57-5512-4b13-a200-ea030b322fc1",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.582Z",
-      "updated_at": "2023-08-21T13:28:58.582Z",
-      "name": "zinkvuil/vloeistoffen in singel",
-      "slug": "zinkvuilvloeistoffen-in-singel",
-      "public_name": "zinkvuil/vloeistoffen in singel",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "34",
-          "magMelden": true,
-          "omschrijving": "zinkvuil/vloeistoffen in singel",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "27043605-1cc2-4315-bbf3-070f1a9ed212"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "5a20daeb-b49d-42e4-a816-dcbc9af97301",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.581Z",
-      "updated_at": "2023-08-21T13:28:58.581Z",
-      "name": "Fonteinen",
-      "slug": "fonteinen",
-      "public_name": "Fonteinen",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "297",
-          "magMelden": true,
-          "omschrijving": "Fonteinen",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "27043605-1cc2-4315-bbf3-070f1a9ed212"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "5c1cb2c4-c9b1-444f-bc36-0c530ef3ed0d",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.585Z",
-      "updated_at": "2023-08-21T13:28:58.585Z",
-      "name": "klok / uurwerk ",
-      "slug": "klok-uurwerk",
-      "public_name": "klok / uurwerk ",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "134",
-          "magMelden": true,
-          "omschrijving": "klok / uurwerk ",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "b2009fdb-4c4b-471d-9dd9-d654951b6f78"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "5c90bb3e-a92b-4139-809d-6c9e0441998f",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.558Z",
-      "updated_at": "2023-08-21T13:28:58.558Z",
-      "name": "Levende ratten",
-      "slug": "levende-ratten",
-      "public_name": "Levende ratten",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "214",
-          "magMelden": true,
-          "omschrijving": "Levende ratten",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "7699ad53-7232-45e6-81f2-594af2c07da0"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "5d572f78-1cda-4d41-b7f4-612a56be2ec4",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.567Z",
-      "updated_at": "2023-08-21T13:28:58.567Z",
-      "name": "(olie)vaten",
-      "slug": "olievaten",
-      "public_name": "(olie)vaten",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "118",
-          "magMelden": true,
-          "omschrijving": "(olie)vaten",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "53fff76c-6a62-4928-bbb8-ca2653dd0067"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "62e20643-5f54-4da2-9394-9a2bee45eb92",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.541Z",
-      "updated_at": "2023-08-21T13:28:58.541Z",
-      "name": "restafvalcontainer vol",
-      "slug": "restafvalcontainer-vol",
-      "public_name": "restafvalcontainer vol",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "84",
-          "magMelden": true,
-          "omschrijving": "restafvalcontainer vol",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "cbc97f98-b0e7-44c3-a577-3317826ffc3f"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "64c6d686-c496-40db-b20b-2a84a3baadf6",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.524Z",
-      "updated_at": "2023-08-21T13:28:58.524Z",
-      "name": "koelkast/vriezer",
-      "slug": "koelkastvriezer",
-      "public_name": "koelkast/vriezer",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "103",
-          "magMelden": true,
-          "omschrijving": "koelkast/vriezer",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "e1ed2b53-add6-4bb3-a41d-7e36f2fa96e4"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "66269f3c-707f-4033-9aa3-e18666ac7071",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.613Z",
-      "updated_at": "2023-08-21T13:28:58.613Z",
-      "name": "POK Asfalt: SIR",
-      "slug": "pok-asfalt-sir",
-      "public_name": "POK Asfalt: SIR",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "196",
-          "magMelden": true,
-          "omschrijving": "POK Asfalt: SIR",
-          "magDoorverwijzen": false,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "48f211d6-8d12-4868-97dd-64b2bca9f552"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "664f8ebb-5533-4e73-9b8b-aad94cbb5b26",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.527Z",
-      "updated_at": "2023-08-21T13:28:58.527Z",
-      "name": "sloopafval",
-      "slug": "sloopafval",
-      "public_name": "sloopafval",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "106",
-          "magMelden": true,
-          "omschrijving": "sloopafval",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "e1ed2b53-add6-4bb3-a41d-7e36f2fa96e4"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "697eb13a-4468-42bc-99a9-b0b68f4cef52",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.591Z",
-      "updated_at": "2023-08-21T13:28:58.591Z",
-      "name": "lichtmastluikje staat open / bedrading zichtbaar",
-      "slug": "lichtmastluikje-staat-open-bedrading-zichtbaar",
-      "public_name": "lichtmastluikje staat open / bedrading zichtbaar",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "167",
-          "magMelden": true,
-          "omschrijving": "lichtmastluikje staat open / bedrading zichtbaar",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "43d598d9-3446-46ae-be62-ef6480cb4d67"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "6a35a2c3-fb1d-4445-8e49-8c59e6cf359e",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.569Z",
-      "updated_at": "2023-08-21T13:28:58.569Z",
-      "name": "graffiti-discriminerend",
-      "slug": "graffiti-discriminerend",
-      "public_name": "graffiti-discriminerend",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "9",
-          "magMelden": true,
-          "omschrijving": "graffiti-discriminerend",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "259b79ef-2d5b-4ca6-a65d-b8539c24e947"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "6b99ba2a-ee82-411d-9465-e7f580a5c3e5",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.588Z",
-      "updated_at": "2023-08-21T13:28:58.588Z",
-      "name": "Watertappunt",
-      "slug": "watertappunt",
-      "public_name": "Watertappunt",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "298",
-          "magMelden": true,
-          "omschrijving": "Watertappunt",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "b2009fdb-4c4b-471d-9dd9-d654951b6f78"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "6e8056b3-ca33-4f17-8467-2f7d9e036562",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.624Z",
-      "updated_at": "2023-08-21T13:28:58.624Z",
-      "name": "winkelwagens",
-      "slug": "winkelwagens",
-      "public_name": "winkelwagens",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "56",
-          "magMelden": true,
-          "omschrijving": "winkelwagens",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "c76a4c7f-48d0-4040-b9c5-f715d0114369"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "7110ba6d-8e83-4067-a1df-07c42364c8ad",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.534Z",
-      "updated_at": "2023-08-21T13:28:58.534Z",
-      "name": "Huiscontainer (papier) niet geleegd",
-      "slug": "huiscontainer-papier-niet-geleegd",
-      "public_name": "Huiscontainer (papier) niet geleegd",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "278",
-          "magMelden": true,
-          "omschrijving": "Huiscontainer (papier) niet geleegd",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "cbc97f98-b0e7-44c3-a577-3317826ffc3f"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "72dd2c1a-5ea9-4a17-a808-c1d9d31f9551",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.544Z",
-      "updated_at": "2023-08-21T13:28:58.544Z",
-      "name": "Wijkcontainer (gfe) kapot",
-      "slug": "wijkcontainer-gfe-kapot",
-      "public_name": "Wijkcontainer (gfe) kapot",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "293",
-          "magMelden": true,
-          "omschrijving": "Wijkcontainer (gfe) kapot",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "cbc97f98-b0e7-44c3-a577-3317826ffc3f"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "73d91984-6d11-460a-995a-97b84369de71",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.556Z",
-      "updated_at": "2023-08-21T13:28:58.556Z",
-      "name": "Duivenoverlast",
-      "slug": "duivenoverlast",
-      "public_name": "Duivenoverlast",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "110",
-          "magMelden": true,
-          "omschrijving": "Duivenoverlast",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "7699ad53-7232-45e6-81f2-594af2c07da0"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "748ed796-e7bd-4cc8-adcd-28ad7fe05b80",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.616Z",
-      "updated_at": "2023-08-21T13:28:58.616Z",
-      "name": "sluis",
-      "slug": "sluis",
-      "public_name": "sluis",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "131",
-          "magMelden": true,
-          "omschrijving": "sluis",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "48f211d6-8d12-4868-97dd-64b2bca9f552"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "7540c3a7-da98-4431-a4db-b50edbe0cc5c",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.618Z",
-      "updated_at": "2023-08-21T13:28:58.618Z",
-      "name": "voetpad",
-      "slug": "voetpad",
-      "public_name": "voetpad",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "75",
-          "magMelden": true,
-          "omschrijving": "voetpad",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "48f211d6-8d12-4868-97dd-64b2bca9f552"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "75bb1ed6-4ac9-42c8-a3f5-6fe02387d716",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.521Z",
-      "updated_at": "2023-08-21T13:28:58.521Z",
-      "name": "huisvuilzakken naast container",
-      "slug": "huisvuilzakken-naast-container",
-      "public_name": "huisvuilzakken naast container",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "116",
-          "magMelden": true,
-          "omschrijving": "huisvuilzakken naast container",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "e1ed2b53-add6-4bb3-a41d-7e36f2fa96e4"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "76bfe16a-082c-4f42-be89-9e22fbfc5622",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.599Z",
-      "updated_at": "2023-08-21T13:28:58.599Z",
-      "name": "Onkruid op verharding",
-      "slug": "onkruid-op-verharding",
-      "public_name": "Onkruid op verharding",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "44",
-          "magMelden": true,
-          "omschrijving": "Onkruid op verharding",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "bea01995-797d-4907-9cbe-d77e88d1c714"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "7701e721-2c16-4cb9-8ffd-155cc4bfc182",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.619Z",
-      "updated_at": "2023-08-21T13:28:58.619Z",
-      "name": "bouwplaatsen - algemeen",
-      "slug": "bouwplaatsen-algemeen",
-      "public_name": "bouwplaatsen - algemeen",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "141",
-          "magMelden": true,
-          "omschrijving": "bouwplaatsen - algemeen",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "c2d892e4-257a-4ce3-b8e5-968b1ef5766b"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "79b949ee-c2ef-4cc2-82f2-bab4c036f774",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.535Z",
-      "updated_at": "2023-08-21T13:28:58.535Z",
-      "name": "Huiscontainer (rest) niet geleegd",
-      "slug": "huiscontainer-rest-niet-geleegd",
-      "public_name": "Huiscontainer (rest) niet geleegd",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "277",
-          "magMelden": true,
-          "omschrijving": "Huiscontainer (rest) niet geleegd",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "cbc97f98-b0e7-44c3-a577-3317826ffc3f"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "7a1e1497-e53d-4c0a-bac5-03b6ff0e0dbf",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.551Z",
-      "updated_at": "2023-08-21T13:28:58.551Z",
-      "name": "Dode duiven",
-      "slug": "dode-duiven",
-      "public_name": "Dode duiven",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "180",
-          "magMelden": true,
-          "omschrijving": "Dode duiven",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "7699ad53-7232-45e6-81f2-594af2c07da0"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "7b580cc6-ece6-44f6-ab95-586c01d80023",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.587Z",
-      "updated_at": "2023-08-21T13:28:58.587Z",
-      "name": "straatmeubilair algemeen",
-      "slug": "straatmeubilair-algemeen",
-      "public_name": "straatmeubilair algemeen",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "69",
-          "magMelden": true,
-          "omschrijving": "straatmeubilair algemeen",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": true
-        }
-      },
-      "group": "b2009fdb-4c4b-471d-9dd9-d654951b6f78"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "7c8e376d-8276-4607-9756-ecc74073ca25",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.576Z",
-      "updated_at": "2023-08-21T13:28:58.576Z",
-      "name": "aanhangers/caravans",
-      "slug": "aanhangerscaravans",
-      "public_name": "aanhangers/caravans",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "123",
-          "magMelden": true,
-          "omschrijving": "aanhangers/caravans",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "341b616c-ae10-4234-87c2-52dac4493387"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "8007d38f-0547-4352-9ab9-b675739e22a7",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.610Z",
-      "updated_at": "2023-08-21T13:28:58.610Z",
-      "name": "gebiedsgericht",
-      "slug": "gebiedsgericht",
-      "public_name": "gebiedsgericht",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "183",
-          "magMelden": true,
-          "omschrijving": "gebiedsgericht",
-          "magDoorverwijzen": false,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "48f211d6-8d12-4868-97dd-64b2bca9f552"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "825e6293-f6d9-46bb-8f8c-be2563e630ff",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.568Z",
-      "updated_at": "2023-08-21T13:28:58.568Z",
-      "name": "uitgebrande voertuigen (herstel wegdek)",
-      "slug": "uitgebrande-voertuigen-herstel-wegdek",
-      "public_name": "uitgebrande voertuigen (herstel wegdek)",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "121",
-          "magMelden": true,
-          "omschrijving": "uitgebrande voertuigen (herstel wegdek)",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "53fff76c-6a62-4928-bbb8-ca2653dd0067"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "8ebeded9-550b-43df-b5ed-bf602cd69a45",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.563Z",
-      "updated_at": "2023-08-21T13:28:58.563Z",
-      "name": "injectienaalden/spuiten",
-      "slug": "injectienaaldenspuiten",
-      "public_name": "injectienaalden/spuiten",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "79",
-          "magMelden": true,
-          "omschrijving": "injectienaalden/spuiten",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "53fff76c-6a62-4928-bbb8-ca2653dd0067"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "8fe0f643-120e-4c31-b828-1b25a00ff94c",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.614Z",
-      "updated_at": "2023-08-21T13:28:58.614Z",
-      "name": "POK Asfalt: Zwart",
-      "slug": "pok-asfalt-zwart",
-      "public_name": "POK Asfalt: Zwart",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "193",
-          "magMelden": true,
-          "omschrijving": "POK Asfalt: Zwart",
-          "magDoorverwijzen": false,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "48f211d6-8d12-4868-97dd-64b2bca9f552"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "910e9aee-7587-44b5-a7a3-f2a21f5823da",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.571Z",
-      "updated_at": "2023-08-21T13:28:58.571Z",
-      "name": "Flying Squads Schone Stad",
-      "slug": "flying-squads-schone-stad",
-      "public_name": "Flying Squads Schone Stad",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "266",
-          "magMelden": true,
-          "omschrijving": "Flying Squads Schone Stad",
-          "magDoorverwijzen": false,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "67c1c7a7-d4c3-4c4f-a745-0e23c9f23ba2"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "92e8ca71-34c7-4115-8628-bea5de069ba2",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.517Z",
-      "updated_at": "2023-08-21T13:28:58.517Z",
-      "name": "Grofvuil op straat",
-      "slug": "grofvuil-op-straat",
-      "public_name": "Grofvuil op straat",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "276",
-          "magMelden": true,
-          "omschrijving": "Grofvuil op straat",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "e1ed2b53-add6-4bb3-a41d-7e36f2fa96e4"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "9301a90a-b224-4303-98b6-be10fc4c5b5c",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.613Z",
-      "updated_at": "2023-08-21T13:28:58.613Z",
-      "name": "POK Asfalt: Rood",
-      "slug": "pok-asfalt-rood",
-      "public_name": "POK Asfalt: Rood",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "194",
-          "magMelden": true,
-          "omschrijving": "POK Asfalt: Rood",
-          "magDoorverwijzen": false,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "48f211d6-8d12-4868-97dd-64b2bca9f552"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "9541f753-d8ae-42e6-bed5-f39533430261",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.543Z",
-      "updated_at": "2023-08-21T13:28:58.543Z",
-      "name": "textielcontainer vol",
-      "slug": "textielcontainer-vol",
-      "public_name": "textielcontainer vol",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "102",
-          "magMelden": true,
-          "omschrijving": "textielcontainer vol",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "cbc97f98-b0e7-44c3-a577-3317826ffc3f"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "96953f3d-2970-410f-ba73-72a99fa9c710",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.598Z",
-      "updated_at": "2023-08-21T13:28:58.598Z",
-      "name": "Onkruid in groen ",
-      "slug": "onkruid-in-groen",
-      "public_name": "Onkruid in groen ",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "282",
-          "magMelden": true,
-          "omschrijving": "Onkruid in groen ",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "bea01995-797d-4907-9cbe-d77e88d1c714"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "98b6d30c-0fc8-4220-8bd5-ec74465fda49",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.553Z",
-      "updated_at": "2023-08-21T13:28:58.553Z",
-      "name": "Dode vogels",
-      "slug": "dode-vogels",
-      "public_name": "Dode vogels",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "125",
-          "magMelden": true,
-          "omschrijving": "Dode vogels",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "7699ad53-7232-45e6-81f2-594af2c07da0"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "99373d80-7289-41f8-99f3-8b33985ec0b5",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.525Z",
-      "updated_at": "2023-08-21T13:28:58.525Z",
-      "name": "Papier/Karton",
-      "slug": "papierkarton",
-      "public_name": "Papier/Karton",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "191",
-          "magMelden": true,
-          "omschrijving": "Papier/Karton",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "e1ed2b53-add6-4bb3-a41d-7e36f2fa96e4"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "9aaddee7-6db4-4886-a5c5-8582737a242e",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.579Z",
-      "updated_at": "2023-08-21T13:28:58.579Z",
-      "name": "beschoeiingen",
-      "slug": "beschoeiingen",
-      "public_name": "beschoeiingen",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "33",
-          "magMelden": true,
-          "omschrijving": "beschoeiingen",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "27043605-1cc2-4315-bbf3-070f1a9ed212"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "9c796b9b-9355-4c81-bcf9-db8b31881ee4",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.596Z",
-      "updated_at": "2023-08-21T13:28:58.596Z",
-      "name": "hondenpoep op straat",
-      "slug": "hondenpoep-op-straat",
-      "public_name": "hondenpoep op straat",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "81",
-          "magMelden": true,
-          "omschrijving": "hondenpoep op straat",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "bea01995-797d-4907-9cbe-d77e88d1c714"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "9e15c9cc-24ae-4dff-a895-8c928be8a7fb",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.609Z",
-      "updated_at": "2023-08-21T13:28:58.609Z",
-      "name": "fietspad",
-      "slug": "fietspad",
-      "public_name": "fietspad",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "8",
-          "magMelden": true,
-          "omschrijving": "fietspad",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "48f211d6-8d12-4868-97dd-64b2bca9f552"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "a09edcc9-33bb-485a-b8be-2b86d1f2b879",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.590Z",
-      "updated_at": "2023-08-21T13:28:58.590Z",
-      "name": "lamp(en) uit",
-      "slug": "lampen-uit",
-      "public_name": "lamp(en) uit",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "164",
-          "magMelden": true,
-          "omschrijving": "lamp(en) uit",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "43d598d9-3446-46ae-be62-ef6480cb4d67"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "a168d6ab-14c3-441e-9451-1fa77c199b52",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.604Z",
-      "updated_at": "2023-08-21T13:28:58.604Z",
-      "name": "stankoverlast",
-      "slug": "stankoverlast",
-      "public_name": "stankoverlast",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "98",
-          "magMelden": true,
-          "omschrijving": "stankoverlast",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "30df10e5-d2f0-41da-809c-5c4d3d9e8c51"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "a1c83e26-a3ef-4910-ba81-4647f0edf503",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.559Z",
-      "updated_at": "2023-08-21T13:28:58.559Z",
-      "name": "Overlast wespen, bijen, hommels",
-      "slug": "overlast-wespen-bijen-hommels",
-      "public_name": "Overlast wespen, bijen, hommels",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "182",
-          "magMelden": true,
-          "omschrijving": "Overlast wespen, bijen, hommels",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "7699ad53-7232-45e6-81f2-594af2c07da0"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "a3de921f-47d0-4a2c-a6ed-6d39112fba4e",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.624Z",
-      "updated_at": "2023-08-21T13:28:58.624Z",
-      "name": "(Brom-)fietswrak",
-      "slug": "brom-fietswrak",
-      "public_name": "(Brom-)fietswrak",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "90",
-          "magMelden": true,
-          "omschrijving": "(Brom-)fietswrak",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "5722e9c5-99e6-45d3-8335-69c623b3710f"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "a41eb585-e37f-478a-a516-d5581256d33d",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.574Z",
-      "updated_at": "2023-08-21T13:28:58.574Z",
-      "name": "Schone Stad algemeen",
-      "slug": "schone-stad-algemeen",
-      "public_name": "Schone Stad algemeen",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "140",
-          "magMelden": true,
-          "omschrijving": "Schone Stad algemeen",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "3925aebe-e96c-42c1-b27b-bbb3369fb7f4"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "a7a26bc2-73c5-49e1-b227-4bacc6084cdf",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.555Z",
-      "updated_at": "2023-08-21T13:28:58.555Z",
-      "name": "Dood dier op/aan weg (geen rat/duif)",
-      "slug": "dood-dier-opaan-weg-geen-ratduif",
-      "public_name": "Dood dier op/aan weg (geen rat/duif)",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "126",
-          "magMelden": true,
-          "omschrijving": "Dood dier op/aan weg (geen rat/duif)",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "7699ad53-7232-45e6-81f2-594af2c07da0"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "a8094792-5f1c-46d7-9d8b-b9cc1ea2eea4",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.623Z",
-      "updated_at": "2023-08-21T13:28:58.623Z",
-      "name": "Stickers",
-      "slug": "stickers",
-      "public_name": "Stickers",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "207",
-          "magMelden": true,
-          "omschrijving": "Stickers",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "95112c42-16a5-4be6-a741-75494fd813e8"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "a8c7ed32-e802-4d9e-bf19-cbe8238222a1",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.529Z",
-      "updated_at": "2023-08-21T13:28:58.529Z",
-      "name": "cocon/1100 liter rolcontainer vol",
-      "slug": "cocon1100-liter-rolcontainer-vol",
-      "public_name": "cocon/1100 liter rolcontainer vol",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "83",
-          "magMelden": true,
-          "omschrijving": "cocon/1100 liter rolcontainer vol",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "cbc97f98-b0e7-44c3-a577-3317826ffc3f"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "aa06a7af-75d5-49ca-9c18-a7b42428b25e",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.594Z",
-      "updated_at": "2023-08-21T13:28:58.594Z",
-      "name": "Andere uitwerpselen",
-      "slug": "andere-uitwerpselen",
-      "public_name": "Andere uitwerpselen",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "281",
-          "magMelden": true,
-          "omschrijving": "Andere uitwerpselen",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "bea01995-797d-4907-9cbe-d77e88d1c714"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "b0f71e1d-df2c-49f5-8fd7-3de018e95865",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.530Z",
-      "updated_at": "2023-08-21T13:28:58.530Z",
-      "name": "Containerruimte markthal",
-      "slug": "containerruimte-markthal",
-      "public_name": "Containerruimte markthal",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "212",
-          "magMelden": true,
-          "omschrijving": "Containerruimte markthal",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "cbc97f98-b0e7-44c3-a577-3317826ffc3f"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "b6e005de-eb98-43a1-a2c7-26867c467e89",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.573Z",
-      "updated_at": "2023-08-21T13:28:58.573Z",
-      "name": "Openbare werken algemeen",
-      "slug": "openbare-werken-algemeen",
-      "public_name": "Openbare werken algemeen",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "23",
-          "magMelden": true,
-          "omschrijving": "Openbare werken algemeen",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "3925aebe-e96c-42c1-b27b-bbb3369fb7f4"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "b8b31bb0-47a6-40d8-80a4-8f1bb2102b75",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.571Z",
-      "updated_at": "2023-08-21T13:28:58.571Z",
-      "name": "Flying Squads T&H",
-      "slug": "flying-squads-th",
-      "public_name": "Flying Squads T&H",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "265",
-          "magMelden": true,
-          "omschrijving": "Flying Squads T&H",
-          "magDoorverwijzen": false,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "67c1c7a7-d4c3-4c4f-a745-0e23c9f23ba2"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "c0cc8029-29c7-4972-9578-50c3ae432b87",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.603Z",
-      "updated_at": "2023-08-21T13:28:58.603Z",
-      "name": "hoofdriool",
-      "slug": "hoofdriool",
-      "public_name": "hoofdriool",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "51",
-          "magMelden": true,
-          "omschrijving": "hoofdriool",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "30df10e5-d2f0-41da-809c-5c4d3d9e8c51"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "c2d8ce23-8fdf-45e0-b953-32602a66e09f",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.531Z",
-      "updated_at": "2023-08-21T13:28:58.531Z",
-      "name": "glascontainer kapot",
-      "slug": "glascontainer-kapot",
-      "public_name": "glascontainer kapot",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "146",
-          "magMelden": true,
-          "omschrijving": "glascontainer kapot",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "cbc97f98-b0e7-44c3-a577-3317826ffc3f"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "c4f0ca44-6146-45e3-a9f9-bacaf11e7038",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.600Z",
-      "updated_at": "2023-08-21T13:28:58.600Z",
-      "name": "Overlast blad of bloesem",
-      "slug": "overlast-blad-of-bloesem",
-      "public_name": "Overlast blad of bloesem",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "301",
-          "magMelden": true,
-          "omschrijving": "Overlast blad of bloesem",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "bea01995-797d-4907-9cbe-d77e88d1c714"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "cabd9321-c0d3-41c6-b0fd-d188875941fb",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.576Z",
-      "updated_at": "2023-08-21T13:28:58.576Z",
-      "name": "Overlast markten",
-      "slug": "overlast-markten",
-      "public_name": "Overlast markten",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "288",
-          "magMelden": true,
-          "omschrijving": "Overlast markten",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "6dd09e68-dc0c-408a-b0b0-92d7ce4e2814"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "ce475153-aa7d-4021-9e58-684c30d1ab8c",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.548Z",
-      "updated_at": "2023-08-21T13:28:58.549Z",
-      "name": "Japanse Duizendknoop",
-      "slug": "japanse-duizendknoop",
-      "public_name": "Japanse Duizendknoop",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "294",
-          "magMelden": true,
-          "omschrijving": "Japanse Duizendknoop",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "4c6a8038-1c14-482f-abf9-340875a86573"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "d0f4666c-e10f-46b9-8e3d-9d7575124bbd",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.608Z",
-      "updated_at": "2023-08-21T13:28:58.608Z",
-      "name": "boomwortels",
-      "slug": "boomwortels",
-      "public_name": "boomwortels",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "14",
-          "magMelden": true,
-          "omschrijving": "boomwortels",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "48f211d6-8d12-4868-97dd-64b2bca9f552"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "d5bbb547-b71d-4ce4-9906-9e8cd3754467",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.584Z",
-      "updated_at": "2023-08-21T13:28:58.584Z",
-      "name": "bewegwijzering",
-      "slug": "bewegwijzering",
-      "public_name": "bewegwijzering",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "174",
-          "magMelden": true,
-          "omschrijving": "bewegwijzering",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "b2009fdb-4c4b-471d-9dd9-d654951b6f78"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "d6027c95-a062-400d-a18a-59fdd6518e42",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.562Z",
-      "updated_at": "2023-08-21T13:28:58.562Z",
-      "name": "gastank/brandblusapparatuur",
-      "slug": "gastankbrandblusapparatuur",
-      "public_name": "gastank/brandblusapparatuur",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "120",
-          "magMelden": true,
-          "omschrijving": "gastank/brandblusapparatuur",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "53fff76c-6a62-4928-bbb8-ca2653dd0067"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "d9f75fa2-42c0-41d9-a7e2-746672ac0292",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.607Z",
-      "updated_at": "2023-08-21T13:28:58.607Z",
-      "name": "Water- of rioolpersleiding",
-      "slug": "water-of-rioolpersleiding",
-      "public_name": "Water- of rioolpersleiding",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "300",
-          "magMelden": true,
-          "omschrijving": "Water- of rioolpersleiding",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "30df10e5-d2f0-41da-809c-5c4d3d9e8c51"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "db012fbc-cbd2-4fa6-8b46-10c5d9b1be9d",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.606Z",
-      "updated_at": "2023-08-21T13:28:58.606Z",
-      "name": "Water in de kruipruimte, de kelder of in een tuin",
-      "slug": "water-in-de-kruipruimte-de-kelder-of-in-een-tuin",
-      "public_name": "Water in de kruipruimte, de kelder of in een tuin",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "219",
-          "magMelden": false,
-          "omschrijving": "Water in de kruipruimte, de kelder of in een tuin",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "30df10e5-d2f0-41da-809c-5c4d3d9e8c51"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "dc5b202a-3be4-40ac-81b5-71d7521ab25b",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.580Z",
-      "updated_at": "2023-08-21T13:28:58.580Z",
-      "name": "drijfvuil in singel",
-      "slug": "drijfvuil-in-singel",
-      "public_name": "drijfvuil in singel",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "115",
-          "magMelden": true,
-          "omschrijving": "drijfvuil in singel",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "27043605-1cc2-4315-bbf3-070f1a9ed212"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "dc8abf82-3887-45a3-be06-7e30e2097321",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.621Z",
-      "updated_at": "2023-08-21T13:28:58.621Z",
-      "name": "Posters",
-      "slug": "posters",
-      "public_name": "Posters",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "206",
-          "magMelden": true,
-          "omschrijving": "Posters",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "95112c42-16a5-4be6-a741-75494fd813e8"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "dd759a9d-0625-4806-9f0a-1d16d9b35556",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.601Z",
-      "updated_at": "2023-08-21T13:28:58.601Z",
-      "name": "zwerfvuil in het water",
-      "slug": "zwerfvuil-in-het-water",
-      "public_name": "zwerfvuil in het water",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "215",
-          "magMelden": true,
-          "omschrijving": "zwerfvuil in het water",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "bea01995-797d-4907-9cbe-d77e88d1c714"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "dda1d53c-d447-4edd-bfd5-e61c750278b0",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.552Z",
-      "updated_at": "2023-08-21T13:28:58.552Z",
-      "name": "Dode ratten",
-      "slug": "dode-ratten",
-      "public_name": "Dode ratten",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "213",
-          "magMelden": true,
-          "omschrijving": "Dode ratten",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "7699ad53-7232-45e6-81f2-594af2c07da0"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "de08a540-a07c-4bb8-a3ec-c3383aa5e4be",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.605Z",
-      "updated_at": "2023-08-21T13:28:58.605Z",
-      "name": "storing gemaal",
-      "slug": "storing-gemaal",
-      "public_name": "storing gemaal",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "114",
-          "magMelden": true,
-          "omschrijving": "storing gemaal",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "30df10e5-d2f0-41da-809c-5c4d3d9e8c51"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "dfdd383b-dcf1-45fc-95ea-2db743b2a647",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.516Z",
-      "updated_at": "2023-08-21T13:28:58.516Z",
-      "name": "Grofvuil in plantsoen",
-      "slug": "grofvuil-in-plantsoen",
-      "public_name": "Grofvuil in plantsoen",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "1",
-          "magMelden": true,
-          "omschrijving": "Grofvuil in plantsoen",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "e1ed2b53-add6-4bb3-a41d-7e36f2fa96e4"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "e02a5a59-de51-47ac-9c47-ba4d33242d63",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.533Z",
-      "updated_at": "2023-08-21T13:28:58.533Z",
-      "name": "Huiscontainer kapot",
-      "slug": "huiscontainer-kapot",
-      "public_name": "Huiscontainer kapot",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "303",
-          "magMelden": true,
-          "omschrijving": "Huiscontainer kapot",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "cbc97f98-b0e7-44c3-a577-3317826ffc3f"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "e5759c4b-a5a4-4635-bb7b-6a328f2c70ce",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.593Z",
-      "updated_at": "2023-08-21T13:28:58.593Z",
-      "name": "verlichting overig: (geef omschrijving)",
-      "slug": "verlichting-overig-geef-omschrijving",
-      "public_name": "verlichting overig: (geef omschrijving)",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "168",
-          "magMelden": true,
-          "omschrijving": "verlichting overig: (geef omschrijving)",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "43d598d9-3446-46ae-be62-ef6480cb4d67"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "e5a527fd-fcc9-4569-a902-3953aa61ba99",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.572Z",
-      "updated_at": "2023-08-21T13:28:58.572Z",
-      "name": "Marktvoorzieningen",
-      "slug": "marktvoorzieningen",
-      "public_name": "Marktvoorzieningen",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "287",
-          "magMelden": true,
-          "omschrijving": "Marktvoorzieningen",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "3925aebe-e96c-42c1-b27b-bbb3369fb7f4"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "e5b84a44-4e9d-434a-bd7e-8f9a3529bef5",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.574Z",
-      "updated_at": "2023-08-21T13:28:58.574Z",
-      "name": "Stadsontwikkeling Algemeen",
-      "slug": "stadsontwikkeling-algemeen",
-      "public_name": "Stadsontwikkeling Algemeen",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "302",
-          "magMelden": true,
-          "omschrijving": "Stadsontwikkeling Algemeen",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "3925aebe-e96c-42c1-b27b-bbb3369fb7f4"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "e5e4d014-b737-48a0-99ba-fcf0e7f93d73",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.577Z",
-      "updated_at": "2023-08-21T13:28:58.577Z",
-      "name": "Hinderlijk geparkeerde (brom-)fiets",
-      "slug": "hinderlijk-geparkeerde-brom-fiets",
-      "public_name": "Hinderlijk geparkeerde (brom-)fiets",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "289",
-          "magMelden": true,
-          "omschrijving": "Hinderlijk geparkeerde (brom-)fiets",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "341b616c-ae10-4234-87c2-52dac4493387"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "e681013a-0392-463b-8cfa-72fe8974fed3",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.549Z",
-      "updated_at": "2023-08-21T13:28:58.549Z",
-      "name": "plantsoenen",
-      "slug": "plantsoenen",
-      "public_name": "plantsoenen",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "20",
-          "magMelden": true,
-          "omschrijving": "plantsoenen",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "4c6a8038-1c14-482f-abf9-340875a86573"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "ee80ab3d-9e53-4252-a350-2878a30fdf90",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.601Z",
-      "updated_at": "2023-08-21T13:28:58.601Z",
-      "name": "zwerfvuil in plantsoen",
-      "slug": "zwerfvuil-in-plantsoen",
-      "public_name": "zwerfvuil in plantsoen",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "42",
-          "magMelden": true,
-          "omschrijving": "zwerfvuil in plantsoen",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "bea01995-797d-4907-9cbe-d77e88d1c714"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "ef4cabe8-61f6-495f-848a-9fd9f7ff015d",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.597Z",
-      "updated_at": "2023-08-21T13:28:58.597Z",
-      "name": "honden-uitlaatzone",
-      "slug": "honden-uitlaatzone",
-      "public_name": "honden-uitlaatzone",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "80",
-          "magMelden": true,
-          "omschrijving": "honden-uitlaatzone",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "bea01995-797d-4907-9cbe-d77e88d1c714"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "f0881bc9-5805-47e0-8ed1-0eec5969306a",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.611Z",
-      "updated_at": "2023-08-21T13:28:58.611Z",
-      "name": "gladheid (sneeuw-ijzel-vorst)",
-      "slug": "gladheid-sneeuw-ijzel-vorst",
-      "public_name": "gladheid (sneeuw-ijzel-vorst)",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "89",
-          "magMelden": true,
-          "omschrijving": "gladheid (sneeuw-ijzel-vorst)",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "48f211d6-8d12-4868-97dd-64b2bca9f552"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "f0b43dec-76e1-43ab-a638-67bd2508a9d9",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.619Z",
-      "updated_at": "2023-08-21T13:28:58.620Z",
-      "name": "ingraving - huisaansluiting",
-      "slug": "ingraving-huisaansluiting",
-      "public_name": "ingraving - huisaansluiting",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "32",
-          "magMelden": true,
-          "omschrijving": "ingraving - huisaansluiting",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "c2d892e4-257a-4ce3-b8e5-968b1ef5766b"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "f7f38243-af5b-433b-b240-5242ddc3e8f7",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.620Z",
-      "updated_at": "2023-08-21T13:28:58.620Z",
-      "name": "tijdelijke verkeerssituatie",
-      "slug": "tijdelijke-verkeerssituatie",
-      "public_name": "tijdelijke verkeerssituatie",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "18",
-          "magMelden": true,
-          "omschrijving": "tijdelijke verkeerssituatie",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "c2d892e4-257a-4ce3-b8e5-968b1ef5766b"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "f8e3fbe4-83e5-44cb-a826-c1a6de036d0f",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.518Z",
-      "updated_at": "2023-08-21T13:28:58.518Z",
-      "name": "grond/zand/grind",
-      "slug": "grondzandgrind",
-      "public_name": "grond/zand/grind",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "93",
-          "magMelden": true,
-          "omschrijving": "grond/zand/grind",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "e1ed2b53-add6-4bb3-a41d-7e36f2fa96e4"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "f8fb6f38-d4d0-4d9a-aa1a-3936e19c02b1",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.579Z",
-      "updated_at": "2023-08-21T13:28:58.579Z",
-      "name": "Te lang geparkeerde (brom-)fiets",
-      "slug": "te-lang-geparkeerde-brom-fiets",
-      "public_name": "Te lang geparkeerde (brom-)fiets",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "290",
-          "magMelden": true,
-          "omschrijving": "Te lang geparkeerde (brom-)fiets",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "341b616c-ae10-4234-87c2-52dac4493387"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "f93162a8-b1d6-432e-9a21-06d03d39db55",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.587Z",
-      "updated_at": "2023-08-21T13:28:58.587Z",
-      "name": "straatnaambord/verkeersbord",
-      "slug": "straatnaambordverkeersbord",
-      "public_name": "straatnaambord/verkeersbord",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "60",
-          "magMelden": true,
-          "omschrijving": "straatnaambord/verkeersbord",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": true
-        }
-      },
-      "group": "b2009fdb-4c4b-471d-9dd9-d654951b6f78"
-    }
-  },
-  {
-    "model": "categories.category",
-    "pk": "f9ce0316-bf39-452b-bf16-4813425403de",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.533Z",
-      "updated_at": "2023-08-21T13:28:58.533Z",
-      "name": "Huiscontainer (gfe+t/gft) niet geleegd",
-      "slug": "huiscontainer-gfetgft-niet-geleegd",
-      "public_name": "Huiscontainer (gfe+t/gft) niet geleegd",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "279",
-          "magMelden": true,
-          "omschrijving": "Huiscontainer (gfe+t/gft) niet geleegd",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "cbc97f98-b0e7-44c3-a577-3317826ffc3f"
-    }
-  },
+      "model": "categories.category",
+      "pk": "0326c015-db6c-49de-b172-3586c88ce9e5",
+      "fields": {
+          "created_at": "2023-10-05T19:15:15.457Z",
+          "updated_at": "2023-10-05T19:15:15.457Z",
+          "name": "Drugsafval",
+          "slug": "drugsafval-2",
+          "public_name": "Drugsafval",
+          "description_private": null,
+          "description_public": null,
+          "is_public_accessible": false,
+          "is_active": true,
+          "meta": {},
+          "group": "fae00d6e-44aa-4094-b114-aa8c692b01a6"
+      }
+  },
+  {
+      "model": "categories.category",
+      "pk": "04c88e0b-54c4-40fc-8345-e6906b14b33f",
+      "fields": {
+          "created_at": "2023-10-09T19:54:31.445Z",
+          "updated_at": "2023-10-09T19:54:31.445Z",
+          "name": "Schoonmaken",
+          "slug": "schoonmaken",
+          "public_name": "Schoonmaken",
+          "description_private": "",
+          "description_public": "",
+          "is_public_accessible": false,
+          "is_active": true,
+          "meta": {},
+          "group": "b4a2cbec-9dd3-4b2f-967b-75bedebd9c39"
+      }
+  },
+  {
+      "model": "categories.category",
+      "pk": "05eda4ca-34dc-4d5f-9283-495e54548d02",
+      "fields": {
+          "created_at": "2023-10-05T19:15:15.462Z",
+          "updated_at": "2023-10-05T19:15:15.462Z",
+          "name": "Huiscontainer",
+          "slug": "huiscontainer-2",
+          "public_name": "Huiscontainer",
+          "description_private": null,
+          "description_public": null,
+          "is_public_accessible": false,
+          "is_active": true,
+          "meta": {},
+          "group": "fae00d6e-44aa-4094-b114-aa8c692b01a6"
+      }
+  },
+  {
+      "model": "categories.category",
+      "pk": "081071f4-d5b8-4236-a80b-da59fd4d3ec3",
+      "fields": {
+          "created_at": "2023-10-05T19:15:15.414Z",
+          "updated_at": "2023-10-05T19:15:15.414Z",
+          "name": "Parkeeroverlast voertuig",
+          "slug": "parkeeroverlast-voertuig",
+          "public_name": "Parkeeroverlast voertuig",
+          "description_private": null,
+          "description_public": null,
+          "is_public_accessible": false,
+          "is_active": true,
+          "meta": {},
+          "group": "74387be6-e1e8-45db-9432-dc9ccbf17b2a"
+      }
+  },
+  {
+      "model": "categories.category",
+      "pk": "0cba76f2-87bf-443b-9098-57e4bf1d7a4f",
+      "fields": {
+          "created_at": "2023-10-05T19:15:15.390Z",
+          "updated_at": "2023-10-05T19:15:15.390Z",
+          "name": "Wijkcontainer",
+          "slug": "wijkcontainer",
+          "public_name": "Wijkcontainer",
+          "description_private": null,
+          "description_public": null,
+          "is_public_accessible": false,
+          "is_active": true,
+          "meta": {},
+          "group": "f3fe2950-59a3-4cd7-8d7b-c3a781d15149"
+      }
+  },
+  {
+      "model": "categories.category",
+      "pk": "0f3375d6-fc1d-4ab3-830f-66a4e9191da0",
+      "fields": {
+          "created_at": "2023-10-05T19:15:15.396Z",
+          "updated_at": "2023-10-05T19:15:15.396Z",
+          "name": "Grofvuil",
+          "slug": "grofvuil",
+          "public_name": "Grofvuil",
+          "description_private": null,
+          "description_public": null,
+          "is_public_accessible": false,
+          "is_active": true,
+          "meta": {},
+          "group": "f3fe2950-59a3-4cd7-8d7b-c3a781d15149"
+      }
+  },
   {
-    "model": "categories.category",
-    "pk": "fd8dda2b-b671-42b3-b232-8091a6cf520e",
-    "fields": {
-      "created_at": "2023-08-21T13:28:58.522Z",
-      "updated_at": "2023-08-21T13:28:58.522Z",
-      "name": "huisvuilzakken niet opgehaald",
-      "slug": "huisvuilzakken-niet-opgehaald",
-      "public_name": "huisvuilzakken niet opgehaald",
-      "description_private": null,
-      "description_public": null,
-      "is_public_accessible": false,
-      "is_active": true,
-      "meta": {
-        "msb": {
-          "code": "112",
-          "magMelden": true,
-          "omschrijving": "huisvuilzakken niet opgehaald",
-          "magDoorverwijzen": true,
-          "indicatieBestandsbeheer": false
-        }
-      },
-      "group": "e1ed2b53-add6-4bb3-a41d-7e36f2fa96e4"
-    }
+      "model": "categories.category",
+      "pk": "1047d98f-5f72-4609-920d-b4e93ff526e8",
+      "fields": {
+          "created_at": "2023-10-05T19:15:15.440Z",
+          "updated_at": "2023-10-05T19:15:15.440Z",
+          "name": "Gras",
+          "slug": "gras",
+          "public_name": "Gras",
+          "description_private": null,
+          "description_public": null,
+          "is_public_accessible": false,
+          "is_active": true,
+          "meta": {},
+          "group": "e5c93c4f-5bd1-4af9-a152-20527436bdbe"
+      }
+  },
+  {
+      "model": "categories.category",
+      "pk": "1a32840b-4347-4fc4-b644-223483875442",
+      "fields": {
+          "created_at": "2023-10-05T19:15:15.450Z",
+          "updated_at": "2023-10-05T19:15:15.450Z",
+          "name": "Klok",
+          "slug": "klok",
+          "public_name": "Klok",
+          "description_private": null,
+          "description_public": null,
+          "is_public_accessible": false,
+          "is_active": true,
+          "meta": {},
+          "group": "b04809a9-d00e-4479-93a0-08a19e6106bb"
+      }
+  },
+  {
+      "model": "categories.category",
+      "pk": "23b6dd4c-6682-4728-b986-bd6213bdff8b",
+      "fields": {
+          "created_at": "2023-10-05T19:15:15.404Z",
+          "updated_at": "2023-10-05T19:15:15.404Z",
+          "name": "Verlichting brandt overdag",
+          "slug": "verlichting-brandt-overdag",
+          "public_name": "Verlichting brandt overdag",
+          "description_private": null,
+          "description_public": null,
+          "is_public_accessible": false,
+          "is_active": true,
+          "meta": {},
+          "group": "7bf728d4-b625-49b6-b0a5-eb2d9828ca13"
+      }
+  },
+  {
+      "model": "categories.category",
+      "pk": "28a47df8-c2dc-4e42-a74a-f2bffa9dcc69",
+      "fields": {
+          "created_at": "2023-10-09T19:54:10.440Z",
+          "updated_at": "2023-10-09T19:54:10.441Z",
+          "name": "Beplanting",
+          "slug": "beplanting",
+          "public_name": "Beplanting",
+          "description_private": "",
+          "description_public": "",
+          "is_public_accessible": false,
+          "is_active": true,
+          "meta": {},
+          "group": "b4a2cbec-9dd3-4b2f-967b-75bedebd9c39"
+      }
+  },
+  {
+      "model": "categories.category",
+      "pk": "2f2f7ab2-de02-4604-874a-3d5cb47a3f9b",
+      "fields": {
+          "created_at": "2023-10-05T19:15:15.464Z",
+          "updated_at": "2023-10-05T19:15:15.464Z",
+          "name": "Zwerfafval",
+          "slug": "zwerfafval-2",
+          "public_name": "Zwerfafval",
+          "description_private": null,
+          "description_public": null,
+          "is_public_accessible": false,
+          "is_active": true,
+          "meta": {},
+          "group": "fae00d6e-44aa-4094-b114-aa8c692b01a6"
+      }
+  },
+  {
+      "model": "categories.category",
+      "pk": "362bd944-403a-4c84-832b-db0571ff72eb",
+      "fields": {
+          "created_at": "2023-10-05T19:15:15.438Z",
+          "updated_at": "2023-10-05T19:15:15.438Z",
+          "name": "Onkruid",
+          "slug": "onkruid",
+          "public_name": "Onkruid",
+          "description_private": null,
+          "description_public": null,
+          "is_public_accessible": false,
+          "is_active": true,
+          "meta": {},
+          "group": "e5c93c4f-5bd1-4af9-a152-20527436bdbe"
+      }
+  },
+  {
+      "model": "categories.category",
+      "pk": "38c6e714-9648-4d77-8b94-41ad01a1eb7b",
+      "fields": {
+          "created_at": "2023-10-05T19:15:15.453Z",
+          "updated_at": "2023-10-05T19:15:15.453Z",
+          "name": "Wijkcontainer",
+          "slug": "wijkcontainer-2",
+          "public_name": "Wijkcontainer",
+          "description_private": null,
+          "description_public": null,
+          "is_public_accessible": false,
+          "is_active": true,
+          "meta": {},
+          "group": "fae00d6e-44aa-4094-b114-aa8c692b01a6"
+      }
+  },
+  {
+      "model": "categories.category",
+      "pk": "46220395-1755-40fa-b1f5-b493687e10e5",
+      "fields": {
+          "created_at": "2023-10-05T19:15:15.435Z",
+          "updated_at": "2023-10-05T19:15:15.435Z",
+          "name": "Uitwerpselen",
+          "slug": "uitwerpselen",
+          "public_name": "Uitwerpselen",
+          "description_private": null,
+          "description_public": null,
+          "is_public_accessible": false,
+          "is_active": true,
+          "meta": {},
+          "group": "0ee73ff2-8fa7-43d3-aea1-e1fb09377d52"
+      }
+  },
+  {
+      "model": "categories.category",
+      "pk": "4bb5ff81-b3dc-428b-ad01-38c826d15bb2",
+      "fields": {
+          "created_at": "2023-10-05T19:15:15.421Z",
+          "updated_at": "2023-10-05T19:15:15.421Z",
+          "name": "Rioollucht",
+          "slug": "rioollucht",
+          "public_name": "Rioollucht",
+          "description_private": null,
+          "description_public": null,
+          "is_public_accessible": false,
+          "is_active": true,
+          "meta": {},
+          "group": "dc6ec530-8982-4d6d-9a85-e34f9f396ac1"
+      }
+  },
+  {
+      "model": "categories.category",
+      "pk": "500a1417-06b2-41b4-b544-96383979d444",
+      "fields": {
+          "created_at": "2023-10-05T19:15:15.426Z",
+          "updated_at": "2023-10-05T19:15:15.426Z",
+          "name": "Gat in de weg",
+          "slug": "gat-in-de-weg",
+          "public_name": "Gat in de weg",
+          "description_private": null,
+          "description_public": null,
+          "is_public_accessible": false,
+          "is_active": true,
+          "meta": {},
+          "group": "21d32db5-6e1b-4286-a3f0-b3273c89e22e"
+      }
+  },
+  {
+      "model": "categories.category",
+      "pk": "5071288d-3e4a-402b-b851-a37d88fc5562",
+      "fields": {
+          "created_at": "2023-10-05T19:15:15.449Z",
+          "updated_at": "2023-10-05T19:15:15.449Z",
+          "name": "Informatie- of reclamezuil",
+          "slug": "informatie-of-reclamezuil",
+          "public_name": "Informatie- of reclamezuil",
+          "description_private": null,
+          "description_public": null,
+          "is_public_accessible": false,
+          "is_active": true,
+          "meta": {},
+          "group": "b04809a9-d00e-4479-93a0-08a19e6106bb"
+      }
+  },
+  {
+      "model": "categories.category",
+      "pk": "5508684c-8a95-47fb-ab3c-3815769b1435",
+      "fields": {
+          "created_at": "2023-10-05T19:15:15.405Z",
+          "updated_at": "2023-10-05T19:15:15.405Z",
+          "name": "Verlichting beschadigd",
+          "slug": "verlichting-beschadigd",
+          "public_name": "Verlichting beschadigd",
+          "description_private": null,
+          "description_public": null,
+          "is_public_accessible": false,
+          "is_active": true,
+          "meta": {},
+          "group": "7bf728d4-b625-49b6-b0a5-eb2d9828ca13"
+      }
+  },
+  {
+      "model": "categories.category",
+      "pk": "557f2f26-2575-4824-a445-69fd36ecf3ed",
+      "fields": {
+          "created_at": "2023-10-09T19:58:54.237Z",
+          "updated_at": "2023-10-09T19:58:54.237Z",
+          "name": "Overig",
+          "slug": "overig",
+          "public_name": "Overig",
+          "description_private": "",
+          "description_public": "",
+          "is_public_accessible": false,
+          "is_active": true,
+          "meta": {},
+          "group": "b4a2cbec-9dd3-4b2f-967b-75bedebd9c39"
+      }
+  },
+  {
+      "model": "categories.category",
+      "pk": "57d6ccb3-06be-4a49-ac31-18b81c8df0c9",
+      "fields": {
+          "created_at": "2023-10-09T19:55:51.594Z",
+          "updated_at": "2023-10-09T19:55:51.594Z",
+          "name": "Gaten",
+          "slug": "gaten",
+          "public_name": "Gaten",
+          "description_private": "",
+          "description_public": "",
+          "is_public_accessible": false,
+          "is_active": true,
+          "meta": {},
+          "group": "b4a2cbec-9dd3-4b2f-967b-75bedebd9c39"
+      }
+  },
+  {
+      "model": "categories.category",
+      "pk": "5aea206f-cae3-42c1-92af-2c2eeef2970d",
+      "fields": {
+          "created_at": "2023-10-05T19:15:15.446Z",
+          "updated_at": "2023-10-05T20:05:59.682Z",
+          "name": "Sport- of speeltoestel",
+          "slug": "sport-of-speeltoestel",
+          "public_name": "Sport- of speeltoestel",
+          "description_private": null,
+          "description_public": null,
+          "is_public_accessible": false,
+          "is_active": true,
+          "meta": {
+              "priority": 1
+          },
+          "group": "b04809a9-d00e-4479-93a0-08a19e6106bb"
+      }
+  },
+  {
+      "model": "categories.category",
+      "pk": "5b91a2b7-ce7e-4421-a223-6cbc7048fc35",
+      "fields": {
+          "created_at": "2023-10-05T19:15:15.406Z",
+          "updated_at": "2023-10-05T19:15:15.406Z",
+          "name": "Verlichting overig",
+          "slug": "verlichting-overig",
+          "public_name": "Verlichting overig",
+          "description_private": null,
+          "description_public": null,
+          "is_public_accessible": false,
+          "is_active": true,
+          "meta": {},
+          "group": "7bf728d4-b625-49b6-b0a5-eb2d9828ca13"
+      }
+  },
+  {
+      "model": "categories.category",
+      "pk": "5bb13e61-0f6a-45eb-a679-6755ffecffa5",
+      "fields": {
+          "created_at": "2023-10-05T19:15:15.447Z",
+          "updated_at": "2023-10-05T19:15:15.447Z",
+          "name": "Bank of tafel",
+          "slug": "bank-of-tafel",
+          "public_name": "Bank of tafel",
+          "description_private": null,
+          "description_public": null,
+          "is_public_accessible": false,
+          "is_active": true,
+          "meta": {},
+          "group": "b04809a9-d00e-4479-93a0-08a19e6106bb"
+      }
+  },
+  {
+      "model": "categories.category",
+      "pk": "601377d3-0c5b-4321-b626-90cf6a128fca",
+      "fields": {
+          "created_at": "2023-10-05T19:15:15.448Z",
+          "updated_at": "2023-10-05T19:15:15.448Z",
+          "name": "Verkeers- of straatnaambord",
+          "slug": "verkeers-of-straatnaambord",
+          "public_name": "Verkeers- of straatnaambord",
+          "description_private": null,
+          "description_public": null,
+          "is_public_accessible": false,
+          "is_active": true,
+          "meta": {},
+          "group": "b04809a9-d00e-4479-93a0-08a19e6106bb"
+      }
+  },
+  {
+      "model": "categories.category",
+      "pk": "62bab6a2-3cbc-444b-b9b7-3a9d727f5da9",
+      "fields": {
+          "created_at": "2023-10-09T19:56:16.906Z",
+          "updated_at": "2023-10-09T19:56:16.906Z",
+          "name": "Wespennest",
+          "slug": "wespennest",
+          "public_name": "Wespennest",
+          "description_private": "",
+          "description_public": "",
+          "is_public_accessible": false,
+          "is_active": true,
+          "meta": {},
+          "group": "b4a2cbec-9dd3-4b2f-967b-75bedebd9c39"
+      }
+  },
+  {
+      "model": "categories.category",
+      "pk": "633269f2-ef2b-440c-88c6-dcc8e103ffc6",
+      "fields": {
+          "created_at": "2023-10-09T19:53:51.131Z",
+          "updated_at": "2023-10-09T19:53:51.131Z",
+          "name": "Verzakking algemeen",
+          "slug": "verzakking-algemeen",
+          "public_name": "Verzakking algemeen",
+          "description_private": "",
+          "description_public": "",
+          "is_public_accessible": false,
+          "is_active": true,
+          "meta": {},
+          "group": "b4a2cbec-9dd3-4b2f-967b-75bedebd9c39"
+      }
+  },
+  {
+      "model": "categories.category",
+      "pk": "66e8a036-a9aa-4f0e-858f-6db30909475e",
+      "fields": {
+          "created_at": "2023-10-05T19:15:15.439Z",
+          "updated_at": "2023-10-05T19:15:15.439Z",
+          "name": "Blad of bloesem",
+          "slug": "blad-of-bloesem",
+          "public_name": "Blad of bloesem",
+          "description_private": null,
+          "description_public": null,
+          "is_public_accessible": false,
+          "is_active": true,
+          "meta": {},
+          "group": "e5c93c4f-5bd1-4af9-a152-20527436bdbe"
+      }
+  },
+  {
+      "model": "categories.category",
+      "pk": "68338572-876b-44d5-9eea-34206f49bb47",
+      "fields": {
+          "created_at": "2023-10-09T19:58:10.501Z",
+          "updated_at": "2023-10-09T19:58:10.501Z",
+          "name": "Zerk reinigen",
+          "slug": "zerk-reinigen",
+          "public_name": "Zerk reinigen",
+          "description_private": "",
+          "description_public": "",
+          "is_public_accessible": false,
+          "is_active": true,
+          "meta": {},
+          "group": "b4a2cbec-9dd3-4b2f-967b-75bedebd9c39"
+      }
+  },
+  {
+      "model": "categories.category",
+      "pk": "6a2c0c26-b969-4042-94e7-28c48f492d99",
+      "fields": {
+          "created_at": "2023-10-05T19:15:15.397Z",
+          "updated_at": "2023-10-05T19:15:15.397Z",
+          "name": "Huiscontainer",
+          "slug": "huiscontainer",
+          "public_name": "Huiscontainer",
+          "description_private": null,
+          "description_public": null,
+          "is_public_accessible": false,
+          "is_active": true,
+          "meta": {},
+          "group": "f3fe2950-59a3-4cd7-8d7b-c3a781d15149"
+      }
+  },
+  {
+      "model": "categories.category",
+      "pk": "71977ef3-9410-46d9-a1ba-7b82bfa9e51b",
+      "fields": {
+          "created_at": "2023-10-05T19:15:15.459Z",
+          "updated_at": "2023-10-05T19:15:15.459Z",
+          "name": "Gevaarlijk afval",
+          "slug": "gevaarlijk-afval-2",
+          "public_name": "Gevaarlijk afval",
+          "description_private": null,
+          "description_public": null,
+          "is_public_accessible": false,
+          "is_active": true,
+          "meta": {},
+          "group": "fae00d6e-44aa-4094-b114-aa8c692b01a6"
+      }
+  },
+  {
+      "model": "categories.category",
+      "pk": "71e0819d-6ecd-432d-9957-8e6bc80005b4",
+      "fields": {
+          "created_at": "2023-10-09T19:57:44.733Z",
+          "updated_at": "2023-10-09T19:57:44.733Z",
+          "name": "Muizen",
+          "slug": "muizen",
+          "public_name": "Muizen",
+          "description_private": "",
+          "description_public": "",
+          "is_public_accessible": false,
+          "is_active": true,
+          "meta": {},
+          "group": "b4a2cbec-9dd3-4b2f-967b-75bedebd9c39"
+      }
+  },
+  {
+      "model": "categories.category",
+      "pk": "76b43e78-bac7-4c03-a20a-eaad69456214",
+      "fields": {
+          "created_at": "2023-10-09T19:57:17.321Z",
+          "updated_at": "2023-10-09T19:57:17.321Z",
+          "name": "Konijnen",
+          "slug": "konijnen",
+          "public_name": "Konijnen",
+          "description_private": "",
+          "description_public": "",
+          "is_public_accessible": false,
+          "is_active": true,
+          "meta": {},
+          "group": "b4a2cbec-9dd3-4b2f-967b-75bedebd9c39"
+      }
+  },
+  {
+      "model": "categories.category",
+      "pk": "7b96bd53-5c8c-47df-b4fa-daa219a193a8",
+      "fields": {
+          "created_at": "2023-10-05T19:15:15.442Z",
+          "updated_at": "2023-10-05T19:15:15.442Z",
+          "name": "Planten",
+          "slug": "planten",
+          "public_name": "Planten",
+          "description_private": null,
+          "description_public": null,
+          "is_public_accessible": false,
+          "is_active": true,
+          "meta": {},
+          "group": "e5c93c4f-5bd1-4af9-a152-20527436bdbe"
+      }
+  },
+  {
+      "model": "categories.category",
+      "pk": "7ddc1c07-84ff-4ba2-9c77-e0d52ec42a91",
+      "fields": {
+          "created_at": "2023-10-05T19:15:15.394Z",
+          "updated_at": "2023-10-05T19:15:15.394Z",
+          "name": "Gevaarlijk afval",
+          "slug": "gevaarlijk-afval",
+          "public_name": "Gevaarlijk afval",
+          "description_private": null,
+          "description_public": null,
+          "is_public_accessible": false,
+          "is_active": true,
+          "meta": {},
+          "group": "f3fe2950-59a3-4cd7-8d7b-c3a781d15149"
+      }
+  },
+  {
+      "model": "categories.category",
+      "pk": "815e173c-5208-4ec4-843d-2d2810596237",
+      "fields": {
+          "created_at": "2023-10-05T19:15:15.455Z",
+          "updated_at": "2023-10-05T20:05:52.474Z",
+          "name": "Afval naast wijkcontainer",
+          "slug": "afval-naast-wijkcontainer-2",
+          "public_name": "Afval naast wijkcontainer",
+          "description_private": null,
+          "description_public": null,
+          "is_public_accessible": false,
+          "is_active": true,
+          "meta": {
+              "priority": 1
+          },
+          "group": "fae00d6e-44aa-4094-b114-aa8c692b01a6"
+      }
+  },
+  {
+      "model": "categories.category",
+      "pk": "831c7e6d-48f3-4726-a6c2-f353e03c6d73",
+      "fields": {
+          "created_at": "2023-10-05T19:15:15.465Z",
+          "updated_at": "2023-10-05T19:15:15.465Z",
+          "name": "Afvalbak",
+          "slug": "afvalbak-2",
+          "public_name": "Afvalbak",
+          "description_private": null,
+          "description_public": null,
+          "is_public_accessible": false,
+          "is_active": true,
+          "meta": {},
+          "group": "fae00d6e-44aa-4094-b114-aa8c692b01a6"
+      }
+  },
+  {
+      "model": "categories.category",
+      "pk": "84250a52-371b-418b-83db-8fcdee49b143",
+      "fields": {
+          "created_at": "2023-10-05T19:15:15.415Z",
+          "updated_at": "2023-10-05T19:15:15.415Z",
+          "name": "Parkeeroverlast (brom-)fiets",
+          "slug": "parkeeroverlast-brom-fiets",
+          "public_name": "Parkeeroverlast (brom-)fiets",
+          "description_private": null,
+          "description_public": null,
+          "is_public_accessible": false,
+          "is_active": true,
+          "meta": {},
+          "group": "74387be6-e1e8-45db-9432-dc9ccbf17b2a"
+      }
+  },
+  {
+      "model": "categories.category",
+      "pk": "88e1713b-a635-4457-bd36-287a20fddb5c",
+      "fields": {
+          "created_at": "2023-10-05T19:15:15.441Z",
+          "updated_at": "2023-10-05T19:15:15.441Z",
+          "name": "Bomen",
+          "slug": "bomen",
+          "public_name": "Bomen",
+          "description_private": null,
+          "description_public": null,
+          "is_public_accessible": false,
+          "is_active": true,
+          "meta": {},
+          "group": "e5c93c4f-5bd1-4af9-a152-20527436bdbe"
+      }
+  },
+  {
+      "model": "categories.category",
+      "pk": "8bc3f745-2ead-46a7-86e6-9d4d0b4ce5ae",
+      "fields": {
+          "created_at": "2023-10-05T19:15:15.398Z",
+          "updated_at": "2023-10-05T19:15:15.398Z",
+          "name": "Zwerfafval",
+          "slug": "zwerfafval",
+          "public_name": "Zwerfafval",
+          "description_private": null,
+          "description_public": null,
+          "is_public_accessible": false,
+          "is_active": true,
+          "meta": {},
+          "group": "f3fe2950-59a3-4cd7-8d7b-c3a781d15149"
+      }
+  },
+  {
+      "model": "categories.category",
+      "pk": "9ab0c732-f4b8-4945-a735-95d11b579ece",
+      "fields": {
+          "created_at": "2023-10-09T19:53:04.811Z",
+          "updated_at": "2023-10-09T19:53:04.812Z",
+          "name": "Wateroverlast",
+          "slug": "wateroverlast-2",
+          "public_name": "Wateroverlast",
+          "description_private": "",
+          "description_public": "",
+          "is_public_accessible": false,
+          "is_active": true,
+          "meta": {},
+          "group": "b4a2cbec-9dd3-4b2f-967b-75bedebd9c39"
+      }
+  },
+  {
+      "model": "categories.category",
+      "pk": "9adaf635-6d00-4596-8c47-16827f91226f",
+      "fields": {
+          "created_at": "2023-10-05T19:15:15.427Z",
+          "updated_at": "2023-10-05T19:15:15.427Z",
+          "name": "Bestrating ongelijk of beschadigd",
+          "slug": "bestrating-ongelijk-of-beschadigd",
+          "public_name": "Bestrating ongelijk of beschadigd",
+          "description_private": null,
+          "description_public": null,
+          "is_public_accessible": false,
+          "is_active": true,
+          "meta": {},
+          "group": "21d32db5-6e1b-4286-a3f0-b3273c89e22e"
+      }
+  },
+  {
+      "model": "categories.category",
+      "pk": "9e6aeaec-befe-4cde-b445-2372acee471a",
+      "fields": {
+          "created_at": "2023-10-05T19:15:15.460Z",
+          "updated_at": "2023-10-05T19:15:15.460Z",
+          "name": "Grofvuil",
+          "slug": "grofvuil-2",
+          "public_name": "Grofvuil",
+          "description_private": null,
+          "description_public": null,
+          "is_public_accessible": false,
+          "is_active": true,
+          "meta": {},
+          "group": "fae00d6e-44aa-4094-b114-aa8c692b01a6"
+      }
+  },
+  {
+      "model": "categories.category",
+      "pk": "a373dab9-ad0b-42ce-a1f0-ce30da6e3fd1",
+      "fields": {
+          "created_at": "2023-10-05T19:15:15.420Z",
+          "updated_at": "2023-10-05T19:15:15.420Z",
+          "name": "Wateroverlast",
+          "slug": "wateroverlast",
+          "public_name": "Wateroverlast",
+          "description_private": null,
+          "description_public": null,
+          "is_public_accessible": false,
+          "is_active": true,
+          "meta": {},
+          "group": "dc6ec530-8982-4d6d-9a85-e34f9f396ac1"
+      }
+  },
+  {
+      "model": "categories.category",
+      "pk": "a3a6928c-e2ed-4adc-8132-6d94fb238480",
+      "fields": {
+          "created_at": "2023-10-05T19:15:15.428Z",
+          "updated_at": "2023-10-05T19:15:15.428Z",
+          "name": "Gladheid",
+          "slug": "gladheid",
+          "public_name": "Gladheid",
+          "description_private": null,
+          "description_public": null,
+          "is_public_accessible": false,
+          "is_active": true,
+          "meta": {},
+          "group": "21d32db5-6e1b-4286-a3f0-b3273c89e22e"
+      }
+  },
+  {
+      "model": "categories.category",
+      "pk": "a5b22eec-f060-437d-bf93-ab38b6c20f7d",
+      "fields": {
+          "created_at": "2023-10-05T19:15:15.407Z",
+          "updated_at": "2023-10-05T19:15:15.407Z",
+          "name": "Verlichting doet het niet",
+          "slug": "verlichting-doet-het-niet",
+          "public_name": "Verlichting doet het niet",
+          "description_private": null,
+          "description_public": null,
+          "is_public_accessible": false,
+          "is_active": true,
+          "meta": {},
+          "group": "7bf728d4-b625-49b6-b0a5-eb2d9828ca13"
+      }
+  },
+  {
+      "model": "categories.category",
+      "pk": "bb34503a-dbe4-49bb-a617-8a02df187748",
+      "fields": {
+          "created_at": "2023-10-05T19:15:15.392Z",
+          "updated_at": "2023-10-05T19:15:15.392Z",
+          "name": "Afval naast wijkcontainer",
+          "slug": "afval-naast-wijkcontainer",
+          "public_name": "Afval naast wijkcontainer",
+          "description_private": null,
+          "description_public": null,
+          "is_public_accessible": false,
+          "is_active": true,
+          "meta": {},
+          "group": "f3fe2950-59a3-4cd7-8d7b-c3a781d15149"
+      }
+  },
+  {
+      "model": "categories.category",
+      "pk": "c1689993-768c-4b7d-9f4f-78dd945daa51",
+      "fields": {
+          "created_at": "2023-10-09T19:51:52.156Z",
+          "updated_at": "2023-10-09T19:51:52.156Z",
+          "name": "Verzakking graf",
+          "slug": "verzakking-graf",
+          "public_name": "Verzakking graf",
+          "description_private": "",
+          "description_public": "",
+          "is_public_accessible": false,
+          "is_active": true,
+          "meta": {},
+          "group": "b4a2cbec-9dd3-4b2f-967b-75bedebd9c39"
+      }
+  },
+  {
+      "model": "categories.category",
+      "pk": "ca748d49-bcef-4eb0-a75e-282bb5c717bb",
+      "fields": {
+          "created_at": "2023-10-05T19:15:15.433Z",
+          "updated_at": "2023-10-05T19:15:15.433Z",
+          "name": "Overlast insecten",
+          "slug": "overlast-insecten",
+          "public_name": "Overlast insecten",
+          "description_private": null,
+          "description_public": null,
+          "is_public_accessible": false,
+          "is_active": true,
+          "meta": {},
+          "group": "0ee73ff2-8fa7-43d3-aea1-e1fb09377d52"
+      }
+  },
+  {
+      "model": "categories.category",
+      "pk": "cfe15939-1246-4b56-bb7c-5e453d8667c8",
+      "fields": {
+          "created_at": "2023-10-09T19:55:07.838Z",
+          "updated_at": "2023-10-09T19:55:07.838Z",
+          "name": "Verdwenen materiaal",
+          "slug": "verdwenen-materiaal",
+          "public_name": "Verdwenen materiaal",
+          "description_private": "",
+          "description_public": "",
+          "is_public_accessible": false,
+          "is_active": true,
+          "meta": {},
+          "group": "b4a2cbec-9dd3-4b2f-967b-75bedebd9c39"
+      }
+  },
+  {
+      "model": "categories.category",
+      "pk": "cfeeefbc-1f41-4ace-aae7-02d3014757f1",
+      "fields": {
+          "created_at": "2023-10-05T19:15:15.413Z",
+          "updated_at": "2023-10-05T19:15:15.413Z",
+          "name": "Deel(brom-)fiets",
+          "slug": "deelbrom-fiets",
+          "public_name": "Deel(brom-)fiets",
+          "description_private": null,
+          "description_public": null,
+          "is_public_accessible": false,
+          "is_active": true,
+          "meta": {},
+          "group": "74387be6-e1e8-45db-9432-dc9ccbf17b2a"
+      }
+  },
+  {
+      "model": "categories.category",
+      "pk": "d16d5ab3-668e-4980-88d7-a8c8549bb572",
+      "fields": {
+          "created_at": "2023-10-05T19:15:15.422Z",
+          "updated_at": "2023-10-05T19:15:15.422Z",
+          "name": "Gemaal of sluis",
+          "slug": "gemaal-of-sluis",
+          "public_name": "Gemaal of sluis",
+          "description_private": null,
+          "description_public": null,
+          "is_public_accessible": false,
+          "is_active": true,
+          "meta": {},
+          "group": "dc6ec530-8982-4d6d-9a85-e34f9f396ac1"
+      }
+  },
+  {
+      "model": "categories.category",
+      "pk": "d19af3af-733c-4dfb-9bca-08f373cd0f7c",
+      "fields": {
+          "created_at": "2023-10-05T19:15:15.423Z",
+          "updated_at": "2023-10-05T19:15:15.423Z",
+          "name": "Rioolafvoer verstopt",
+          "slug": "rioolafvoer-verstopt",
+          "public_name": "Rioolafvoer verstopt",
+          "description_private": null,
+          "description_public": null,
+          "is_public_accessible": false,
+          "is_active": true,
+          "meta": {},
+          "group": "dc6ec530-8982-4d6d-9a85-e34f9f396ac1"
+      }
+  },
+  {
+      "model": "categories.category",
+      "pk": "d4fd456d-6a8e-46d7-9df9-4c27e9198026",
+      "fields": {
+          "created_at": "2023-10-05T19:15:15.399Z",
+          "updated_at": "2023-10-05T19:15:15.399Z",
+          "name": "Afvalbak",
+          "slug": "afvalbak",
+          "public_name": "Afvalbak",
+          "description_private": null,
+          "description_public": null,
+          "is_public_accessible": false,
+          "is_active": true,
+          "meta": {},
+          "group": "f3fe2950-59a3-4cd7-8d7b-c3a781d15149"
+      }
+  },
+  {
+      "model": "categories.category",
+      "pk": "d7e6a3cf-0e8c-40f4-a8c5-6ad1db179163",
+      "fields": {
+          "created_at": "2023-10-05T19:15:15.416Z",
+          "updated_at": "2023-10-05T19:15:15.416Z",
+          "name": "Voertuigwrak",
+          "slug": "voertuigwrak",
+          "public_name": "Voertuigwrak",
+          "description_private": null,
+          "description_public": null,
+          "is_public_accessible": false,
+          "is_active": true,
+          "meta": {},
+          "group": "74387be6-e1e8-45db-9432-dc9ccbf17b2a"
+      }
+  },
+  {
+      "model": "categories.category",
+      "pk": "e4496c15-e876-4da1-962e-da554943db8a",
+      "fields": {
+          "created_at": "2023-10-05T19:15:15.411Z",
+          "updated_at": "2023-10-05T19:15:15.411Z",
+          "name": "Parkeeroverlast aanhangwagen",
+          "slug": "parkeeroverlast-aanhangwagen",
+          "public_name": "Parkeeroverlast aanhangwagen",
+          "description_private": null,
+          "description_public": null,
+          "is_public_accessible": false,
+          "is_active": true,
+          "meta": {},
+          "group": "74387be6-e1e8-45db-9432-dc9ccbf17b2a"
+      }
+  },
+  {
+      "model": "categories.category",
+      "pk": "e6bf8652-a929-47a7-be5e-8a971c2dfbf2",
+      "fields": {
+          "created_at": "2023-10-05T19:15:15.432Z",
+          "updated_at": "2023-10-05T19:15:15.432Z",
+          "name": "Overlast ongedierte",
+          "slug": "overlast-ongedierte",
+          "public_name": "Overlast ongedierte",
+          "description_private": null,
+          "description_public": null,
+          "is_public_accessible": false,
+          "is_active": true,
+          "meta": {},
+          "group": "0ee73ff2-8fa7-43d3-aea1-e1fb09377d52"
+      }
+  },
+  {
+      "model": "categories.category",
+      "pk": "ee348928-8a47-41d4-8ffd-3b19a6cc9034",
+      "fields": {
+          "created_at": "2023-10-05T19:15:15.393Z",
+          "updated_at": "2023-10-05T19:15:15.393Z",
+          "name": "Drugsafval",
+          "slug": "drugsafval",
+          "public_name": "Drugsafval",
+          "description_private": null,
+          "description_public": null,
+          "is_public_accessible": false,
+          "is_active": true,
+          "meta": {},
+          "group": "f3fe2950-59a3-4cd7-8d7b-c3a781d15149"
+      }
+  },
+  {
+      "model": "categories.category",
+      "pk": "fb5e2a88-e820-420e-ba59-121ff10943f4",
+      "fields": {
+          "created_at": "2023-10-05T19:15:15.434Z",
+          "updated_at": "2023-10-05T19:15:15.434Z",
+          "name": "Dode dieren",
+          "slug": "dode-dieren",
+          "public_name": "Dode dieren",
+          "description_private": null,
+          "description_public": null,
+          "is_public_accessible": false,
+          "is_active": true,
+          "meta": {},
+          "group": "0ee73ff2-8fa7-43d3-aea1-e1fb09377d52"
+      }
   }
   ]
