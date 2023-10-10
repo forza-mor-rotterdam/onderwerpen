@@ -10,6 +10,7 @@ env:
 
 jobs:
   apps:
+    environment: acc
     runs-on: ubuntu-latest
     permissions:
       contents: read
