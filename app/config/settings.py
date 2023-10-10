@@ -64,12 +64,8 @@ INSTALLED_APPS = (
     "health_check.db",
     "health_check.cache",
     "health_check.contrib.migrations",
-    "health_check.contrib.celery_ping",
     "debug_toolbar",
     "django_prometheus",
-    "django_rename_app",
-    "django_celery_beat",
-    "django_celery_results",
     # Apps
     "apps.authentication",
     "apps.categories",
@@ -173,15 +169,6 @@ DATABASES.update(
     if ENVIRONMENT == "test"
     else {}
 )
-
-CELERY_TASK_TRACK_STARTED = True
-CELERY_TASK_TIME_LIMIT = 30 * 60
-CELERY_BROKER_URL = "redis://redis:6379/0"
-
-BROKER_URL = CELERY_BROKER_URL
-CELERY_TASK_TRACK_STARTED = True
-CELERY_RESULT_BACKEND = "django-db"
-CELERY_TASK_TIME_LIMIT = 30 * 60
 
 
 if ENVIRONMENT == "test":
@@ -365,10 +352,6 @@ LOGGING = {
             "handlers": ["console"],
             "level": LOG_LEVEL,
             "propagate": True,
-        },
-        "celery": {
-            "handlers": ["console", "file"],
-            "level": "INFO",
         },
     },
 }
