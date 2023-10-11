@@ -75,7 +75,6 @@ MIDDLEWARE = (
     "csp.middleware.CSPMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django_session_timeout.middleware.SessionTimeoutMiddleware",
-    "debug_toolbar.middleware.DebugToolbarMiddleware",
     "django.middleware.locale.LocaleMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
@@ -282,23 +281,23 @@ TEMPLATES = [
 
 
 # Cache settings
-REDIS_URL = "redis://redis:6379"
-CACHES = {
-    "default": {
-        "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": REDIS_URL,
-        "OPTIONS": {
-            "CLIENT_CLASS": "django_redis.client.DefaultClient",
-            "SOCKET_CONNECT_TIMEOUT": 5,
-            "SOCKET_TIMEOUT": 5,
-        },
-    }
-}
+# REDIS_URL = "redis://redis:6379"
+# CACHES = {
+#     "default": {
+#         "BACKEND": "django_redis.cache.RedisCache",
+#         "LOCATION": REDIS_URL,
+#         "OPTIONS": {
+#             "CLIENT_CLASS": "django_redis.client.DefaultClient",
+#             "SOCKET_CONNECT_TIMEOUT": 5,
+#             "SOCKET_TIMEOUT": 5,
+#         },
+#     }
+# }
 
 
 # Sessions are managed by django-session-timeout-joinup
 # Django session settings
-SESSION_ENGINE = "django.contrib.sessions.backends.cache"
+# SESSION_ENGINE = "django.contrib.sessions.backends.cache"
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
 
 # Session settings for django-session-timeout-joinup
