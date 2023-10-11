@@ -31,15 +31,6 @@ LANGUAGES = [("nl", "Dutch")]
 DEFAULT_ALLOWED_HOSTS = ".forzamor.nl,localhost,127.0.0.1"
 ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", DEFAULT_ALLOWED_HOSTS).split(",")
 
-SIGNALEN_API = os.getenv("SIGNALEN_API")
-MELDING_API = os.getenv("MELDING_API")
-APPLICATIE_BASIS_URL = os.getenv("APPLICATIE_BASIS_URL")
-ALLOW_UNAUTHORIZED_MEDIA_ACCESS = (
-    os.getenv("ALLOW_UNAUTHORIZED_MEDIA_ACCESS", False) in TRUE_VALUES
-)
-TOKEN_API_RELATIVE_URL = os.getenv("TOKEN_API_RELATIVE_URL", "/api-token-auth/")
-MELDINGEN_TOKEN_TIMEOUT = 60 * 5
-
 INSTALLED_APPS = (
     "django_db_schema_renderer",
     "django.contrib.contenttypes",
@@ -64,12 +55,7 @@ INSTALLED_APPS = (
     "health_check.db",
     "health_check.cache",
     "health_check.contrib.migrations",
-    "health_check.contrib.celery_ping",
     "debug_toolbar",
-    "django_prometheus",
-    "django_rename_app",
-    "django_celery_beat",
-    "django_celery_results",
     # Apps
     "apps.authentication",
     "apps.categories",
@@ -83,7 +69,6 @@ INSTALLED_APPS = (
 
 
 MIDDLEWARE = (
-    "django_prometheus.middleware.PrometheusBeforeMiddleware",
     "corsheaders.middleware.CorsMiddleware",
     "django.middleware.security.SecurityMiddleware",
     "django_permissions_policy.PermissionsPolicyMiddleware",
@@ -97,7 +82,6 @@ MIDDLEWARE = (
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
-    "django_prometheus.middleware.PrometheusAfterMiddleware",
 )
 
 # django-permissions-policy settings
@@ -173,16 +157,6 @@ DATABASES.update(
     if ENVIRONMENT == "test"
     else {}
 )
-
-CELERY_TASK_TRACK_STARTED = True
-CELERY_TASK_TIME_LIMIT = 30 * 60
-CELERY_BROKER_URL = "redis://redis:6379/0"
-
-BROKER_URL = CELERY_BROKER_URL
-CELERY_TASK_TRACK_STARTED = True
-CELERY_RESULT_BACKEND = "django-db"
-CELERY_TASK_TIME_LIMIT = 30 * 60
-
 
 if ENVIRONMENT == "test":
     DJANGO_TEST_USERNAME = os.getenv("DJANGO_TEST_USERNAME", "test")
@@ -365,10 +339,6 @@ LOGGING = {
             "handlers": ["console"],
             "level": LOG_LEVEL,
             "propagate": True,
-        },
-        "celery": {
-            "handlers": ["console", "file"],
-            "level": "INFO",
         },
     },
 }

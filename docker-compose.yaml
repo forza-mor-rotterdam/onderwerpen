@@ -50,36 +50,6 @@ services:
     ports:
       - "6379"
 
-  app_celery_worker:
-    build: ./app
-    container_name: onderwerpen_celery_worker
-    command: "celery -A config worker -l info"
-    depends_on:
-      database:
-        condition: service_started
-      redis:
-        condition: service_started
-    env_file:
-      - .env.local
-    networks:
-      - onderwerpen_network
-      - mor_bridge_network
-
-  app_celery_beat:
-    build: ./app
-    container_name: onderwerpen_celery_beat
-    command: "celery -A config beat -l info --scheduler django_celery_beat.schedulers:DatabaseScheduler"
-    depends_on:
-      database:
-        condition: service_started
-      redis:
-        condition: service_started
-    env_file:
-      - .env.local
-    networks:
-      - onderwerpen_network
-      - mor_bridge_network
-
 volumes:
   postgres-data:
 
