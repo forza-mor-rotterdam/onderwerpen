@@ -35,7 +35,6 @@ urlpatterns = [
     path("account/", account, name="account"),
     path("api/v1/", include((router.urls, "app"), namespace="v1")),
     path("api-token-auth/", views.obtain_auth_token),
-    path("admin/", admin.site.urls),
     path("health/", include("health_check.urls")),
     path("db-schema/", include((schema_urls, "db-schema"))),
     path("plate/", include("django_spaghetti.urls")),
@@ -89,6 +88,11 @@ if settings.OIDC_ENABLED:
             ),
             name="admin_logout",
         ),
+        path("admin/", admin.site.urls),
+    ]
+else:
+    urlpatterns += [
+        path("admin/", admin.site.urls),
     ]
 
 if settings.DEBUG:
