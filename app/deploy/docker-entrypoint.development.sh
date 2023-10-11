@@ -15,7 +15,7 @@ echo Collecting static files
 python manage.py collectstatic --no-input
 
 # echo Load initial data
-# python manage.py loaddata initial_data
+# python manage.py loaddata initial_data || true
 
 echo Create superuser
 python manage.py createsuperuser --noinput || true

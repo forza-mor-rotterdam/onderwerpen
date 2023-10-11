@@ -48,6 +48,7 @@ class CategoryListSerializer(serializers.ModelSerializer):
             "is_active",
             "group_uuid",
             "meta",
+            "priority",
         )
         read_only_fields = (
             "_links",
