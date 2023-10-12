@@ -28,6 +28,10 @@ class CategoryListSerializer(serializers.ModelSerializer):
     _links = CategoryLinksSerializer(source="*", read_only=True)
     _display = serializers.CharField(source="public_name")
     group_uuid = serializers.CharField(source="group.uuid")
+    priority = serializers.SerializerMethodField()
+
+    def get_priority(self, obj):
+        return "normal" if int(obj.meta.get("priority", 0)) <= 0 else "high"
 
     class Meta:
         model = Category
@@ -44,6 +48,7 @@ class CategoryListSerializer(serializers.ModelSerializer):
             "is_active",
             "group_uuid",
             "meta",
+            "priority",
         )
         read_only_fields = (
             "_links",
@@ -58,10 +63,11 @@ class CategoryListSerializer(serializers.ModelSerializer):
             "is_active",
             "group_uuid",
             "meta",
+            "priority",
         )
 
 
-class CategorySerializer(serializers.ModelSerializer):
+class CategorySerializer(CategoryListSerializer):
     """
     Category
     """
@@ -91,6 +97,7 @@ class CategorySerializer(serializers.ModelSerializer):
             "meta",
             "group_uuid",
             "questions",
+            "priority",
         )
         read_only_fields = (
             "_links",
@@ -105,5 +112,6 @@ class CategorySerializer(serializers.ModelSerializer):
             "meta",
             "group_uuid",
             "questions",
+            "priority",
         )
         lookup_field = "category_uuid"

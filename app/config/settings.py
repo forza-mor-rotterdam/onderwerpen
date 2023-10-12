@@ -31,15 +31,6 @@ LANGUAGES = [("nl", "Dutch")]
 DEFAULT_ALLOWED_HOSTS = ".forzamor.nl,localhost,127.0.0.1"
 ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", DEFAULT_ALLOWED_HOSTS).split(",")
 
-SIGNALEN_API = os.getenv("SIGNALEN_API")
-MELDING_API = os.getenv("MELDING_API")
-APPLICATIE_BASIS_URL = os.getenv("APPLICATIE_BASIS_URL")
-ALLOW_UNAUTHORIZED_MEDIA_ACCESS = (
-    os.getenv("ALLOW_UNAUTHORIZED_MEDIA_ACCESS", False) in TRUE_VALUES
-)
-TOKEN_API_RELATIVE_URL = os.getenv("TOKEN_API_RELATIVE_URL", "/api-token-auth/")
-MELDINGEN_TOKEN_TIMEOUT = 60 * 5
-
 INSTALLED_APPS = (
     "django_db_schema_renderer",
     "django.contrib.contenttypes",
@@ -56,6 +47,7 @@ INSTALLED_APPS = (
     "rest_framework_gis",
     "drf_spectacular",
     "django_filters",
+    "webpack_loader",
     "corsheaders",
     "django_extensions",
     "django_spaghetti",
@@ -63,37 +55,32 @@ INSTALLED_APPS = (
     "health_check.db",
     "health_check.cache",
     "health_check.contrib.migrations",
-    "health_check.contrib.celery_ping",
     "debug_toolbar",
-    "django_prometheus",
-    "django_rename_app",
-    "django_celery_beat",
-    "django_celery_results",
     # Apps
     "apps.authentication",
     "apps.categories",
     "apps.groups",
     "apps.questions",
     "apps.health",
+    "apps.authorisatie",
+    "apps.beheer",
+    "apps.rotterdam_formulier_html",
 )
 
 
 MIDDLEWARE = (
-    "django_prometheus.middleware.PrometheusBeforeMiddleware",
     "corsheaders.middleware.CorsMiddleware",
     "django.middleware.security.SecurityMiddleware",
     "django_permissions_policy.PermissionsPolicyMiddleware",
     "csp.middleware.CSPMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django_session_timeout.middleware.SessionTimeoutMiddleware",
-    "debug_toolbar.middleware.DebugToolbarMiddleware",
     "django.middleware.locale.LocaleMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
-    "django_prometheus.middleware.PrometheusAfterMiddleware",
 )
 
 # django-permissions-policy settings
@@ -116,6 +103,13 @@ PERMISSIONS_POLICY = {
     "usb": [],
 }
 
+STATICFILES_DIRS = (
+    [
+        "/app/frontend/public/build/",
+    ]
+    if DEBUG
+    else []
+)
 
 STATIC_URL = "/static/"
 STATIC_ROOT = os.path.normpath(join(os.path.dirname(BASE_DIR), "static"))
@@ -123,6 +117,18 @@ STATIC_ROOT = os.path.normpath(join(os.path.dirname(BASE_DIR), "static"))
 MEDIA_URL = "/media/"
 MEDIA_ROOT = os.path.normpath(join(os.path.dirname(BASE_DIR), "media"))
 
+WEBPACK_LOADER = {
+    "DEFAULT": {
+        "CACHE": not DEBUG,
+        "POLL_INTERVAL": 0.1,
+        "IGNORE": [r".+\.hot-update.js", r".+\.map"],
+        "LOADER_CLASS": "webpack_loader.loader.WebpackLoader",
+        "STATS_FILE": "/static/webpack-stats.json"
+        if not DEBUG
+        else "/app/frontend/public/build/webpack-stats.json",
+    }
+}
+DEV_SOCKET_PORT = os.getenv("DEV_SOCKET_PORT", "9000")
 
 # Database settings
 DATABASE_NAME = os.getenv("DATABASE_NAME")
@@ -150,16 +156,6 @@ DATABASES.update(
     if ENVIRONMENT == "test"
     else {}
 )
-
-CELERY_TASK_TRACK_STARTED = True
-CELERY_TASK_TIME_LIMIT = 30 * 60
-CELERY_BROKER_URL = "redis://redis:6379/0"
-
-BROKER_URL = CELERY_BROKER_URL
-CELERY_TASK_TRACK_STARTED = True
-CELERY_RESULT_BACKEND = "django-db"
-CELERY_TASK_TIME_LIMIT = 30 * 60
-
 
 if ENVIRONMENT == "test":
     DJANGO_TEST_USERNAME = os.getenv("DJANGO_TEST_USERNAME", "test")
@@ -285,23 +281,23 @@ TEMPLATES = [
 
 
 # Cache settings
-REDIS_URL = "redis://redis:6379"
-CACHES = {
-    "default": {
-        "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": REDIS_URL,
-        "OPTIONS": {
-            "CLIENT_CLASS": "django_redis.client.DefaultClient",
-            "SOCKET_CONNECT_TIMEOUT": 5,
-            "SOCKET_TIMEOUT": 5,
-        },
-    }
-}
+# REDIS_URL = "redis://redis:6379"
+# CACHES = {
+#     "default": {
+#         "BACKEND": "django_redis.cache.RedisCache",
+#         "LOCATION": REDIS_URL,
+#         "OPTIONS": {
+#             "CLIENT_CLASS": "django_redis.client.DefaultClient",
+#             "SOCKET_CONNECT_TIMEOUT": 5,
+#             "SOCKET_TIMEOUT": 5,
+#         },
+#     }
+# }
 
 
 # Sessions are managed by django-session-timeout-joinup
 # Django session settings
-SESSION_ENGINE = "django.contrib.sessions.backends.cache"
+# SESSION_ENGINE = "django.contrib.sessions.backends.cache"
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
 
 # Session settings for django-session-timeout-joinup
@@ -343,10 +339,6 @@ LOGGING = {
             "level": LOG_LEVEL,
             "propagate": True,
         },
-        "celery": {
-            "handlers": ["console", "file"],
-            "level": "INFO",
-        },
     },
 }
 
@@ -369,7 +361,9 @@ try:
 except Exception as e:
     logger.error(f"OPENID_CONFIG FOUT, url: {OPENID_CONFIG_URI}, error: {e}")
 
+OIDC_ENABLED = False
 if OPENID_CONFIG and OIDC_RP_CLIENT_ID:
+    OIDC_ENABLED = True
     OIDC_VERIFY_SSL = os.getenv("OIDC_VERIFY_SSL", True) in TRUE_VALUES
     OIDC_USE_NONCE = os.getenv("OIDC_USE_NONCE", True) in TRUE_VALUES
 
@@ -385,9 +379,6 @@ if OPENID_CONFIG and OIDC_RP_CLIENT_ID:
     OIDC_OP_JWKS_ENDPOINT = os.getenv(
         "OIDC_OP_JWKS_ENDPOINT", OPENID_CONFIG.get("jwks_uri")
     )
-    CHECK_SESSION_IFRAME = os.getenv(
-        "CHECK_SESSION_IFRAME", OPENID_CONFIG.get("check_session_iframe")
-    )
     OIDC_RP_SCOPES = os.getenv(
         "OIDC_RP_SCOPES",
         " ".join(OPENID_CONFIG.get("scopes_supported", ["openid", "email", "profile"])),
@@ -402,10 +393,9 @@ if OPENID_CONFIG and OIDC_RP_CLIENT_ID:
 
     AUTHENTICATION_BACKENDS = [
         "django.contrib.auth.backends.ModelBackend",
-        "apps.authenticatie.auth.OIDCAuthenticationBackend",
+        "apps.authentication.auth.OIDCAuthenticationBackend",
     ]
 
-    OIDC_OP_LOGOUT_URL_METHOD = "apps.authentication.views.provider_logout"
     ALLOW_LOGOUT_GET_METHOD = True
     OIDC_STORE_ID_TOKEN = True
     OIDC_RENEW_ID_TOKEN_EXPIRY_SECONDS = int(
