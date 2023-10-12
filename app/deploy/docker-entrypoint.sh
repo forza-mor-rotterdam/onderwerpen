@@ -14,8 +14,8 @@ python manage.py migrate --noinput
 echo Collecting static files
 python manage.py collectstatic --no-input
 
-# echo Load initial data
-# python manage.py loaddata initial_data
+echo Load initial data
+python manage.py loaddata initial_data
 
 echo Create superuser
 python manage.py createsuperuser --noinput || true
