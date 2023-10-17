@@ -1,21 +1,700 @@
-[
-  {
-      "model": "categories.category",
-      "pk": "0326c015-db6c-49de-b172-3586c88ce9e5",
-      "fields": {
-          "created_at": "2023-10-05T19:15:15.457Z",
-          "updated_at": "2023-10-05T19:15:15.457Z",
-          "name": "Drugsafval",
-          "slug": "drugsafval-2",
-          "public_name": "Drugsafval",
-          "description_private": null,
-          "description_public": null,
-          "is_public_accessible": false,
-          "is_active": true,
-          "meta": {},
-          "group": "fae00d6e-44aa-4094-b114-aa8c692b01a6"
-      }
-  },
+[{
+    "model": "categories.category",
+    "pk": "0e04bd7b-cb81-40db-88f8-e7c4e7f63351",
+    "fields": {
+        "created_at": "2023-10-11T12:37:55.034Z",
+        "updated_at": "2023-10-11T12:37:55.034Z",
+        "name": "Voertuigwrak",
+        "slug": "voertuigwrak",
+        "public_name": "Voertuigwrak",
+        "description_private": null,
+        "description_public": null,
+        "is_public_accessible": false,
+        "is_active": true,
+        "meta": {},
+        "group": "191c5d16-b0b5-4640-9d80-1838f4f9a187"
+    }
+},
+{
+    "model": "categories.category",
+    "pk": "22d2e245-9083-45d5-bb47-b7b5c5f6c456",
+    "fields": {
+        "created_at": "2023-10-11T12:37:55.078Z",
+        "updated_at": "2023-10-11T12:37:55.078Z",
+        "name": "Planten",
+        "slug": "planten",
+        "public_name": "Planten",
+        "description_private": null,
+        "description_public": null,
+        "is_public_accessible": false,
+        "is_active": true,
+        "meta": {},
+        "group": "04974c25-9a04-4326-80be-a43d84762687"
+    }
+},
+{
+    "model": "categories.category",
+    "pk": "235c5c84-988e-45a2-9dca-8e27c925111d",
+    "fields": {
+        "created_at": "2023-10-11T12:37:54.991Z",
+        "updated_at": "2023-10-11T12:37:54.991Z",
+        "name": "Fontein",
+        "slug": "fontein",
+        "public_name": "Fontein",
+        "description_private": null,
+        "description_public": null,
+        "is_public_accessible": false,
+        "is_active": true,
+        "meta": {},
+        "group": "3420aa41-c233-4e16-8524-b0cdcbcbda96"
+    }
+},
+{
+    "model": "categories.category",
+    "pk": "249afd8c-f127-4fba-b667-df0057585f0e",
+    "fields": {
+        "created_at": "2023-10-11T12:37:54.994Z",
+        "updated_at": "2023-10-11T12:37:54.994Z",
+        "name": "Vervuiling in het water",
+        "slug": "vervuiling-in-het-water",
+        "public_name": "Vervuiling in het water",
+        "description_private": null,
+        "description_public": null,
+        "is_public_accessible": false,
+        "is_active": true,
+        "meta": {},
+        "group": "3420aa41-c233-4e16-8524-b0cdcbcbda96"
+    }
+},
+{
+    "model": "categories.category",
+    "pk": "2a39390d-148c-4fb2-8645-9942ef8b33a8",
+    "fields": {
+        "created_at": "2023-10-11T12:37:55.049Z",
+        "updated_at": "2023-10-11T12:37:55.049Z",
+        "name": "Rioollucht",
+        "slug": "rioollucht",
+        "public_name": "Rioollucht",
+        "description_private": null,
+        "description_public": null,
+        "is_public_accessible": false,
+        "is_active": true,
+        "meta": {},
+        "group": "85ce4c99-096e-471d-859b-af144323b963"
+    }
+},
+{
+    "model": "categories.category",
+    "pk": "2abc11a9-54ce-40c6-a907-2b66b547908e",
+    "fields": {
+        "created_at": "2023-10-11T12:37:55.075Z",
+        "updated_at": "2023-10-11T12:37:55.075Z",
+        "name": "Blad of bloesem",
+        "slug": "blad-of-bloesem",
+        "public_name": "Blad of bloesem",
+        "description_private": null,
+        "description_public": null,
+        "is_public_accessible": false,
+        "is_active": true,
+        "meta": {},
+        "group": "04974c25-9a04-4326-80be-a43d84762687"
+    }
+},
+{
+    "model": "categories.category",
+    "pk": "2e81de77-7650-4464-9198-1656784d9c39",
+    "fields": {
+        "created_at": "2023-10-11T12:37:55.014Z",
+        "updated_at": "2023-10-11T12:37:55.014Z",
+        "name": "Verlichting overig",
+        "slug": "verlichting-overig",
+        "public_name": "Verlichting overig",
+        "description_private": null,
+        "description_public": null,
+        "is_public_accessible": false,
+        "is_active": true,
+        "meta": {},
+        "group": "b9846a89-1ec1-43ca-95a3-e8c6cc171cc3"
+    }
+},
+{
+    "model": "categories.category",
+    "pk": "2f599280-ad22-4e97-93d4-041418c821e2",
+    "fields": {
+        "created_at": "2023-10-11T12:37:55.069Z",
+        "updated_at": "2023-10-11T12:37:55.069Z",
+        "name": "Dode dieren",
+        "slug": "dode-dieren",
+        "public_name": "Dode dieren",
+        "description_private": null,
+        "description_public": null,
+        "is_public_accessible": false,
+        "is_active": true,
+        "meta": {},
+        "group": "59ea18bf-05b6-45e0-b130-3237e586fdd2"
+    }
+},
+{
+    "model": "categories.category",
+    "pk": "3273ae72-87ae-472f-8682-e531db237676",
+    "fields": {
+        "created_at": "2023-10-11T12:37:55.053Z",
+        "updated_at": "2023-10-11T12:37:55.053Z",
+        "name": "Rioolafvoer verstopt",
+        "slug": "rioolafvoer-verstopt",
+        "public_name": "Rioolafvoer verstopt",
+        "description_private": null,
+        "description_public": null,
+        "is_public_accessible": false,
+        "is_active": true,
+        "meta": {},
+        "group": "85ce4c99-096e-471d-859b-af144323b963"
+    }
+},
+{
+    "model": "categories.category",
+    "pk": "38fb9566-81c0-43b7-980b-e73d0e93ca59",
+    "fields": {
+        "created_at": "2023-10-11T12:37:55.097Z",
+        "updated_at": "2023-10-11T12:37:55.097Z",
+        "name": "Zwerfafval",
+        "slug": "zwerfafval",
+        "public_name": "Zwerfafval",
+        "description_private": null,
+        "description_public": null,
+        "is_public_accessible": false,
+        "is_active": true,
+        "meta": {},
+        "group": "41202ca5-929f-423b-9b46-b9127e0a19e0"
+    }
+},
+{
+    "model": "categories.category",
+    "pk": "3dfdf4b4-4743-46de-a88b-2e395c9d3759",
+    "fields": {
+        "created_at": "2023-10-11T12:37:55.028Z",
+        "updated_at": "2023-10-11T12:37:55.028Z",
+        "name": "Deel(brom-)fiets",
+        "slug": "deelbrom-fiets",
+        "public_name": "Deel(brom-)fiets",
+        "description_private": null,
+        "description_public": null,
+        "is_public_accessible": false,
+        "is_active": true,
+        "meta": {},
+        "group": "191c5d16-b0b5-4640-9d80-1838f4f9a187"
+    }
+},
+{
+    "model": "categories.category",
+    "pk": "46f70f40-b69c-42b1-b21a-15e36095e21a",
+    "fields": {
+        "created_at": "2023-10-11T12:37:55.093Z",
+        "updated_at": "2023-10-11T12:37:55.093Z",
+        "name": "Drugsafval",
+        "slug": "drugsafval",
+        "public_name": "Drugsafval",
+        "description_private": null,
+        "description_public": null,
+        "is_public_accessible": false,
+        "is_active": true,
+        "meta": {},
+        "group": "41202ca5-929f-423b-9b46-b9127e0a19e0"
+    }
+},
+{
+    "model": "categories.category",
+    "pk": "48266180-c267-4568-98d9-a2a87a5f07b8",
+    "fields": {
+        "created_at": "2023-10-11T12:37:55.096Z",
+        "updated_at": "2023-10-11T12:37:55.096Z",
+        "name": "Huiscontainer",
+        "slug": "huiscontainer",
+        "public_name": "Huiscontainer",
+        "description_private": null,
+        "description_public": null,
+        "is_public_accessible": false,
+        "is_active": true,
+        "meta": {},
+        "group": "41202ca5-929f-423b-9b46-b9127e0a19e0"
+    }
+},
+{
+    "model": "categories.category",
+    "pk": "5a37b3b4-3e55-4da6-aa02-7ca899ce3984",
+    "fields": {
+        "created_at": "2023-10-11T12:37:55.074Z",
+        "updated_at": "2023-10-11T12:37:55.074Z",
+        "name": "Onkruid",
+        "slug": "onkruid",
+        "public_name": "Onkruid",
+        "description_private": null,
+        "description_public": null,
+        "is_public_accessible": false,
+        "is_active": true,
+        "meta": {},
+        "group": "04974c25-9a04-4326-80be-a43d84762687"
+    }
+},
+{
+    "model": "categories.category",
+    "pk": "5e63e5e6-e59f-40dd-a5ce-e7a3e38f46fc",
+    "fields": {
+        "created_at": "2023-10-11T12:37:54.993Z",
+        "updated_at": "2023-10-11T12:37:54.993Z",
+        "name": "Kade of kant beschadigd",
+        "slug": "kade-of-kant-beschadigd",
+        "public_name": "Kade of kant beschadigd",
+        "description_private": null,
+        "description_public": null,
+        "is_public_accessible": false,
+        "is_active": true,
+        "meta": {},
+        "group": "3420aa41-c233-4e16-8524-b0cdcbcbda96"
+    }
+},
+{
+    "model": "categories.category",
+    "pk": "678d1431-23cc-4f4e-916a-99199736639e",
+    "fields": {
+        "created_at": "2023-10-11T12:37:55.091Z",
+        "updated_at": "2023-10-11T12:37:55.091Z",
+        "name": "Wijkcontainer",
+        "slug": "wijkcontainer",
+        "public_name": "Wijkcontainer",
+        "description_private": null,
+        "description_public": null,
+        "is_public_accessible": false,
+        "is_active": true,
+        "meta": {},
+        "group": "41202ca5-929f-423b-9b46-b9127e0a19e0"
+    }
+},
+{
+    "model": "categories.category",
+    "pk": "6b6e7896-649d-45a0-a13c-5a1b96bc04de",
+    "fields": {
+        "created_at": "2023-10-11T12:37:55.047Z",
+        "updated_at": "2023-10-11T12:37:55.047Z",
+        "name": "Wateroverlast",
+        "slug": "wateroverlast",
+        "public_name": "Wateroverlast",
+        "description_private": null,
+        "description_public": null,
+        "is_public_accessible": false,
+        "is_active": true,
+        "meta": {},
+        "group": "85ce4c99-096e-471d-859b-af144323b963"
+    }
+},
+{
+    "model": "categories.category",
+    "pk": "75f47c3c-7fe8-40c2-82a0-ace4ed158544",
+    "fields": {
+        "created_at": "2023-10-11T12:37:55.077Z",
+        "updated_at": "2023-10-11T12:37:55.077Z",
+        "name": "Bomen",
+        "slug": "bomen",
+        "public_name": "Bomen",
+        "description_private": null,
+        "description_public": null,
+        "is_public_accessible": false,
+        "is_active": true,
+        "meta": {},
+        "group": "04974c25-9a04-4326-80be-a43d84762687"
+    }
+},
+{
+    "model": "categories.category",
+    "pk": "7a596705-8e17-4d72-9d0e-8dfc6781eaf8",
+    "fields": {
+        "created_at": "2023-10-11T12:37:55.060Z",
+        "updated_at": "2023-10-11T12:37:55.060Z",
+        "name": "Gat in de weg",
+        "slug": "gat-in-de-weg",
+        "public_name": "Gat in de weg",
+        "description_private": null,
+        "description_public": null,
+        "is_public_accessible": false,
+        "is_active": true,
+        "meta": {},
+        "group": "1bd6f88b-8008-4e8e-bfc4-d1c27591d104"
+    }
+},
+{
+    "model": "categories.category",
+    "pk": "7fbd1bad-e2a3-4b46-8d67-9bfc66d54c95",
+    "fields": {
+        "created_at": "2023-10-11T12:37:55.084Z",
+        "updated_at": "2023-10-11T12:37:55.084Z",
+        "name": "Verkeers- of straatnaambord",
+        "slug": "verkeers-of-straatnaambord",
+        "public_name": "Verkeers- of straatnaambord",
+        "description_private": null,
+        "description_public": null,
+        "is_public_accessible": false,
+        "is_active": true,
+        "meta": {},
+        "group": "13e3d793-08d6-43df-a4f5-572373519757"
+    }
+},
+{
+    "model": "categories.category",
+    "pk": "7fbee9d2-b76a-4ce3-8dae-1fe0014f59f2",
+    "fields": {
+        "created_at": "2023-10-11T12:37:55.023Z",
+        "updated_at": "2023-10-11T12:37:55.023Z",
+        "name": "Parkeeroverlast aanhangwagen",
+        "slug": "parkeeroverlast-aanhangwagen",
+        "public_name": "Parkeeroverlast aanhangwagen",
+        "description_private": null,
+        "description_public": null,
+        "is_public_accessible": false,
+        "is_active": true,
+        "meta": {},
+        "group": "191c5d16-b0b5-4640-9d80-1838f4f9a187"
+    }
+},
+{
+    "model": "categories.category",
+    "pk": "8dfb10de-2a3b-49b4-9238-121bc1951b54",
+    "fields": {
+        "created_at": "2023-10-11T12:37:55.092Z",
+        "updated_at": "2023-10-11T12:37:55.092Z",
+        "name": "Afval naast wijkcontainer",
+        "slug": "afval-naast-wijkcontainer",
+        "public_name": "Afval naast wijkcontainer",
+        "description_private": null,
+        "description_public": null,
+        "is_public_accessible": false,
+        "is_active": true,
+        "meta": {},
+        "group": "41202ca5-929f-423b-9b46-b9127e0a19e0"
+    }
+},
+{
+    "model": "categories.category",
+    "pk": "8e106e13-6ec8-45b4-8ca9-f381b3507e96",
+    "fields": {
+        "created_at": "2023-10-11T12:37:55.011Z",
+        "updated_at": "2023-10-11T12:37:55.011Z",
+        "name": "Verlichting brandt overdag",
+        "slug": "verlichting-brandt-overdag",
+        "public_name": "Verlichting brandt overdag",
+        "description_private": null,
+        "description_public": null,
+        "is_public_accessible": false,
+        "is_active": true,
+        "meta": {},
+        "group": "b9846a89-1ec1-43ca-95a3-e8c6cc171cc3"
+    }
+},
+{
+    "model": "categories.category",
+    "pk": "91a465fe-064b-40f8-8bec-49c253269c09",
+    "fields": {
+        "created_at": "2023-10-11T12:37:55.012Z",
+        "updated_at": "2023-10-11T12:37:55.012Z",
+        "name": "Verlichting beschadigd",
+        "slug": "verlichting-beschadigd",
+        "public_name": "Verlichting beschadigd",
+        "description_private": null,
+        "description_public": null,
+        "is_public_accessible": false,
+        "is_active": true,
+        "meta": {},
+        "group": "b9846a89-1ec1-43ca-95a3-e8c6cc171cc3"
+    }
+},
+{
+    "model": "categories.category",
+    "pk": "9aaf41bd-7009-4da2-be89-e553ae7c115c",
+    "fields": {
+        "created_at": "2023-10-11T12:37:55.098Z",
+        "updated_at": "2023-10-11T12:37:55.098Z",
+        "name": "Afvalbak",
+        "slug": "afvalbak",
+        "public_name": "Afvalbak",
+        "description_private": null,
+        "description_public": null,
+        "is_public_accessible": false,
+        "is_active": true,
+        "meta": {},
+        "group": "41202ca5-929f-423b-9b46-b9127e0a19e0"
+    }
+},
+{
+    "model": "categories.category",
+    "pk": "9d40d923-e449-4fb3-a740-05a49e612250",
+    "fields": {
+        "created_at": "2023-10-11T12:37:55.016Z",
+        "updated_at": "2023-10-11T12:37:55.016Z",
+        "name": "Verlichting doet het niet",
+        "slug": "verlichting-doet-het-niet",
+        "public_name": "Verlichting doet het niet",
+        "description_private": null,
+        "description_public": null,
+        "is_public_accessible": false,
+        "is_active": true,
+        "meta": {},
+        "group": "b9846a89-1ec1-43ca-95a3-e8c6cc171cc3"
+    }
+},
+{
+    "model": "categories.category",
+    "pk": "a0768bb3-c0fb-4fb3-a055-ec98168bff8a",
+    "fields": {
+        "created_at": "2023-10-11T12:37:55.050Z",
+        "updated_at": "2023-10-11T12:37:55.050Z",
+        "name": "Gemaal of sluis",
+        "slug": "gemaal-of-sluis",
+        "public_name": "Gemaal of sluis",
+        "description_private": null,
+        "description_public": null,
+        "is_public_accessible": false,
+        "is_active": true,
+        "meta": {},
+        "group": "85ce4c99-096e-471d-859b-af144323b963"
+    }
+},
+{
+    "model": "categories.category",
+    "pk": "a3876928-c62f-483a-a091-e635b0561583",
+    "fields": {
+        "created_at": "2023-10-11T12:37:55.083Z",
+        "updated_at": "2023-10-11T12:37:55.083Z",
+        "name": "Bank of tafel",
+        "slug": "bank-of-tafel",
+        "public_name": "Bank of tafel",
+        "description_private": null,
+        "description_public": null,
+        "is_public_accessible": false,
+        "is_active": true,
+        "meta": {},
+        "group": "13e3d793-08d6-43df-a4f5-572373519757"
+    }
+},
+{
+    "model": "categories.category",
+    "pk": "a41adb5b-2b1c-4d3f-8c54-3e24104028c5",
+    "fields": {
+        "created_at": "2023-10-11T12:37:55.085Z",
+        "updated_at": "2023-10-11T12:37:55.085Z",
+        "name": "Informatie- of reclamezuil",
+        "slug": "informatie-of-reclamezuil",
+        "public_name": "Informatie- of reclamezuil",
+        "description_private": null,
+        "description_public": null,
+        "is_public_accessible": false,
+        "is_active": true,
+        "meta": {},
+        "group": "13e3d793-08d6-43df-a4f5-572373519757"
+    }
+},
+{
+    "model": "categories.category",
+    "pk": "b00222da-ea17-411f-862d-acc37ecea668",
+    "fields": {
+        "created_at": "2023-10-11T12:37:55.061Z",
+        "updated_at": "2023-10-11T12:37:55.061Z",
+        "name": "Bestrating ongelijk of beschadigd",
+        "slug": "bestrating-ongelijk-of-beschadigd",
+        "public_name": "Bestrating ongelijk of beschadigd",
+        "description_private": null,
+        "description_public": null,
+        "is_public_accessible": false,
+        "is_active": true,
+        "meta": {},
+        "group": "1bd6f88b-8008-4e8e-bfc4-d1c27591d104"
+    }
+},
+{
+    "model": "categories.category",
+    "pk": "b10da7d8-cb92-478f-98c8-e974a9274dbf",
+    "fields": {
+        "created_at": "2023-10-11T12:37:55.086Z",
+        "updated_at": "2023-10-11T12:37:55.086Z",
+        "name": "Klok",
+        "slug": "klok",
+        "public_name": "Klok",
+        "description_private": null,
+        "description_public": null,
+        "is_public_accessible": false,
+        "is_active": true,
+        "meta": {},
+        "group": "13e3d793-08d6-43df-a4f5-572373519757"
+    }
+},
+{
+    "model": "categories.category",
+    "pk": "b7ea1fb5-7886-4c6a-ac9b-0e777df10d26",
+    "fields": {
+        "created_at": "2023-10-11T12:37:55.063Z",
+        "updated_at": "2023-10-11T12:37:55.063Z",
+        "name": "Gladheid",
+        "slug": "gladheid",
+        "public_name": "Gladheid",
+        "description_private": null,
+        "description_public": null,
+        "is_public_accessible": false,
+        "is_active": true,
+        "meta": {},
+        "group": "1bd6f88b-8008-4e8e-bfc4-d1c27591d104"
+    }
+},
+{
+    "model": "categories.category",
+    "pk": "ca1c979e-ab3a-4ca2-8f02-e93fda448c15",
+    "fields": {
+        "created_at": "2023-10-11T12:37:55.095Z",
+        "updated_at": "2023-10-11T12:37:55.095Z",
+        "name": "Grofvuil",
+        "slug": "grofvuil",
+        "public_name": "Grofvuil",
+        "description_private": null,
+        "description_public": null,
+        "is_public_accessible": false,
+        "is_active": true,
+        "meta": {},
+        "group": "41202ca5-929f-423b-9b46-b9127e0a19e0"
+    }
+},
+{
+    "model": "categories.category",
+    "pk": "d4e229b0-b43d-4a3d-acdb-c7a4063f1aa0",
+    "fields": {
+        "created_at": "2023-10-11T12:37:55.070Z",
+        "updated_at": "2023-10-11T12:37:55.070Z",
+        "name": "Uitwerpselen",
+        "slug": "uitwerpselen",
+        "public_name": "Uitwerpselen",
+        "description_private": null,
+        "description_public": null,
+        "is_public_accessible": false,
+        "is_active": true,
+        "meta": {},
+        "group": "59ea18bf-05b6-45e0-b130-3237e586fdd2"
+    }
+},
+{
+    "model": "categories.category",
+    "pk": "d7c67486-dab7-4bde-b82f-7b8d70075c69",
+    "fields": {
+        "created_at": "2023-10-11T12:37:55.082Z",
+        "updated_at": "2023-10-11T12:37:55.082Z",
+        "name": "Sport- of speeltoestel",
+        "slug": "sport-of-speeltoestel",
+        "public_name": "Sport- of speeltoestel",
+        "description_private": null,
+        "description_public": null,
+        "is_public_accessible": false,
+        "is_active": true,
+        "meta": {},
+        "group": "13e3d793-08d6-43df-a4f5-572373519757"
+    }
+},
+{
+    "model": "categories.category",
+    "pk": "db8d3b02-4107-47a4-b91f-a323f70b5e93",
+    "fields": {
+        "created_at": "2023-10-11T12:37:55.031Z",
+        "updated_at": "2023-10-11T12:37:55.031Z",
+        "name": "Parkeeroverlast (brom-)fiets",
+        "slug": "parkeeroverlast-brom-fiets",
+        "public_name": "Parkeeroverlast (brom-)fiets",
+        "description_private": null,
+        "description_public": null,
+        "is_public_accessible": false,
+        "is_active": true,
+        "meta": {},
+        "group": "191c5d16-b0b5-4640-9d80-1838f4f9a187"
+    }
+},
+{
+    "model": "categories.category",
+    "pk": "e487e5ce-b22d-431f-bf9f-0e47e65e300a",
+    "fields": {
+        "created_at": "2023-10-11T12:37:55.068Z",
+        "updated_at": "2023-10-11T12:37:55.068Z",
+        "name": "Overlast insecten",
+        "slug": "overlast-insecten",
+        "public_name": "Overlast insecten",
+        "description_private": null,
+        "description_public": null,
+        "is_public_accessible": false,
+        "is_active": true,
+        "meta": {},
+        "group": "59ea18bf-05b6-45e0-b130-3237e586fdd2"
+    }
+},
+{
+    "model": "categories.category",
+    "pk": "f3f98125-b3ef-4272-a29e-ab027e0c1776",
+    "fields": {
+        "created_at": "2023-10-11T12:37:55.076Z",
+        "updated_at": "2023-10-11T12:37:55.076Z",
+        "name": "Gras",
+        "slug": "gras",
+        "public_name": "Gras",
+        "description_private": null,
+        "description_public": null,
+        "is_public_accessible": false,
+        "is_active": true,
+        "meta": {},
+        "group": "04974c25-9a04-4326-80be-a43d84762687"
+    }
+},
+{
+    "model": "categories.category",
+    "pk": "f55b9632-0c27-4548-87ad-1ca5a092d440",
+    "fields": {
+        "created_at": "2023-10-11T12:37:55.094Z",
+        "updated_at": "2023-10-11T12:37:55.094Z",
+        "name": "Gevaarlijk afval",
+        "slug": "gevaarlijk-afval",
+        "public_name": "Gevaarlijk afval",
+        "description_private": null,
+        "description_public": null,
+        "is_public_accessible": false,
+        "is_active": true,
+        "meta": {},
+        "group": "41202ca5-929f-423b-9b46-b9127e0a19e0"
+    }
+},
+{
+    "model": "categories.category",
+    "pk": "fb16dc36-dacf-4122-ae0f-488496fa0821",
+    "fields": {
+        "created_at": "2023-10-11T12:37:55.029Z",
+        "updated_at": "2023-10-11T12:37:55.029Z",
+        "name": "Parkeeroverlast voertuig",
+        "slug": "parkeeroverlast-voertuig",
+        "public_name": "Parkeeroverlast voertuig",
+        "description_private": null,
+        "description_public": null,
+        "is_public_accessible": false,
+        "is_active": true,
+        "meta": {},
+        "group": "191c5d16-b0b5-4640-9d80-1838f4f9a187"
+    }
+},
+{
+    "model": "categories.category",
+    "pk": "ff8e3017-2158-4dd3-983b-e078851cf68e",
+    "fields": {
+        "created_at": "2023-10-11T12:37:55.067Z",
+        "updated_at": "2023-10-11T12:37:55.067Z",
+        "name": "Overlast ongedierte",
+        "slug": "overlast-ongedierte",
+        "public_name": "Overlast ongedierte",
+        "description_private": null,
+        "description_public": null,
+        "is_public_accessible": false,
+        "is_active": true,
+        "meta": {},
+        "group": "59ea18bf-05b6-45e0-b130-3237e586fdd2"
+    }
+},
   {
       "model": "categories.category",
       "pk": "04c88e0b-54c4-40fc-8345-e6906b14b33f",
@@ -35,125 +714,6 @@
   },
   {
       "model": "categories.category",
-      "pk": "05eda4ca-34dc-4d5f-9283-495e54548d02",
-      "fields": {
-          "created_at": "2023-10-05T19:15:15.462Z",
-          "updated_at": "2023-10-05T19:15:15.462Z",
-          "name": "Huiscontainer",
-          "slug": "huiscontainer-2",
-          "public_name": "Huiscontainer",
-          "description_private": null,
-          "description_public": null,
-          "is_public_accessible": false,
-          "is_active": true,
-          "meta": {},
-          "group": "fae00d6e-44aa-4094-b114-aa8c692b01a6"
-      }
-  },
-  {
-      "model": "categories.category",
-      "pk": "081071f4-d5b8-4236-a80b-da59fd4d3ec3",
-      "fields": {
-          "created_at": "2023-10-05T19:15:15.414Z",
-          "updated_at": "2023-10-05T19:15:15.414Z",
-          "name": "Parkeeroverlast voertuig",
-          "slug": "parkeeroverlast-voertuig",
-          "public_name": "Parkeeroverlast voertuig",
-          "description_private": null,
-          "description_public": null,
-          "is_public_accessible": false,
-          "is_active": true,
-          "meta": {},
-          "group": "74387be6-e1e8-45db-9432-dc9ccbf17b2a"
-      }
-  },
-  {
-      "model": "categories.category",
-      "pk": "0cba76f2-87bf-443b-9098-57e4bf1d7a4f",
-      "fields": {
-          "created_at": "2023-10-05T19:15:15.390Z",
-          "updated_at": "2023-10-05T19:15:15.390Z",
-          "name": "Wijkcontainer",
-          "slug": "wijkcontainer",
-          "public_name": "Wijkcontainer",
-          "description_private": null,
-          "description_public": null,
-          "is_public_accessible": false,
-          "is_active": true,
-          "meta": {},
-          "group": "f3fe2950-59a3-4cd7-8d7b-c3a781d15149"
-      }
-  },
-  {
-      "model": "categories.category",
-      "pk": "0f3375d6-fc1d-4ab3-830f-66a4e9191da0",
-      "fields": {
-          "created_at": "2023-10-05T19:15:15.396Z",
-          "updated_at": "2023-10-05T19:15:15.396Z",
-          "name": "Grofvuil",
-          "slug": "grofvuil",
-          "public_name": "Grofvuil",
-          "description_private": null,
-          "description_public": null,
-          "is_public_accessible": false,
-          "is_active": true,
-          "meta": {},
-          "group": "f3fe2950-59a3-4cd7-8d7b-c3a781d15149"
-      }
-  },
-  {
-      "model": "categories.category",
-      "pk": "1047d98f-5f72-4609-920d-b4e93ff526e8",
-      "fields": {
-          "created_at": "2023-10-05T19:15:15.440Z",
-          "updated_at": "2023-10-05T19:15:15.440Z",
-          "name": "Gras",
-          "slug": "gras",
-          "public_name": "Gras",
-          "description_private": null,
-          "description_public": null,
-          "is_public_accessible": false,
-          "is_active": true,
-          "meta": {},
-          "group": "e5c93c4f-5bd1-4af9-a152-20527436bdbe"
-      }
-  },
-  {
-      "model": "categories.category",
-      "pk": "1a32840b-4347-4fc4-b644-223483875442",
-      "fields": {
-          "created_at": "2023-10-05T19:15:15.450Z",
-          "updated_at": "2023-10-05T19:15:15.450Z",
-          "name": "Klok",
-          "slug": "klok",
-          "public_name": "Klok",
-          "description_private": null,
-          "description_public": null,
-          "is_public_accessible": false,
-          "is_active": true,
-          "meta": {},
-          "group": "b04809a9-d00e-4479-93a0-08a19e6106bb"
-      }
-  },
-  {
-      "model": "categories.category",
-      "pk": "23b6dd4c-6682-4728-b986-bd6213bdff8b",
-      "fields": {
-          "created_at": "2023-10-05T19:15:15.404Z",
-          "updated_at": "2023-10-05T19:15:15.404Z",
-          "name": "Verlichting brandt overdag",
-          "slug": "verlichting-brandt-overdag",
-          "public_name": "Verlichting brandt overdag",
-          "description_private": null,
-          "description_public": null,
-          "is_public_accessible": false,
-          "is_active": true,
-          "meta": {},
-          "group": "7bf728d4-b625-49b6-b0a5-eb2d9828ca13"
-      }
-  },
-  {
-      "model": "categories.category",
       "pk": "28a47df8-c2dc-4e42-a74a-f2bffa9dcc69",
       "fields": {
           "created_at": "2023-10-09T19:54:10.440Z",
@@ -167,142 +727,6 @@
           "is_active": true,
           "meta": {},
           "group": "b4a2cbec-9dd3-4b2f-967b-75bedebd9c39"
-      }
-  },
-  {
-      "model": "categories.category",
-      "pk": "2f2f7ab2-de02-4604-874a-3d5cb47a3f9b",
-      "fields": {
-          "created_at": "2023-10-05T19:15:15.464Z",
-          "updated_at": "2023-10-05T19:15:15.464Z",
-          "name": "Zwerfafval",
-          "slug": "zwerfafval-2",
-          "public_name": "Zwerfafval",
-          "description_private": null,
-          "description_public": null,
-          "is_public_accessible": false,
-          "is_active": true,
-          "meta": {},
-          "group": "fae00d6e-44aa-4094-b114-aa8c692b01a6"
-      }
-  },
-  {
-      "model": "categories.category",
-      "pk": "362bd944-403a-4c84-832b-db0571ff72eb",
-      "fields": {
-          "created_at": "2023-10-05T19:15:15.438Z",
-          "updated_at": "2023-10-05T19:15:15.438Z",
-          "name": "Onkruid",
-          "slug": "onkruid",
-          "public_name": "Onkruid",
-          "description_private": null,
-          "description_public": null,
-          "is_public_accessible": false,
-          "is_active": true,
-          "meta": {},
-          "group": "e5c93c4f-5bd1-4af9-a152-20527436bdbe"
-      }
-  },
-  {
-      "model": "categories.category",
-      "pk": "38c6e714-9648-4d77-8b94-41ad01a1eb7b",
-      "fields": {
-          "created_at": "2023-10-05T19:15:15.453Z",
-          "updated_at": "2023-10-05T19:15:15.453Z",
-          "name": "Wijkcontainer",
-          "slug": "wijkcontainer-2",
-          "public_name": "Wijkcontainer",
-          "description_private": null,
-          "description_public": null,
-          "is_public_accessible": false,
-          "is_active": true,
-          "meta": {},
-          "group": "fae00d6e-44aa-4094-b114-aa8c692b01a6"
-      }
-  },
-  {
-      "model": "categories.category",
-      "pk": "46220395-1755-40fa-b1f5-b493687e10e5",
-      "fields": {
-          "created_at": "2023-10-05T19:15:15.435Z",
-          "updated_at": "2023-10-05T19:15:15.435Z",
-          "name": "Uitwerpselen",
-          "slug": "uitwerpselen",
-          "public_name": "Uitwerpselen",
-          "description_private": null,
-          "description_public": null,
-          "is_public_accessible": false,
-          "is_active": true,
-          "meta": {},
-          "group": "0ee73ff2-8fa7-43d3-aea1-e1fb09377d52"
-      }
-  },
-  {
-      "model": "categories.category",
-      "pk": "4bb5ff81-b3dc-428b-ad01-38c826d15bb2",
-      "fields": {
-          "created_at": "2023-10-05T19:15:15.421Z",
-          "updated_at": "2023-10-05T19:15:15.421Z",
-          "name": "Rioollucht",
-          "slug": "rioollucht",
-          "public_name": "Rioollucht",
-          "description_private": null,
-          "description_public": null,
-          "is_public_accessible": false,
-          "is_active": true,
-          "meta": {},
-          "group": "dc6ec530-8982-4d6d-9a85-e34f9f396ac1"
-      }
-  },
-  {
-      "model": "categories.category",
-      "pk": "500a1417-06b2-41b4-b544-96383979d444",
-      "fields": {
-          "created_at": "2023-10-05T19:15:15.426Z",
-          "updated_at": "2023-10-05T19:15:15.426Z",
-          "name": "Gat in de weg",
-          "slug": "gat-in-de-weg",
-          "public_name": "Gat in de weg",
-          "description_private": null,
-          "description_public": null,
-          "is_public_accessible": false,
-          "is_active": true,
-          "meta": {},
-          "group": "21d32db5-6e1b-4286-a3f0-b3273c89e22e"
-      }
-  },
-  {
-      "model": "categories.category",
-      "pk": "5071288d-3e4a-402b-b851-a37d88fc5562",
-      "fields": {
-          "created_at": "2023-10-05T19:15:15.449Z",
-          "updated_at": "2023-10-05T19:15:15.449Z",
-          "name": "Informatie- of reclamezuil",
-          "slug": "informatie-of-reclamezuil",
-          "public_name": "Informatie- of reclamezuil",
-          "description_private": null,
-          "description_public": null,
-          "is_public_accessible": false,
-          "is_active": true,
-          "meta": {},
-          "group": "b04809a9-d00e-4479-93a0-08a19e6106bb"
-      }
-  },
-  {
-      "model": "categories.category",
-      "pk": "5508684c-8a95-47fb-ab3c-3815769b1435",
-      "fields": {
-          "created_at": "2023-10-05T19:15:15.405Z",
-          "updated_at": "2023-10-05T19:15:15.405Z",
-          "name": "Verlichting beschadigd",
-          "slug": "verlichting-beschadigd",
-          "public_name": "Verlichting beschadigd",
-          "description_private": null,
-          "description_public": null,
-          "is_public_accessible": false,
-          "is_active": true,
-          "meta": {},
-          "group": "7bf728d4-b625-49b6-b0a5-eb2d9828ca13"
       }
   },
   {
@@ -341,76 +765,6 @@
   },
   {
       "model": "categories.category",
-      "pk": "5aea206f-cae3-42c1-92af-2c2eeef2970d",
-      "fields": {
-          "created_at": "2023-10-05T19:15:15.446Z",
-          "updated_at": "2023-10-05T20:05:59.682Z",
-          "name": "Sport- of speeltoestel",
-          "slug": "sport-of-speeltoestel",
-          "public_name": "Sport- of speeltoestel",
-          "description_private": null,
-          "description_public": null,
-          "is_public_accessible": false,
-          "is_active": true,
-          "meta": {
-              "priority": 1
-          },
-          "group": "b04809a9-d00e-4479-93a0-08a19e6106bb"
-      }
-  },
-  {
-      "model": "categories.category",
-      "pk": "5b91a2b7-ce7e-4421-a223-6cbc7048fc35",
-      "fields": {
-          "created_at": "2023-10-05T19:15:15.406Z",
-          "updated_at": "2023-10-05T19:15:15.406Z",
-          "name": "Verlichting overig",
-          "slug": "verlichting-overig",
-          "public_name": "Verlichting overig",
-          "description_private": null,
-          "description_public": null,
-          "is_public_accessible": false,
-          "is_active": true,
-          "meta": {},
-          "group": "7bf728d4-b625-49b6-b0a5-eb2d9828ca13"
-      }
-  },
-  {
-      "model": "categories.category",
-      "pk": "5bb13e61-0f6a-45eb-a679-6755ffecffa5",
-      "fields": {
-          "created_at": "2023-10-05T19:15:15.447Z",
-          "updated_at": "2023-10-05T19:15:15.447Z",
-          "name": "Bank of tafel",
-          "slug": "bank-of-tafel",
-          "public_name": "Bank of tafel",
-          "description_private": null,
-          "description_public": null,
-          "is_public_accessible": false,
-          "is_active": true,
-          "meta": {},
-          "group": "b04809a9-d00e-4479-93a0-08a19e6106bb"
-      }
-  },
-  {
-      "model": "categories.category",
-      "pk": "601377d3-0c5b-4321-b626-90cf6a128fca",
-      "fields": {
-          "created_at": "2023-10-05T19:15:15.448Z",
-          "updated_at": "2023-10-05T19:15:15.448Z",
-          "name": "Verkeers- of straatnaambord",
-          "slug": "verkeers-of-straatnaambord",
-          "public_name": "Verkeers- of straatnaambord",
-          "description_private": null,
-          "description_public": null,
-          "is_public_accessible": false,
-          "is_active": true,
-          "meta": {},
-          "group": "b04809a9-d00e-4479-93a0-08a19e6106bb"
-      }
-  },
-  {
-      "model": "categories.category",
       "pk": "62bab6a2-3cbc-444b-b9b7-3a9d727f5da9",
       "fields": {
           "created_at": "2023-10-09T19:56:16.906Z",
@@ -445,23 +799,6 @@
   },
   {
       "model": "categories.category",
-      "pk": "66e8a036-a9aa-4f0e-858f-6db30909475e",
-      "fields": {
-          "created_at": "2023-10-05T19:15:15.439Z",
-          "updated_at": "2023-10-05T19:15:15.439Z",
-          "name": "Blad of bloesem",
-          "slug": "blad-of-bloesem",
-          "public_name": "Blad of bloesem",
-          "description_private": null,
-          "description_public": null,
-          "is_public_accessible": false,
-          "is_active": true,
-          "meta": {},
-          "group": "e5c93c4f-5bd1-4af9-a152-20527436bdbe"
-      }
-  },
-  {
-      "model": "categories.category",
       "pk": "68338572-876b-44d5-9eea-34206f49bb47",
       "fields": {
           "created_at": "2023-10-09T19:58:10.501Z",
@@ -475,40 +812,6 @@
           "is_active": true,
           "meta": {},
           "group": "b4a2cbec-9dd3-4b2f-967b-75bedebd9c39"
-      }
-  },
-  {
-      "model": "categories.category",
-      "pk": "6a2c0c26-b969-4042-94e7-28c48f492d99",
-      "fields": {
-          "created_at": "2023-10-05T19:15:15.397Z",
-          "updated_at": "2023-10-05T19:15:15.397Z",
-          "name": "Huiscontainer",
-          "slug": "huiscontainer",
-          "public_name": "Huiscontainer",
-          "description_private": null,
-          "description_public": null,
-          "is_public_accessible": false,
-          "is_active": true,
-          "meta": {},
-          "group": "f3fe2950-59a3-4cd7-8d7b-c3a781d15149"
-      }
-  },
-  {
-      "model": "categories.category",
-      "pk": "71977ef3-9410-46d9-a1ba-7b82bfa9e51b",
-      "fields": {
-          "created_at": "2023-10-05T19:15:15.459Z",
-          "updated_at": "2023-10-05T19:15:15.459Z",
-          "name": "Gevaarlijk afval",
-          "slug": "gevaarlijk-afval-2",
-          "public_name": "Gevaarlijk afval",
-          "description_private": null,
-          "description_public": null,
-          "is_public_accessible": false,
-          "is_active": true,
-          "meta": {},
-          "group": "fae00d6e-44aa-4094-b114-aa8c692b01a6"
       }
   },
   {
@@ -547,127 +850,6 @@
   },
   {
       "model": "categories.category",
-      "pk": "7b96bd53-5c8c-47df-b4fa-daa219a193a8",
-      "fields": {
-          "created_at": "2023-10-05T19:15:15.442Z",
-          "updated_at": "2023-10-05T19:15:15.442Z",
-          "name": "Planten",
-          "slug": "planten",
-          "public_name": "Planten",
-          "description_private": null,
-          "description_public": null,
-          "is_public_accessible": false,
-          "is_active": true,
-          "meta": {},
-          "group": "e5c93c4f-5bd1-4af9-a152-20527436bdbe"
-      }
-  },
-  {
-      "model": "categories.category",
-      "pk": "7ddc1c07-84ff-4ba2-9c77-e0d52ec42a91",
-      "fields": {
-          "created_at": "2023-10-05T19:15:15.394Z",
-          "updated_at": "2023-10-05T19:15:15.394Z",
-          "name": "Gevaarlijk afval",
-          "slug": "gevaarlijk-afval",
-          "public_name": "Gevaarlijk afval",
-          "description_private": null,
-          "description_public": null,
-          "is_public_accessible": false,
-          "is_active": true,
-          "meta": {},
-          "group": "f3fe2950-59a3-4cd7-8d7b-c3a781d15149"
-      }
-  },
-  {
-      "model": "categories.category",
-      "pk": "815e173c-5208-4ec4-843d-2d2810596237",
-      "fields": {
-          "created_at": "2023-10-05T19:15:15.455Z",
-          "updated_at": "2023-10-05T20:05:52.474Z",
-          "name": "Afval naast wijkcontainer",
-          "slug": "afval-naast-wijkcontainer-2",
-          "public_name": "Afval naast wijkcontainer",
-          "description_private": null,
-          "description_public": null,
-          "is_public_accessible": false,
-          "is_active": true,
-          "meta": {
-              "priority": 1
-          },
-          "group": "fae00d6e-44aa-4094-b114-aa8c692b01a6"
-      }
-  },
-  {
-      "model": "categories.category",
-      "pk": "831c7e6d-48f3-4726-a6c2-f353e03c6d73",
-      "fields": {
-          "created_at": "2023-10-05T19:15:15.465Z",
-          "updated_at": "2023-10-05T19:15:15.465Z",
-          "name": "Afvalbak",
-          "slug": "afvalbak-2",
-          "public_name": "Afvalbak",
-          "description_private": null,
-          "description_public": null,
-          "is_public_accessible": false,
-          "is_active": true,
-          "meta": {},
-          "group": "fae00d6e-44aa-4094-b114-aa8c692b01a6"
-      }
-  },
-  {
-      "model": "categories.category",
-      "pk": "84250a52-371b-418b-83db-8fcdee49b143",
-      "fields": {
-          "created_at": "2023-10-05T19:15:15.415Z",
-          "updated_at": "2023-10-05T19:15:15.415Z",
-          "name": "Parkeeroverlast (brom-)fiets",
-          "slug": "parkeeroverlast-brom-fiets",
-          "public_name": "Parkeeroverlast (brom-)fiets",
-          "description_private": null,
-          "description_public": null,
-          "is_public_accessible": false,
-          "is_active": true,
-          "meta": {},
-          "group": "74387be6-e1e8-45db-9432-dc9ccbf17b2a"
-      }
-  },
-  {
-      "model": "categories.category",
-      "pk": "88e1713b-a635-4457-bd36-287a20fddb5c",
-      "fields": {
-          "created_at": "2023-10-05T19:15:15.441Z",
-          "updated_at": "2023-10-05T19:15:15.441Z",
-          "name": "Bomen",
-          "slug": "bomen",
-          "public_name": "Bomen",
-          "description_private": null,
-          "description_public": null,
-          "is_public_accessible": false,
-          "is_active": true,
-          "meta": {},
-          "group": "e5c93c4f-5bd1-4af9-a152-20527436bdbe"
-      }
-  },
-  {
-      "model": "categories.category",
-      "pk": "8bc3f745-2ead-46a7-86e6-9d4d0b4ce5ae",
-      "fields": {
-          "created_at": "2023-10-05T19:15:15.398Z",
-          "updated_at": "2023-10-05T19:15:15.398Z",
-          "name": "Zwerfafval",
-          "slug": "zwerfafval",
-          "public_name": "Zwerfafval",
-          "description_private": null,
-          "description_public": null,
-          "is_public_accessible": false,
-          "is_active": true,
-          "meta": {},
-          "group": "f3fe2950-59a3-4cd7-8d7b-c3a781d15149"
-      }
-  },
-  {
-      "model": "categories.category",
       "pk": "9ab0c732-f4b8-4945-a735-95d11b579ece",
       "fields": {
           "created_at": "2023-10-09T19:53:04.811Z",
@@ -681,108 +863,6 @@
           "is_active": true,
           "meta": {},
           "group": "b4a2cbec-9dd3-4b2f-967b-75bedebd9c39"
-      }
-  },
-  {
-      "model": "categories.category",
-      "pk": "9adaf635-6d00-4596-8c47-16827f91226f",
-      "fields": {
-          "created_at": "2023-10-05T19:15:15.427Z",
-          "updated_at": "2023-10-05T19:15:15.427Z",
-          "name": "Bestrating ongelijk of beschadigd",
-          "slug": "bestrating-ongelijk-of-beschadigd",
-          "public_name": "Bestrating ongelijk of beschadigd",
-          "description_private": null,
-          "description_public": null,
-          "is_public_accessible": false,
-          "is_active": true,
-          "meta": {},
-          "group": "21d32db5-6e1b-4286-a3f0-b3273c89e22e"
-      }
-  },
-  {
-      "model": "categories.category",
-      "pk": "9e6aeaec-befe-4cde-b445-2372acee471a",
-      "fields": {
-          "created_at": "2023-10-05T19:15:15.460Z",
-          "updated_at": "2023-10-05T19:15:15.460Z",
-          "name": "Grofvuil",
-          "slug": "grofvuil-2",
-          "public_name": "Grofvuil",
-          "description_private": null,
-          "description_public": null,
-          "is_public_accessible": false,
-          "is_active": true,
-          "meta": {},
-          "group": "fae00d6e-44aa-4094-b114-aa8c692b01a6"
-      }
-  },
-  {
-      "model": "categories.category",
-      "pk": "a373dab9-ad0b-42ce-a1f0-ce30da6e3fd1",
-      "fields": {
-          "created_at": "2023-10-05T19:15:15.420Z",
-          "updated_at": "2023-10-05T19:15:15.420Z",
-          "name": "Wateroverlast",
-          "slug": "wateroverlast",
-          "public_name": "Wateroverlast",
-          "description_private": null,
-          "description_public": null,
-          "is_public_accessible": false,
-          "is_active": true,
-          "meta": {},
-          "group": "dc6ec530-8982-4d6d-9a85-e34f9f396ac1"
-      }
-  },
-  {
-      "model": "categories.category",
-      "pk": "a3a6928c-e2ed-4adc-8132-6d94fb238480",
-      "fields": {
-          "created_at": "2023-10-05T19:15:15.428Z",
-          "updated_at": "2023-10-05T19:15:15.428Z",
-          "name": "Gladheid",
-          "slug": "gladheid",
-          "public_name": "Gladheid",
-          "description_private": null,
-          "description_public": null,
-          "is_public_accessible": false,
-          "is_active": true,
-          "meta": {},
-          "group": "21d32db5-6e1b-4286-a3f0-b3273c89e22e"
-      }
-  },
-  {
-      "model": "categories.category",
-      "pk": "a5b22eec-f060-437d-bf93-ab38b6c20f7d",
-      "fields": {
-          "created_at": "2023-10-05T19:15:15.407Z",
-          "updated_at": "2023-10-05T19:15:15.407Z",
-          "name": "Verlichting doet het niet",
-          "slug": "verlichting-doet-het-niet",
-          "public_name": "Verlichting doet het niet",
-          "description_private": null,
-          "description_public": null,
-          "is_public_accessible": false,
-          "is_active": true,
-          "meta": {},
-          "group": "7bf728d4-b625-49b6-b0a5-eb2d9828ca13"
-      }
-  },
-  {
-      "model": "categories.category",
-      "pk": "bb34503a-dbe4-49bb-a617-8a02df187748",
-      "fields": {
-          "created_at": "2023-10-05T19:15:15.392Z",
-          "updated_at": "2023-10-05T19:15:15.392Z",
-          "name": "Afval naast wijkcontainer",
-          "slug": "afval-naast-wijkcontainer",
-          "public_name": "Afval naast wijkcontainer",
-          "description_private": null,
-          "description_public": null,
-          "is_public_accessible": false,
-          "is_active": true,
-          "meta": {},
-          "group": "f3fe2950-59a3-4cd7-8d7b-c3a781d15149"
       }
   },
   {
@@ -804,23 +884,6 @@
   },
   {
       "model": "categories.category",
-      "pk": "ca748d49-bcef-4eb0-a75e-282bb5c717bb",
-      "fields": {
-          "created_at": "2023-10-05T19:15:15.433Z",
-          "updated_at": "2023-10-05T19:15:15.433Z",
-          "name": "Overlast insecten",
-          "slug": "overlast-insecten",
-          "public_name": "Overlast insecten",
-          "description_private": null,
-          "description_public": null,
-          "is_public_accessible": false,
-          "is_active": true,
-          "meta": {},
-          "group": "0ee73ff2-8fa7-43d3-aea1-e1fb09377d52"
-      }
-  },
-  {
-      "model": "categories.category",
       "pk": "cfe15939-1246-4b56-bb7c-5e453d8667c8",
       "fields": {
           "created_at": "2023-10-09T19:55:07.838Z",
@@ -834,159 +897,6 @@
           "is_active": true,
           "meta": {},
           "group": "b4a2cbec-9dd3-4b2f-967b-75bedebd9c39"
-      }
-  },
-  {
-      "model": "categories.category",
-      "pk": "cfeeefbc-1f41-4ace-aae7-02d3014757f1",
-      "fields": {
-          "created_at": "2023-10-05T19:15:15.413Z",
-          "updated_at": "2023-10-05T19:15:15.413Z",
-          "name": "Deel(brom-)fiets",
-          "slug": "deelbrom-fiets",
-          "public_name": "Deel(brom-)fiets",
-          "description_private": null,
-          "description_public": null,
-          "is_public_accessible": false,
-          "is_active": true,
-          "meta": {},
-          "group": "74387be6-e1e8-45db-9432-dc9ccbf17b2a"
-      }
-  },
-  {
-      "model": "categories.category",
-      "pk": "d16d5ab3-668e-4980-88d7-a8c8549bb572",
-      "fields": {
-          "created_at": "2023-10-05T19:15:15.422Z",
-          "updated_at": "2023-10-05T19:15:15.422Z",
-          "name": "Gemaal of sluis",
-          "slug": "gemaal-of-sluis",
-          "public_name": "Gemaal of sluis",
-          "description_private": null,
-          "description_public": null,
-          "is_public_accessible": false,
-          "is_active": true,
-          "meta": {},
-          "group": "dc6ec530-8982-4d6d-9a85-e34f9f396ac1"
-      }
-  },
-  {
-      "model": "categories.category",
-      "pk": "d19af3af-733c-4dfb-9bca-08f373cd0f7c",
-      "fields": {
-          "created_at": "2023-10-05T19:15:15.423Z",
-          "updated_at": "2023-10-05T19:15:15.423Z",
-          "name": "Rioolafvoer verstopt",
-          "slug": "rioolafvoer-verstopt",
-          "public_name": "Rioolafvoer verstopt",
-          "description_private": null,
-          "description_public": null,
-          "is_public_accessible": false,
-          "is_active": true,
-          "meta": {},
-          "group": "dc6ec530-8982-4d6d-9a85-e34f9f396ac1"
-      }
-  },
-  {
-      "model": "categories.category",
-      "pk": "d4fd456d-6a8e-46d7-9df9-4c27e9198026",
-      "fields": {
-          "created_at": "2023-10-05T19:15:15.399Z",
-          "updated_at": "2023-10-05T19:15:15.399Z",
-          "name": "Afvalbak",
-          "slug": "afvalbak",
-          "public_name": "Afvalbak",
-          "description_private": null,
-          "description_public": null,
-          "is_public_accessible": false,
-          "is_active": true,
-          "meta": {},
-          "group": "f3fe2950-59a3-4cd7-8d7b-c3a781d15149"
-      }
-  },
-  {
-      "model": "categories.category",
-      "pk": "d7e6a3cf-0e8c-40f4-a8c5-6ad1db179163",
-      "fields": {
-          "created_at": "2023-10-05T19:15:15.416Z",
-          "updated_at": "2023-10-05T19:15:15.416Z",
-          "name": "Voertuigwrak",
-          "slug": "voertuigwrak",
-          "public_name": "Voertuigwrak",
-          "description_private": null,
-          "description_public": null,
-          "is_public_accessible": false,
-          "is_active": true,
-          "meta": {},
-          "group": "74387be6-e1e8-45db-9432-dc9ccbf17b2a"
-      }
-  },
-  {
-      "model": "categories.category",
-      "pk": "e4496c15-e876-4da1-962e-da554943db8a",
-      "fields": {
-          "created_at": "2023-10-05T19:15:15.411Z",
-          "updated_at": "2023-10-05T19:15:15.411Z",
-          "name": "Parkeeroverlast aanhangwagen",
-          "slug": "parkeeroverlast-aanhangwagen",
-          "public_name": "Parkeeroverlast aanhangwagen",
-          "description_private": null,
-          "description_public": null,
-          "is_public_accessible": false,
-          "is_active": true,
-          "meta": {},
-          "group": "74387be6-e1e8-45db-9432-dc9ccbf17b2a"
-      }
-  },
-  {
-      "model": "categories.category",
-      "pk": "e6bf8652-a929-47a7-be5e-8a971c2dfbf2",
-      "fields": {
-          "created_at": "2023-10-05T19:15:15.432Z",
-          "updated_at": "2023-10-05T19:15:15.432Z",
-          "name": "Overlast ongedierte",
-          "slug": "overlast-ongedierte",
-          "public_name": "Overlast ongedierte",
-          "description_private": null,
-          "description_public": null,
-          "is_public_accessible": false,
-          "is_active": true,
-          "meta": {},
-          "group": "0ee73ff2-8fa7-43d3-aea1-e1fb09377d52"
-      }
-  },
-  {
-      "model": "categories.category",
-      "pk": "ee348928-8a47-41d4-8ffd-3b19a6cc9034",
-      "fields": {
-          "created_at": "2023-10-05T19:15:15.393Z",
-          "updated_at": "2023-10-05T19:15:15.393Z",
-          "name": "Drugsafval",
-          "slug": "drugsafval",
-          "public_name": "Drugsafval",
-          "description_private": null,
-          "description_public": null,
-          "is_public_accessible": false,
-          "is_active": true,
-          "meta": {},
-          "group": "f3fe2950-59a3-4cd7-8d7b-c3a781d15149"
-      }
-  },
-  {
-      "model": "categories.category",
-      "pk": "fb5e2a88-e820-420e-ba59-121ff10943f4",
-      "fields": {
-          "created_at": "2023-10-05T19:15:15.434Z",
-          "updated_at": "2023-10-05T19:15:15.434Z",
-          "name": "Dode dieren",
-          "slug": "dode-dieren",
-          "public_name": "Dode dieren",
-          "description_private": null,
-          "description_public": null,
-          "is_public_accessible": false,
-          "is_active": true,
-          "meta": {},
-          "group": "0ee73ff2-8fa7-43d3-aea1-e1fb09377d52"
       }
   }
   ]

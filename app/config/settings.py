@@ -31,15 +31,6 @@ LANGUAGES = [("nl", "Dutch")]
 DEFAULT_ALLOWED_HOSTS = ".forzamor.nl,localhost,127.0.0.1"
 ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", DEFAULT_ALLOWED_HOSTS).split(",")
 
-SIGNALEN_API = os.getenv("SIGNALEN_API")
-MELDING_API = os.getenv("MELDING_API")
-APPLICATIE_BASIS_URL = os.getenv("APPLICATIE_BASIS_URL")
-ALLOW_UNAUTHORIZED_MEDIA_ACCESS = (
-    os.getenv("ALLOW_UNAUTHORIZED_MEDIA_ACCESS", False) in TRUE_VALUES
-)
-TOKEN_API_RELATIVE_URL = os.getenv("TOKEN_API_RELATIVE_URL", "/api-token-auth/")
-MELDINGEN_TOKEN_TIMEOUT = 60 * 5
-
 INSTALLED_APPS = (
     "django_db_schema_renderer",
     "django.contrib.contenttypes",
@@ -65,7 +56,6 @@ INSTALLED_APPS = (
     "health_check.cache",
     "health_check.contrib.migrations",
     "debug_toolbar",
-    "django_prometheus",
     # Apps
     "apps.authentication",
     "apps.categories",
@@ -79,21 +69,18 @@ INSTALLED_APPS = (
 
 
 MIDDLEWARE = (
-    "django_prometheus.middleware.PrometheusBeforeMiddleware",
     "corsheaders.middleware.CorsMiddleware",
     "django.middleware.security.SecurityMiddleware",
     "django_permissions_policy.PermissionsPolicyMiddleware",
     "csp.middleware.CSPMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django_session_timeout.middleware.SessionTimeoutMiddleware",
-    "debug_toolbar.middleware.DebugToolbarMiddleware",
     "django.middleware.locale.LocaleMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
-    "django_prometheus.middleware.PrometheusAfterMiddleware",
 )
 
 # django-permissions-policy settings
@@ -169,7 +156,6 @@ DATABASES.update(
     if ENVIRONMENT == "test"
     else {}
 )
-
 
 if ENVIRONMENT == "test":
     DJANGO_TEST_USERNAME = os.getenv("DJANGO_TEST_USERNAME", "test")
@@ -295,23 +281,23 @@ TEMPLATES = [
 
 
 # Cache settings
-REDIS_URL = "redis://redis:6379"
-CACHES = {
-    "default": {
-        "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": REDIS_URL,
-        "OPTIONS": {
-            "CLIENT_CLASS": "django_redis.client.DefaultClient",
-            "SOCKET_CONNECT_TIMEOUT": 5,
-            "SOCKET_TIMEOUT": 5,
-        },
-    }
-}
+# REDIS_URL = "redis://redis:6379"
+# CACHES = {
+#     "default": {
+#         "BACKEND": "django_redis.cache.RedisCache",
+#         "LOCATION": REDIS_URL,
+#         "OPTIONS": {
+#             "CLIENT_CLASS": "django_redis.client.DefaultClient",
+#             "SOCKET_CONNECT_TIMEOUT": 5,
+#             "SOCKET_TIMEOUT": 5,
+#         },
+#     }
+# }
 
 
 # Sessions are managed by django-session-timeout-joinup
 # Django session settings
-SESSION_ENGINE = "django.contrib.sessions.backends.cache"
+# SESSION_ENGINE = "django.contrib.sessions.backends.cache"
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
 
 # Session settings for django-session-timeout-joinup
