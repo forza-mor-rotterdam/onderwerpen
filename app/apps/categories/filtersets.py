@@ -24,19 +24,17 @@ class MultipleValueFilter(filters.Filter):
 
 
 class CategoryFilter(filters.FilterSet):
-    meldr_category = MultipleValueFilter(
-        field_class=CharField, method="get_categories_by_meldr_category"
+    name = MultipleValueFilter(
+        field_class=CharField, method="get_categories_by_name"
     )
 
-    def get_categories_by_meldr_category(self, queryset, name, value):
+    def get_categories_by_name(self, queryset, name, value):
         if value:
-            print(value)
-            print(queryset.filter(meta__meldr="Grofvuil"))
-            return queryset.filter(meta__meldr__in=value).distinct()
+            return queryset.filter(name__in=value).distinct()
         return queryset
 
     class Meta:
         model = Category
         fields = [
-            "meldr_category",
+            "name",
         ]
