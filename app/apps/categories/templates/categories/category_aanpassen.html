@@ -14,24 +14,27 @@
             </a>
         </div>
 
-        <h1>Onderwerpen: {{object.name}}</h1>
+        <h1>{{object.name}}</h1>
+        <div class="grid-container">
+            <div class="grid-item">
+                <form action="." method="post">
+                    {% csrf_token %}
+                    <fieldset>
+                    {{ form.priority|render_rotterdam_formulier }}
+                    </fieldset>
 
-
-        <form action="." method="post">
-            {% csrf_token %}
-            <fieldset>
-            {{ form.priority|render_rotterdam_formulier }}
-            </fieldset>
-
-            <div class="form-row container__button">
-                <div class="form-row btn-row">
-                <button class="btn btn-tertiary" type="reset"><span>Annuleren</span></button>
-                <button type="submit" class="btn btn-action">
-                    <span>Aanpassen</span>
-                </button>
-                </div>
+                    <div class="form-row container__button">
+                        <div class="form-row btn-row">
+                        <button class="btn btn-tertiary" type="reset"><span>Annuleren</span></button>
+                        <button type="submit" class="btn btn-action">
+                            <span>Aanpassen</span>
+                        </button>
+                        </div>
+                    </div>
+                </form>
             </div>
-        </form>
+            <div></div>
+        </div>
     </div>
 </turbo-frame>
 {% endblock %}

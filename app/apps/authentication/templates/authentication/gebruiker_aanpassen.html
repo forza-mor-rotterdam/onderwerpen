@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends "base_beheer.html" %}
 {% load rotterdam_formulier_html %}
 {% load json_encode from json_tags %}
 
@@ -14,26 +14,33 @@
             </a>
         </div>
 
-        <h1>Onderwerpen: Gebruiker {{object.email}}</h1>
+        <h1>Wijzig gebruiker</h1>
+        <div class="grid-container">
+            <div class="grid-item">
+                <form action="." method="post">
+                    {% csrf_token %}
+                    <div class="">
+                        <h2 class="h5 no-margin-bottom">E-mailadres</h2>
+                        <p class="no-margin-top">{{object.email}}</p>
+                    </div>
+                    <fieldset>
+                    {{ form.first_name|render_rotterdam_formulier }}
+                    {{ form.last_name|render_rotterdam_formulier }}
+                    {{ form.group|render_rotterdam_formulier }}
+                    </fieldset>
 
-
-        <form action="." method="post">
-            {% csrf_token %}
-            <fieldset>
-            {{ form.first_name|render_rotterdam_formulier }}
-            {{ form.last_name|render_rotterdam_formulier }}
-            {{ form.group|render_rotterdam_formulier }}
-            </fieldset>
-
-            <div class="form-row container__button">
-                <div class="form-row btn-row">
-                <button class="btn btn-tertiary" type="reset"><span>Annuleren</span></button>
-                <button type="submit" class="btn btn-action">
-                    <span>Aanpassen</span>
-                </button>
+                    <div class="form-row container__button">
+                        <div class="form-row btn-row">
+                        <button class="btn btn-tertiary" type="reset"><span>Annuleren</span></button>
+                        <button type="submit" class="btn btn-action">
+                            <span>Aanpassen</span>
+                        </button>
+                    </div>
+                    </div>
+                </form>
             </div>
-            </div>
-        </form>
+            <div></div>
+        </div>
     </div>
 </turbo-frame>
 {% endblock %}
