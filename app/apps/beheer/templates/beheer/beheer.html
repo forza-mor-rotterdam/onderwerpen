@@ -3,16 +3,16 @@
 {% load json_encode from json_tags %}
 
 {% block body %}
-<h1>Onderwerpen: Beheer</h1>
+<h1>Beheer</h1>
 
-<ul>
-<li><a href="{% url 'gebruiker_lijst' %}">Gebruikers</a></li>
-<li><a href="{% url 'onderwerp_lijst' %}">Onderwerpen prioriteiten</a></li>
+<ul class="list--blocks-horizontal">
+    <li><a href="{% url 'gebruiker_lijst' %}">Gebruikers</a></li>
+    <li><a href="{% url 'onderwerp_lijst' %}">Onderwerpen prioriteiten</a></li>
 </ul>
 
 <h2>Andere Forzamor beheer productie omgevingen</h2>
-<ul>
-<li><a href="https://regie.forzamor.nl/beheer">PlanR</a></li>
-<li><a href="https://behandlr.forzamor.nl/beheer">FixeR</a></li>
+<ul class="list--blocks-horizontal">
+    <li><a href="https://regie.forzamor.nl/beheer">PlanR</a></li>
+    <li><a href="https://behandlr.forzamor.nl/beheer">FixeR</a></li>
 </ul>
 {% endblock %}
