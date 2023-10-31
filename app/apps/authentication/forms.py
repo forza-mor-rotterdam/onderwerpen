@@ -26,3 +26,12 @@ class GebruikerAanmakenForm(GebruikerAanpassenForm):
             "last_name",
             "group",
         )
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.fields[
+            "email"
+        ].help_text = "Gebruik altijd het e-mailadres van de gemeente."
+        self.fields[
+            "group"
+        ].help_text = "Bestaat de juiste rechtengroep voor deze gebruiker niet, maak deze eerst aan."
