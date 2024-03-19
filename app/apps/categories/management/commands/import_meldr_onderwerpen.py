@@ -17,7 +17,6 @@ PASSWORD_FIELD = "password"
 
 class Command(BaseCommand):
     def handle(self, *args, **options):
-
         data = [
             {
                 "attributes": {
