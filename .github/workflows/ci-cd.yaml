@@ -24,6 +24,7 @@ jobs:
 
   create-docker-test-image-and-test:
     name: Create Docker test image and test
+    if: github.ref == 'refs/heads/develop'
     runs-on: ubuntu-latest
     needs: django-lint
     steps:
