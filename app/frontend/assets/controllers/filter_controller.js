@@ -4,8 +4,8 @@ export default class extends Controller {
 
   connect() {
     const inputList = document.getElementsByTagName('input')
-    for (let i = 0; i < inputList.length; i++) {
-      inputList[i].addEventListener('change', this.onInputChange)
+    for (const input of inputList) {
+      input.addEventListener('change', this.onInputChange)
     }
 
     const overviewSrcAttr = document.querySelector('#overview').getAttribute('src')
