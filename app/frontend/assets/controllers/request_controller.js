@@ -1,9 +1,9 @@
 import { Controller } from '@hotwired/stimulus'
 
-let specifiek_graf = 1
 let form = null
 let inputList = null
 let checkboxList = null
+// eslint-disable-next-line no-unused-vars
 let formData = null
 const defaultErrorMessage = 'Vul a.u.b. dit veld in.'
 let temp_files = {}
@@ -35,11 +35,10 @@ export default class extends Controller {
     //check radiobutton
     document.getElementById('id_specifiek_graf_0').click()
 
-    for (let i = 0; i < inputList.length; i++) {
-      const input = inputList[i]
+    for (const input of inputList) {
       const error = input.closest('.form-row').getElementsByClassName('invalid-text')[0]
 
-      input.addEventListener('input', (event) => {
+      input.addEventListener('input', () => {
         if (input.validity.valid) {
           input.closest('.form-row').classList.remove('is-invalid')
           error.textContent = ''
@@ -50,9 +49,7 @@ export default class extends Controller {
       })
     }
 
-    for (let i = 0; i < checkboxList.length; i++) {
-      const cb = checkboxList[i]
-
+    for (const cb of checkboxList) {
       cb.addEventListener('input', () => {
         this.checkCheckBoxes()
       })
@@ -73,7 +70,7 @@ export default class extends Controller {
     })
   }
 
-  openModal(event) {
+  openModal() {
     const modal = document.querySelector('.modal')
     const modalBackdrop = document.querySelector('.modal-backdrop')
 
@@ -94,12 +91,11 @@ export default class extends Controller {
   sessionTimer() {}
 
   checkValids() {
-    //check all inputfields (except checkboxes) for validity
-    // if 1 or more fields is invalid, don't send the form (return false)
-    inputList = document.querySelectorAll('[type="text"], [type="radio"], select, textarea')
+    // Check all input fields (except checkboxes) for validity
+    // If one or more fields are invalid, don't send the form (return false)
+    const inputList = document.querySelectorAll('[type="text"], [type="radio"], select, textarea')
     let count = 0
-    for (let i = 0; i < inputList.length; i++) {
-      const input = inputList[i]
+    for (const input of inputList) {
       const error = input.closest('.form-row').getElementsByClassName('invalid-text')[0]
       if (input.validity.valid) {
         error.textContent = ''
@@ -110,12 +106,9 @@ export default class extends Controller {
         count++
       }
     }
-    if (count > 0) {
-      return false
-    } else {
-      return true
-    }
+    return count === 0
   }
+
   checkCheckBoxes() {
     const cbRequired = document.getElementsByClassName('form-row cb-required')[0]
     if (cbRequired) {
@@ -136,7 +129,7 @@ export default class extends Controller {
   }
 
   removeDuplicates(arr) {
-    var unique = []
+    let unique = []
     arr.forEach((element) => {
       if (!unique.includes(element)) {
         unique.push(element)
@@ -145,8 +138,8 @@ export default class extends Controller {
     return unique
   }
 
-  toggleInputNoEmail(e) {}
-  onSpecifiekGrafChange(e) {}
+  toggleInputNoEmail() {}
+  onSpecifiekGrafChange() {}
 
   hideCheckbox(cbToHide) {
     cbToHide.checked = false
@@ -168,8 +161,8 @@ export default class extends Controller {
     } else {
       //find nested inputs
       const inputList = field.getElementsByTagName('input')
-      for (let i = 0; i < inputList.length; i++) {
-        inputList[i].removeAttribute('required')
+      for (const input of inputList) {
+        input.removeAttribute('required')
       }
     }
   }
@@ -179,7 +172,7 @@ export default class extends Controller {
     document.getElementById(field).setAttribute('required', true)
   }
 
-  onBegraafplaatsChange(e) {}
+  onBegraafplaatsChange() {}
 
   showFileInput() {
     const inputContainer = document.getElementById('id_fotos').parentElement

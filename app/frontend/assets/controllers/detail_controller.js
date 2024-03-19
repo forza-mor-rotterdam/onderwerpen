@@ -46,7 +46,7 @@ export default class extends Controller {
     }
   }
 
-  onScrollSlider(e) {
+  onScrollSlider() {
     this.highlightThumb(
       Math.floor(
         this.imageSliderContainerTarget.scrollLeft / this.imageSliderContainerTarget.offsetWidth

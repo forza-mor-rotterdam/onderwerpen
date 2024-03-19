@@ -1,11 +1,11 @@
 import { Controller } from '@hotwired/stimulus'
-
+import { visit } from '@hotwired/turbo'
 export default class extends Controller {
   connect() {}
 
   navigate(e) {
     if (!e.target.closest('a')) {
-      Turbo.visit(e.params.targeturl)
+      visit(e.params.targeturl)
     }
   }
 
