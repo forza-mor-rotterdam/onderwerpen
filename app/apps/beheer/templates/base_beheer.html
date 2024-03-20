@@ -1,15 +1,13 @@
 {% extends "base.html" %}
-
-{% block title %}Onderwerpen beheer{% endblock %}
-
+{% block title %}
+    Onderwerpen beheer
+{% endblock title %}
 {% block pageheader %}
-    {% with page_title="Onderwerpen" %}
-    {{ block.super }}
-    {% endwith %}
-{% endblock %}
-
+    {% with page_title="Onderwerpen" %}{{ block.super }}{% endwith %}
+{% endblock pageheader %}
 <main data-controller="main">
-    <div class="{% block container_class %}container container--wide{% endblock %}">
-        {% block body %}{% endblock %}
+    <div class="{% block container_class %}container container--wide{% endblock container_class %}">
+        {% block body %}
+        {% endblock body %}
     </div>
 </main>
