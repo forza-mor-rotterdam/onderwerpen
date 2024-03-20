@@ -83,6 +83,8 @@ jobs:
           push: true
           tags: ${{ steps.meta_app.outputs.tags }}
           labels: ${{ steps.meta_app.outputs.labels }}
+          build-args: |
+            GIT_SHA=${{ github.sha }}
 
       - name: Build and push nginx Docker image
         uses: docker/build-push-action@v3
@@ -91,6 +93,7 @@ jobs:
           push: true
           tags: ${{ steps.meta_nginx.outputs.tags }}
           labels: ${{ steps.meta_nginx.outputs.labels }}
+
 
   deploy-acc:
     name: Acceptance release
