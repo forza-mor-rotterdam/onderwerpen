@@ -278,6 +278,7 @@ TEMPLATES = [
                 "django.template.context_processors.debug",
                 "django.template.context_processors.static",
                 "django.template.context_processors.request",
+                "config.context_processors.general_settings",
             ],
         },
     }
