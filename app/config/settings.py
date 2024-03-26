@@ -15,6 +15,8 @@ TRUE_VALUES = [True, "True", "true", "1"]
 
 SECRET_KEY = os.environ.get("DJANGO_SECRET_KEY", os.environ.get("DJANGO_SECRET_KEY"))
 
+GIT_SHA = os.getenv("GIT_SHA")
+DEPLOY_DATE = os.getenv("DEPLOY_DATE", "")
 ENVIRONMENT = os.getenv("ENVIRONMENT")
 DEBUG = ENVIRONMENT == "development"
 
