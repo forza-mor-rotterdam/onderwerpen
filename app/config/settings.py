@@ -229,35 +229,52 @@ CSRF_COOKIE_SAMESITE = "Strict" if not DEBUG else "Lax"
 # Settings for Content-Security-Policy header
 CSP_DEFAULT_SRC = ("'self'",)
 CSP_FRAME_ANCESTORS = ("'self'",)
+CSP_FRAME_SRC = (
+    "'self'",
+    "iam.forzamor.nl",
+)
 CSP_SCRIPT_SRC = (
     "'self'",
     "'unsafe-inline'",
-    "blob:",
-    "cdnjs.cloudflare.com",
+    "'unsafe-eval'",
+    "unpkg.com",
     "cdn.jsdelivr.net",
 )
 CSP_IMG_SRC = (
     "'self'",
+    "blob:",
     "data:",
-    "cdn.redoc.ly",
+    "unpkg.com",
+    "service.pdok.nl",
+    "mor-core-acc.forzamor.nl",
     "cdn.jsdelivr.net",
-    "map1c.vis.earthdata.nasa.gov",
-    "map1b.vis.earthdata.nasa.gov",
-    "map1a.vis.earthdata.nasa.gov",
+    "ows.gis.rotterdam.nl",
+    "www.gis.rotterdam.nl",
 )
 CSP_STYLE_SRC = (
     "'self'",
     "data:",
     "'unsafe-inline'",
-    "cdnjs.cloudflare.com",
+    "unpkg.com",
     "cdn.jsdelivr.net",
-    "fonts.googleapis.com",
 )
-CSP_CONNECT_SRC = ("'self'",)
-CSP_FONT_SRC = (
-    "'self'",
-    "fonts.gstatic.com",
+CSP_CONNECT_SRC = (
+    (
+        "'self'",
+        "mercure.fixer-test.forzamor.nl",
+        "mercure.fixer-acc.forzamor.nl",
+        "mercure.fixer.forzamor.nl",
+        "cke4.ckeditor.com",
+    )
+    if not DEBUG
+    else (
+        "'self'",
+        "ws:",
+        "localhost:7001",
+        "cke4.ckeditor.com",
+    )
 )
+CSP_FONT_SRC = ("'self'", "https://fonts.gstatic.com")
 
 SPAGHETTI_SAUCE = {
     "apps": [

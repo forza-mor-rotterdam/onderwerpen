@@ -31,29 +31,34 @@ class GebruikerVerwijderenPermissie(BasisPermissie):
     codenaam = "gebruiker_verwijderen"
 
 
-class GebruikersgroepToekennenPermissie(BasisPermissie):
-    naam = "Gebruikersgroep toekennen/verwijderen voor een gebruiker"
-    codenaam = "gebruikersgroep_toekennen_verwijderen"
-
-
-class GebruikersgroepAanmakenPermissie(BasisPermissie):
-    naam = "Gebruikersgroep aanmaken"
-    codenaam = "gebruikersgroep_aanmaken"
-
-
-class GebruikersgroepBekijkenPermissie(BasisPermissie):
-    naam = "Gebruikersgroep bekijken"
-    codenaam = "gebruikersgroep_bekijken"
-
-
-class GebruikersgroepVerwijderenPermissie(BasisPermissie):
-    naam = "Gebruikersgroep verwijderen"
-    codenaam = "gebruikersgroep_verwijderen"
-
-
 class BeheerBekijkenPermissie(BasisPermissie):
     naam = "Beheer bekijken"
     codenaam = "beheer_bekijken"
+
+
+class RechtengroepLijstBekijkenPermissie(BasisPermissie):
+    naam = "Rechtengroep lijst bekijken"
+    codenaam = "rechtengroep_lijst_bekijken"
+
+
+class RechtengroepAanmakenPermissie(BasisPermissie):
+    naam = "Rechtengroep aanmaken"
+    codenaam = "rechtengroep_aanmaken"
+
+
+class RechtengroepBekijkenPermissie(BasisPermissie):
+    naam = "Rechtengroep bekijken"
+    codenaam = "rechtengroep_bekijken"
+
+
+class RechtengroepAanpassenPermissie(BasisPermissie):
+    naam = "Rechtengroep aanpassen"
+    codenaam = "rechtengroep_aanpassen"
+
+
+class RechtengroepVerwijderenPermissie(BasisPermissie):
+    naam = "Rechtengroep verwijderen"
+    codenaam = "rechtengroep_verwijderen"
 
 
 class OnderwerpLijstBekijkenPermissie(BasisPermissie):
@@ -72,18 +77,20 @@ gebruikersgroep_permissies = (
     GebruikerBekijkenPermissie,
     GebruikerAanpassenPermissie,
     GebruikerVerwijderenPermissie,
-    GebruikersgroepToekennenPermissie,
-    GebruikersgroepAanmakenPermissie,
-    GebruikersgroepBekijkenPermissie,
-    GebruikersgroepVerwijderenPermissie,
     BeheerBekijkenPermissie,
     OnderwerpLijstBekijkenPermissie,
     OnderwerpAanpassenPermissie,
+    RechtengroepLijstBekijkenPermissie,
+    RechtengroepAanmakenPermissie,
+    RechtengroepBekijkenPermissie,
+    RechtengroepAanpassenPermissie,
+    RechtengroepVerwijderenPermissie,
 )
 
 gebruikersgroep_permissie_opties = [
     (p.codenaam, p.naam) for p in gebruikersgroep_permissies
 ]
+permissie_namen = {p.codenaam: p.naam for p in gebruikersgroep_permissies}
 
 
 class Permissie(models.Model):
