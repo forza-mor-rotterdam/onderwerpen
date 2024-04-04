@@ -10,7 +10,15 @@ class CategoryViewSet(mixins.ListModelMixin, viewsets.GenericViewSet):
     Category
     """
 
-    queryset = Category.objects.all()
+    queryset = (
+        Category.objects.select_related(
+            "group",
+        )
+        .prefetch_related(
+            "questions",
+        )
+        .all()
+    )
 
     permission_classes = ()
 

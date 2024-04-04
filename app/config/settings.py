@@ -77,6 +77,7 @@ MIDDLEWARE = (
     "csp.middleware.CSPMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django_session_timeout.middleware.SessionTimeoutMiddleware",
+    "debug_toolbar.middleware.DebugToolbarMiddleware",
     "django.middleware.locale.LocaleMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
@@ -172,6 +173,16 @@ AUTH_USER_MODEL = "authentication.Gebruiker"
 SITE_ID = 1
 SITE_NAME = os.getenv("SITE_NAME", "MOR Onderwerpen")
 SITE_DOMAIN = os.getenv("SITE_DOMAIN", "localhost")
+
+
+def show_debug_toolbar(request):
+    return DEBUG and os.getenv("SHOW_DEBUG_TOOLBAR") in TRUE_VALUES
+
+
+DEBUG_TOOLBAR_CONFIG = {
+    "SHOW_TOOLBAR_CALLBACK": show_debug_toolbar,
+    "INSERT_BEFORE": "</head>",
+}
 
 # Django REST framework settings
 REST_FRAMEWORK = dict(

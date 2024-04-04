@@ -7,6 +7,7 @@ from rest_framework.reverse import reverse
 
 class CategoryLinksSerializer(serializers.Serializer):
     self = serializers.SerializerMethodField()
+    group = serializers.SerializerMethodField()
 
     @extend_schema_field(OpenApiTypes.URI)
     def get_self(self, obj):
@@ -15,6 +16,16 @@ class CategoryLinksSerializer(serializers.Serializer):
             kwargs={
                 "group_uuid": obj.group.uuid,
                 "category_uuid": obj.uuid,
+            },
+            request=self.context.get("request"),
+        )
+
+    @extend_schema_field(OpenApiTypes.URI)
+    def get_group(self, obj):
+        return reverse(
+            "v1:group-detail",
+            kwargs={
+                "group_uuid": obj.group.uuid,
             },
             request=self.context.get("request"),
         )
