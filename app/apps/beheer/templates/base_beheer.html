@@ -5,9 +5,13 @@
 {% block pageheader %}
     {% with page_title="Onderwerpen" %}{{ block.super }}{% endwith %}
 {% endblock pageheader %}
-<main data-controller="main">
-    <div class="{% block container_class %}container container--wide{% endblock container_class %}">
-        {% block body %}
-        {% endblock body %}
-    </div>
-</main>
+{% block main %}
+    <main data-controller="main">
+        <div class="{% block container_class %}container container--wide{% endblock container_class %}">
+            <turbo-frame id="beheer" data-turbo-action="advance">
+            {% block body %}
+            {% endblock body %}
+            </turbo-frame>
+        </div>
+    </main>
+{% endblock main %}

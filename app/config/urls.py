@@ -1,7 +1,16 @@
-from apps.beheer.views import (
+from apps.authentication.views import (
     GebruikerAanmakenView,
     GebruikerAanpassenView,
     GebruikerLijstView,
+    gebruiker_bulk_import,
+)
+from apps.authorisatie.views import (
+    RechtengroepAanmakenView,
+    RechtengroepAanpassenView,
+    RechtengroepLijstView,
+    RechtengroepVerwijderenView,
+)
+from apps.beheer.views import (
     OnderwerpAanpassenView,
     OnderwerpLijstView,
     account,
@@ -61,11 +70,36 @@ urlpatterns = [
         GebruikerAanpassenView.as_view(),
         name="gebruiker_aanpassen",
     ),
+    path(
+        "beheer/gebruiker/bulk-import/",
+        gebruiker_bulk_import,
+        name="gebruiker_bulk_import",
+    ),
     path("beheer/onderwerp/", OnderwerpLijstView.as_view(), name="onderwerp_lijst"),
     path(
         "beheer/onderwerp/<uuid:pk>/aanpassen/",
         OnderwerpAanpassenView.as_view(),
         name="onderwerp_aanpassen",
+    ),
+    path(
+        "beheer/rechtengroep/",
+        RechtengroepLijstView.as_view(),
+        name="rechtengroep_lijst",
+    ),
+    path(
+        "beheer/rechtengroep/aanmaken/",
+        RechtengroepAanmakenView.as_view(),
+        name="rechtengroep_aanmaken",
+    ),
+    path(
+        "beheer/rechtengroep/<int:pk>/aanpassen/",
+        RechtengroepAanpassenView.as_view(),
+        name="rechtengroep_aanpassen",
+    ),
+    path(
+        "beheer/rechtengroep/<int:pk>/verwijderen/",
+        RechtengroepVerwijderenView.as_view(),
+        name="rechtengroep_verwijderen",
     ),
 ]
 
