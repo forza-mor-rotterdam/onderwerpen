@@ -1,18 +1,26 @@
-{% extends "base.html" %}
+{% extends "base_beheer.html" %}
 {% load rotterdam_formulier_html %}
 {% load json_encode from json_tags %}
-
 {% block body %}
-<h1>Beheer</h1>
-
-<ul class="list--blocks-horizontal">
-    <li><a href="{% url 'gebruiker_lijst' %}">Gebruikers</a></li>
-    <li><a href="{% url 'onderwerp_lijst' %}">Onderwerpen prioriteiten</a></li>
-</ul>
-
-<h2>Andere Forzamor beheer productie omgevingen</h2>
-<ul class="list--blocks-horizontal">
-    <li><a href="https://regie.forzamor.nl/beheer">PlanR</a></li>
-    <li><a href="https://behandlr.forzamor.nl/beheer">FixeR</a></li>
-</ul>
-{% endblock %}
+    <h1>Beheer</h1>
+    <ul class="list--blocks-horizontal">
+        <li>
+            <a href="{% url 'gebruiker_lijst' %}">Gebruikers</a>
+        </li>
+        <li>
+            <a href="{% url 'rechtengroep_lijst' %}">Rechtengroepen</a>
+        </li>
+        <li>
+            <a href="{% url 'onderwerp_lijst' %}">Onderwerpen prioriteiten</a>
+        </li>
+    </ul>
+    <h2>Andere Forzamor beheer productie omgevingen</h2>
+    <ul class="list--blocks-horizontal">
+        <li>
+            <a href="https://regie.forzamor.nl/beheer">PlanR</a>
+        </li>
+        <li>
+            <a href="https://behandlr.forzamor.nl/beheer">FixeR</a>
+        </li>
+    </ul>
+{% endblock body %}

@@ -1,15 +1,17 @@
 {% extends "base.html" %}
-
-{% block title %}Onderwerpen beheer{% endblock %}
-
+{% block title %}
+    Onderwerpen beheer
+{% endblock title %}
 {% block pageheader %}
-    {% with page_title="Onderwerpen" %}
-    {{ block.super }}
-    {% endwith %}
-{% endblock %}
-
-<main data-controller="main">
-    <div class="{% block container_class %}container container--wide{% endblock %}">
-        {% block body %}{% endblock %}
-    </div>
-</main>
+    {% with page_title="Onderwerpen" %}{{ block.super }}{% endwith %}
+{% endblock pageheader %}
+{% block main %}
+    <main data-controller="main">
+        <div class="{% block container_class %}container container--wide{% endblock container_class %}">
+            <turbo-frame id="beheer" data-turbo-action="advance">
+            {% block body %}
+            {% endblock body %}
+            </turbo-frame>
+        </div>
+    </main>
+{% endblock main %}

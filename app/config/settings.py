@@ -15,6 +15,8 @@ TRUE_VALUES = [True, "True", "true", "1"]
 
 SECRET_KEY = os.environ.get("DJANGO_SECRET_KEY", os.environ.get("DJANGO_SECRET_KEY"))
 
+GIT_SHA = os.getenv("GIT_SHA")
+DEPLOY_DATE = os.getenv("DEPLOY_DATE", "")
 ENVIRONMENT = os.getenv("ENVIRONMENT")
 DEBUG = ENVIRONMENT == "development"
 
@@ -32,6 +34,7 @@ DEFAULT_ALLOWED_HOSTS = ".forzamor.nl,localhost,127.0.0.1"
 ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", DEFAULT_ALLOWED_HOSTS).split(",")
 
 INSTALLED_APPS = (
+    "apps.health",
     "django_db_schema_renderer",
     "django.contrib.contenttypes",
     "django.contrib.staticfiles",
@@ -61,7 +64,6 @@ INSTALLED_APPS = (
     "apps.categories",
     "apps.groups",
     "apps.questions",
-    "apps.health",
     "apps.authorisatie",
     "apps.beheer",
     "apps.rotterdam_formulier_html",
@@ -75,6 +77,7 @@ MIDDLEWARE = (
     "csp.middleware.CSPMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django_session_timeout.middleware.SessionTimeoutMiddleware",
+    "debug_toolbar.middleware.DebugToolbarMiddleware",
     "django.middleware.locale.LocaleMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
@@ -123,9 +126,11 @@ WEBPACK_LOADER = {
         "POLL_INTERVAL": 0.1,
         "IGNORE": [r".+\.hot-update.js", r".+\.map"],
         "LOADER_CLASS": "webpack_loader.loader.WebpackLoader",
-        "STATS_FILE": "/static/webpack-stats.json"
-        if not DEBUG
-        else "/app/frontend/public/build/webpack-stats.json",
+        "STATS_FILE": (
+            "/static/webpack-stats.json"
+            if not DEBUG
+            else "/app/frontend/public/build/webpack-stats.json"
+        ),
     }
 }
 DEV_SOCKET_PORT = os.getenv("DEV_SOCKET_PORT", "9000")
@@ -168,6 +173,16 @@ AUTH_USER_MODEL = "authentication.Gebruiker"
 SITE_ID = 1
 SITE_NAME = os.getenv("SITE_NAME", "MOR Onderwerpen")
 SITE_DOMAIN = os.getenv("SITE_DOMAIN", "localhost")
+
+
+def show_debug_toolbar(request):
+    return DEBUG and os.getenv("SHOW_DEBUG_TOOLBAR") in TRUE_VALUES
+
+
+DEBUG_TOOLBAR_CONFIG = {
+    "SHOW_TOOLBAR_CALLBACK": show_debug_toolbar,
+    "INSERT_BEFORE": "</head>",
+}
 
 # Django REST framework settings
 REST_FRAMEWORK = dict(
@@ -225,35 +240,52 @@ CSRF_COOKIE_SAMESITE = "Strict" if not DEBUG else "Lax"
 # Settings for Content-Security-Policy header
 CSP_DEFAULT_SRC = ("'self'",)
 CSP_FRAME_ANCESTORS = ("'self'",)
+CSP_FRAME_SRC = (
+    "'self'",
+    "iam.forzamor.nl",
+)
 CSP_SCRIPT_SRC = (
     "'self'",
     "'unsafe-inline'",
-    "blob:",
-    "cdnjs.cloudflare.com",
+    "'unsafe-eval'",
+    "unpkg.com",
     "cdn.jsdelivr.net",
 )
 CSP_IMG_SRC = (
     "'self'",
+    "blob:",
     "data:",
-    "cdn.redoc.ly",
+    "unpkg.com",
+    "service.pdok.nl",
+    "mor-core-acc.forzamor.nl",
     "cdn.jsdelivr.net",
-    "map1c.vis.earthdata.nasa.gov",
-    "map1b.vis.earthdata.nasa.gov",
-    "map1a.vis.earthdata.nasa.gov",
+    "ows.gis.rotterdam.nl",
+    "www.gis.rotterdam.nl",
 )
 CSP_STYLE_SRC = (
     "'self'",
     "data:",
     "'unsafe-inline'",
-    "cdnjs.cloudflare.com",
+    "unpkg.com",
     "cdn.jsdelivr.net",
-    "fonts.googleapis.com",
 )
-CSP_CONNECT_SRC = ("'self'",)
-CSP_FONT_SRC = (
-    "'self'",
-    "fonts.gstatic.com",
+CSP_CONNECT_SRC = (
+    (
+        "'self'",
+        "mercure.fixer-test.forzamor.nl",
+        "mercure.fixer-acc.forzamor.nl",
+        "mercure.fixer.forzamor.nl",
+        "cke4.ckeditor.com",
+    )
+    if not DEBUG
+    else (
+        "'self'",
+        "ws:",
+        "localhost:7001",
+        "cke4.ckeditor.com",
+    )
 )
+CSP_FONT_SRC = ("'self'", "https://fonts.gstatic.com")
 
 SPAGHETTI_SAUCE = {
     "apps": [
@@ -274,6 +306,7 @@ TEMPLATES = [
                 "django.template.context_processors.debug",
                 "django.template.context_processors.static",
                 "django.template.context_processors.request",
+                "config.context_processors.general_settings",
             ],
         },
     }
