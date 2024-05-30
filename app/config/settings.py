@@ -312,36 +312,33 @@ TEMPLATES = [
     }
 ]
 
-
-# Cache settings
-# REDIS_URL = "redis://redis:6379"
-# CACHES = {
-#     "default": {
-#         "BACKEND": "django_redis.cache.RedisCache",
-#         "LOCATION": REDIS_URL,
-#         "OPTIONS": {
-#             "CLIENT_CLASS": "django_redis.client.DefaultClient",
-#             "SOCKET_CONNECT_TIMEOUT": 5,
-#             "SOCKET_TIMEOUT": 5,
-#         },
-#     }
-# }
-
+REDIS_URL = "redis://redis:6379"
+CACHES = {
+    "default": {
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": REDIS_URL,
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+            "SOCKET_CONNECT_TIMEOUT": 5,
+            "SOCKET_TIMEOUT": 5,
+        },
+    }
+}
 
 # Sessions are managed by django-session-timeout-joinup
 # Django session settings
-# SESSION_ENGINE = "django.contrib.sessions.backends.cache"
+SESSION_ENGINE = "django.contrib.sessions.backends.cache"
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
 
 # Session settings for django-session-timeout-joinup
 SESSION_EXPIRE_MAXIMUM_SECONDS = int(
-    os.getenv("SESSION_EXPIRE_MAXIMUM_SECONDS", "28800")
+    os.getenv("SESSION_EXPIRE_MAXIMUM_SECONDS", 60 * 60 * 24 * 7)
 )
-SESSION_EXPIRE_SECONDS = int(os.getenv("SESSION_EXPIRE_SECONDS", "3600"))
+SESSION_EXPIRE_SECONDS = int(os.getenv("SESSION_EXPIRE_SECONDS", 60 * 60 * 24))
 SESSION_EXPIRE_AFTER_LAST_ACTIVITY_GRACE_PERIOD = int(
-    os.getenv("SESSION_EXPIRE_AFTER_LAST_ACTIVITY_GRACE_PERIOD", "1800")
+    os.getenv("SESSION_EXPIRE_AFTER_LAST_ACTIVITY_GRACE_PERIOD", 60 * 60 * 24)
 )
-
+SESSION_CHECK_INTERVAL_SECONDS = int(os.getenv("SESSION_CHECK_INTERVAL_SECONDS", "60"))
 
 LOG_LEVEL = "DEBUG" if DEBUG else "INFO"
 LOGGING = {
