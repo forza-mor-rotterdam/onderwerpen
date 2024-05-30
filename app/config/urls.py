@@ -105,7 +105,6 @@ urlpatterns = [
 
 if settings.OIDC_ENABLED:
     urlpatterns += [
-        path("oidc/", include("mozilla_django_oidc.urls")),
         path(
             "admin/login/",
             RedirectView.as_view(
@@ -122,12 +121,12 @@ if settings.OIDC_ENABLED:
             ),
             name="admin_logout",
         ),
-        path("admin/", admin.site.urls),
     ]
-else:
-    urlpatterns += [
-        path("admin/", admin.site.urls),
-    ]
+
+urlpatterns += [
+    path("admin/", admin.site.urls),
+    path("oidc/", include("mozilla_django_oidc.urls")),
+]
 
 if settings.DEBUG:
     urlpatterns += [
