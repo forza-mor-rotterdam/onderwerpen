@@ -3,7 +3,7 @@ from django.contrib import admin
 
 
 class CategoryAdmin(admin.ModelAdmin):
-    list_display = ("name", "group")
+    list_display = ("uuid", "name", "group")
 
 
 admin.site.register(Category, CategoryAdmin)

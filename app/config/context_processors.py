@@ -30,6 +30,7 @@ def general_settings(context):
         "ENVIRONMENT": settings.ENVIRONMENT,
         "GIT_SHA": settings.GIT_SHA,
         "DEPLOY_DATE": deploy_date_formatted,
+        "APP_ENV": settings.APP_ENV,
     }
     default_settings.update(absolute(context))
 
