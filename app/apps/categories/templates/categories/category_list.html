@@ -16,7 +16,17 @@
             </a>
         </div>
         <div class="container__flex">
-            <h1>Onderwerpen prioriteiten</h1>
+            <h1>Onderwerpen</h1>
+            <a class="btn btn-action" href="{% url 'onderwerp_aanmaken' %}">
+                <svg width="24"
+                     height="24"
+                     viewBox="0 0 32 32"
+                     fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17 6H15V15H6V17H15V26H17V17H26V15H17V6Z" fill="#ffffff"></path>
+                </svg>
+                Nieuw onderwerp
+            </a>
         </div>
         <form>
             <div class="form-row">
@@ -35,6 +45,7 @@
                 <th>Groep</th>
                 <th>Onderwerp</th>
                 <th>Prioriteit</th>
+                <th>Is actief</th>
                 <th></th>
             </tr>
             {% for object in object_list %}
@@ -46,6 +57,13 @@
                             Hoog
                         {% else %}
                             Normaal
+                        {% endif %}
+                    </td>
+                    <td>
+                        {% if not object.is_active %}
+                            {% include "icons/close.svg" %}
+                        {% else %}
+                            {% include "icons/checkmark.svg" %}
                         {% endif %}
                     </td>
                     <td>

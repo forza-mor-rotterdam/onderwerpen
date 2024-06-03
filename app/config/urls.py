@@ -11,6 +11,7 @@ from apps.authorisatie.views import (
     RechtengroepVerwijderenView,
 )
 from apps.beheer.views import (
+    OnderwerpAanmakenView,
     OnderwerpAanpassenView,
     OnderwerpLijstView,
     account,
@@ -76,6 +77,11 @@ urlpatterns = [
         name="gebruiker_bulk_import",
     ),
     path("beheer/onderwerp/", OnderwerpLijstView.as_view(), name="onderwerp_lijst"),
+    path(
+        "beheer/onderwerp/aanmaken/",
+        OnderwerpAanmakenView.as_view(),
+        name="onderwerp_aanmaken",
+    ),
     path(
         "beheer/onderwerp/<uuid:pk>/aanpassen/",
         OnderwerpAanpassenView.as_view(),

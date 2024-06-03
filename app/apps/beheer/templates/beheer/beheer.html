@@ -11,16 +11,15 @@
             <a href="{% url 'rechtengroep_lijst' %}">Rechtengroepen</a>
         </li>
         <li>
-            <a href="{% url 'onderwerp_lijst' %}">Onderwerpen prioriteiten</a>
+            <a href="{% url 'onderwerp_lijst' %}">Onderwerpen</a>
         </li>
     </ul>
-    <h2>Andere Forzamor beheer productie omgevingen</h2>
+    <h2>Andere Forzamor beheer {{ APP_ENV }} omgevingen</h2>
     <ul class="list--blocks-horizontal">
-        <li>
-            <a href="https://regie.forzamor.nl/beheer">PlanR</a>
-        </li>
-        <li>
-            <a href="https://behandlr.forzamor.nl/beheer">FixeR</a>
-        </li>
+        {% for url in env_urls %}
+            <li>
+                <a href="{{ url.0 }}">{{ url.1 }}</a>
+            </li>
+        {% endfor %}
     </ul>
 {% endblock body %}
