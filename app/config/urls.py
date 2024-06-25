@@ -11,6 +11,7 @@ from apps.authorisatie.views import (
     RechtengroepVerwijderenView,
 )
 from apps.beheer.views import (
+    OnderwerpAanmakenView,
     OnderwerpAanpassenView,
     OnderwerpLijstView,
     account,
@@ -77,6 +78,11 @@ urlpatterns = [
     ),
     path("beheer/onderwerp/", OnderwerpLijstView.as_view(), name="onderwerp_lijst"),
     path(
+        "beheer/onderwerp/aanmaken/",
+        OnderwerpAanmakenView.as_view(),
+        name="onderwerp_aanmaken",
+    ),
+    path(
         "beheer/onderwerp/<uuid:pk>/aanpassen/",
         OnderwerpAanpassenView.as_view(),
         name="onderwerp_aanpassen",
@@ -105,7 +111,6 @@ urlpatterns = [
 
 if settings.OIDC_ENABLED:
     urlpatterns += [
-        path("oidc/", include("mozilla_django_oidc.urls")),
         path(
             "admin/login/",
             RedirectView.as_view(
@@ -122,12 +127,12 @@ if settings.OIDC_ENABLED:
             ),
             name="admin_logout",
         ),
-        path("admin/", admin.site.urls),
     ]
-else:
-    urlpatterns += [
-        path("admin/", admin.site.urls),
-    ]
+
+urlpatterns += [
+    path("admin/", admin.site.urls),
+    path("oidc/", include("mozilla_django_oidc.urls")),
+]
 
 if settings.DEBUG:
     urlpatterns += [
