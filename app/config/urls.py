@@ -14,7 +14,6 @@ from apps.beheer.views import (
     OnderwerpAanmakenView,
     OnderwerpAanpassenView,
     OnderwerpLijstView,
-    account,
     beheer,
     http_404,
     http_500,
@@ -42,7 +41,6 @@ router.register(r"category", CategoryViewSet, basename="category")
 
 urlpatterns = [
     path("", root, name="root"),
-    path("account/", account, name="account"),
     path("api/v1/", include((router.urls, "app"), namespace="v1")),
     path("api-token-auth/", views.obtain_auth_token),
     path("health/", include("health_check.urls")),
@@ -111,6 +109,7 @@ urlpatterns = [
 
 if settings.OIDC_ENABLED:
     urlpatterns += [
+        path("oidc/", include("mozilla_django_oidc.urls")),
         path(
             "admin/login/",
             RedirectView.as_view(
@@ -127,12 +126,12 @@ if settings.OIDC_ENABLED:
             ),
             name="admin_logout",
         ),
+        path("admin/", admin.site.urls),
     ]
-
-urlpatterns += [
-    path("admin/", admin.site.urls),
-    path("oidc/", include("mozilla_django_oidc.urls")),
-]
+else:
+    urlpatterns += [
+        path("admin/", admin.site.urls),
+    ]
 
 if settings.DEBUG:
     urlpatterns += [
