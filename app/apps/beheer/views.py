@@ -27,22 +27,18 @@ def http_500(request):
     )
 
 
+@login_required
 def root(request):
     if request.user.has_perms(["authorisatie.beheer_bekijken"]):
         return redirect(reverse("beheer"))
-    return redirect(reverse("account"))
-
-
-@login_required
-def account(request):
     return render(
         request,
-        "auth/account.html",
+        "home.html",
         {},
     )
 
 
-@permission_required("authorisatie.beheer_bekijken")
+@permission_required("authorisatie.beheer_bekijken", raise_exception=True)
 def beheer(request):
     env_suffixs = {
         settings.PRODUCTIE: "",
@@ -66,6 +62,10 @@ def beheer(request):
             f"https://ontdbblr{env_suffixs.get(settings.APP_ENV, env_suffixs.get(settings.ACCEPTATIE))}.{domain}{beheer_url}",
             "OntdbblR",
         ),
+        (
+            f"https://taakr{env_suffixs.get(settings.APP_ENV, env_suffixs.get(settings.ACCEPTATIE))}.{domain}{beheer_url}",
+            "TaakR",
+        ),
     ]
 
     return render(
@@ -77,16 +77,15 @@ def beheer(request):
     )
 
 
-@method_decorator(
-    permission_required("authorisatie.onderwerp_bekijken"), name="dispatch"
-)
 class OnderwerpView(View):
     model = Category
     success_url = reverse_lazy("onderwerp_lijst")
 
 
+@method_decorator(login_required, name="dispatch")
 @method_decorator(
-    permission_required("authorisatie.onderwerp_lijst_bekijken"), name="dispatch"
+    permission_required("authorisatie.onderwerp_lijst_bekijken", raise_exception=True),
+    name="dispatch",
 )
 class OnderwerpLijstView(OnderwerpView, ListView):
     queryset = Category.objects.all().order_by("group__name", "name")
@@ -102,8 +101,10 @@ class OnderwerpAanmakenAanpassenView(OnderwerpView):
         return super().form_valid(form)
 
 
+@method_decorator(login_required, name="dispatch")
 @method_decorator(
-    permission_required("authorisatie.onderwerp_aanpassen"), name="dispatch"
+    permission_required("authorisatie.onderwerp_aanpassen", raise_exception=True),
+    name="dispatch",
 )
 class OnderwerpAanpassenView(OnderwerpAanmakenAanpassenView, UpdateView):
     form_class = CategoryAanpassenForm
@@ -116,8 +117,10 @@ class OnderwerpAanpassenView(OnderwerpAanmakenAanpassenView, UpdateView):
         return initial
 
 
+@method_decorator(login_required, name="dispatch")
 @method_decorator(
-    permission_required("authorisatie.onderwerp_aanmaken"), name="dispatch"
+    permission_required("authorisatie.onderwerp_aanmaken", raise_exception=True),
+    name="dispatch",
 )
 class OnderwerpAanmakenView(OnderwerpAanmakenAanpassenView, CreateView):
     template_name = "categories/category_aanmaken.html"
