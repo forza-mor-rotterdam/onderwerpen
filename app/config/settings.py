@@ -42,6 +42,7 @@ DEFAULT_ALLOWED_HOSTS = ".forzamor.nl,localhost,127.0.0.1"
 ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", DEFAULT_ALLOWED_HOSTS).split(",")
 
 INSTALLED_APPS = (
+    "apps.beheer",
     "apps.health",
     "django_db_schema_renderer",
     "django.contrib.contenttypes",
@@ -53,6 +54,7 @@ INSTALLED_APPS = (
     "django.contrib.admin",
     "django.contrib.gis",
     "django.contrib.postgres",
+    "django.forms",
     "rest_framework",
     "rest_framework.authtoken",
     "rest_framework_gis",
@@ -302,6 +304,7 @@ SPAGHETTI_SAUCE = {
     "show_fields": False,
 }
 
+FORM_RENDERER = "django.forms.renderers.TemplatesSetting"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",

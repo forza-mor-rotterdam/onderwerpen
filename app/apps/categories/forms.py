@@ -1,11 +1,10 @@
 from apps.categories.models import Category
 from django import forms
-from utils.forms import RadioSelect
 
 
 class CategoryAanpassenForm(forms.ModelForm):
     priority = forms.ChoiceField(
-        widget=RadioSelect(
+        widget=forms.RadioSelect(
             attrs={
                 "class": "list--form-radio-input",
             }
@@ -29,7 +28,7 @@ class CategoryAanpassenForm(forms.ModelForm):
 
 class CategoryAanmakenForm(forms.ModelForm):
     priority = forms.ChoiceField(
-        widget=RadioSelect(
+        widget=forms.RadioSelect(
             attrs={
                 "class": "list--form-radio-input",
             }
