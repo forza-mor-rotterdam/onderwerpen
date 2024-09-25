@@ -25,13 +25,18 @@
                     {% csrf_token %}
                     <fieldset>
                         {{ form.name|render_rotterdam_formulier }}
-                        {{ form.priority|render_rotterdam_formulier }}
+                        <div class="wrapper-horizontal">{{ form.priority|render_rotterdam_formulier }}</div>
                         {{ form.is_active|render_rotterdam_formulier }}
                         {{ form.group|render_rotterdam_formulier }}
                     </fieldset>
                     <div class="form-row container__button">
                         <div class="form-row btn-row">
-                            <button class="btn btn-tertiary" type="reset">
+                            <button 
+                                class="btn btn-tertiary"
+                                type="reset" 
+                                data-controller="utils"
+                                data-action="utils#goToUrl"
+                                data-utils-url-param="{% url 'onderwerp_lijst' %}">
                                 <span>Annuleren</span>
                             </button>
                             <button type="submit" class="btn btn-action">

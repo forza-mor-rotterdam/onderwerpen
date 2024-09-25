@@ -10,7 +10,6 @@ from django.contrib.gis.geos import Point
 from django.core.cache import cache
 from django.utils.html import strip_tags
 from requests import Request, Response
-from utils.datetime import stringdatetime_naar_datetime
 
 register = template.Library()
 logger = logging.getLogger(__name__)
