@@ -1,11 +1,10 @@
 from apps.categories.models import Category
 from django import forms
-from utils.forms import RadioSelect
 
 
 class CategoryAanpassenForm(forms.ModelForm):
     priority = forms.ChoiceField(
-        widget=RadioSelect(
+        widget=forms.RadioSelect(
             attrs={
                 "class": "list--form-radio-input",
             }
@@ -16,6 +15,16 @@ class CategoryAanpassenForm(forms.ModelForm):
             (0, "Normaal"),
         ),
         required=True,
+    )
+
+    is_active = forms.BooleanField(
+        widget=forms.CheckboxInput(
+            attrs={
+                "class": "form-check-input",
+            }
+        ),
+        label="Is actief",
+        required=False,
     )
 
     class Meta:
@@ -29,7 +38,7 @@ class CategoryAanpassenForm(forms.ModelForm):
 
 class CategoryAanmakenForm(forms.ModelForm):
     priority = forms.ChoiceField(
-        widget=RadioSelect(
+        widget=forms.RadioSelect(
             attrs={
                 "class": "list--form-radio-input",
             }
@@ -40,6 +49,16 @@ class CategoryAanmakenForm(forms.ModelForm):
             (0, "Normaal"),
         ),
         required=True,
+    )
+
+    is_active = forms.BooleanField(
+        widget=forms.CheckboxInput(
+            attrs={
+                "class": "form-check-input",
+            }
+        ),
+        label="Is actief",
+        required=False,
     )
 
     class Meta:
