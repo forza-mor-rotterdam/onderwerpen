@@ -54,6 +54,7 @@ RUN apt-get update \
         libmagic1 \
         libcairo2 \
         libpango1.0-0 \
+        libpq-dev \
         gcc \
         graphviz \
         graphviz-dev \
