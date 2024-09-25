@@ -10,7 +10,8 @@
             {{ field }}
             <label for="id_{{ field.name }}" class="form-check-label">{{ field.label }}</label>
             {% for error in field.errors %}
-                <br><span class="help-block invalid-text {{ form.error_css_class }}">{{ error }}</span>
+                <br>
+                <span class="help-block invalid-text {{ form.error_css_class }}">{{ error }}</span>
             {% endfor %}
             {% if field.help_text %}<p class="help-block">{{ field.help_text|safe }}</p>{% endif %}
         </div>

@@ -20,7 +20,7 @@ class CategoryAanpassenForm(forms.ModelForm):
     is_active = forms.BooleanField(
         widget=forms.CheckboxInput(
             attrs={
-                "class":"form-check-input",
+                "class": "form-check-input",
             }
         ),
         label="Is actief",
@@ -54,12 +54,13 @@ class CategoryAanmakenForm(forms.ModelForm):
     is_active = forms.BooleanField(
         widget=forms.CheckboxInput(
             attrs={
-                "class":"form-check-input",
+                "class": "form-check-input",
             }
         ),
         label="Is actief",
         required=False,
     )
+
     class Meta:
         model = Category
         fields = (
