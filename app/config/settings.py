@@ -75,7 +75,6 @@ INSTALLED_APPS = (
     "apps.groups",
     "apps.questions",
     "apps.authorisatie",
-    "apps.beheer",
     "apps.rotterdam_formulier_html",
 )
 
