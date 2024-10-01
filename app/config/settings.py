@@ -5,6 +5,7 @@ import sys
 from os.path import join
 
 import requests
+import urllib3
 
 logger = logging.getLogger(__name__)
 
@@ -41,6 +42,7 @@ DEFAULT_ALLOWED_HOSTS = ".forzamor.nl,localhost,127.0.0.1"
 ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", DEFAULT_ALLOWED_HOSTS).split(",")
 
 INSTALLED_APPS = (
+    "apps.beheer",
     "apps.health",
     "django_db_schema_renderer",
     "django.contrib.contenttypes",
@@ -52,6 +54,7 @@ INSTALLED_APPS = (
     "django.contrib.admin",
     "django.contrib.gis",
     "django.contrib.postgres",
+    "django.forms",
     "rest_framework",
     "rest_framework.authtoken",
     "rest_framework_gis",
@@ -72,7 +75,6 @@ INSTALLED_APPS = (
     "apps.groups",
     "apps.questions",
     "apps.authorisatie",
-    "apps.beheer",
     "apps.rotterdam_formulier_html",
 )
 
@@ -301,6 +303,7 @@ SPAGHETTI_SAUCE = {
     "show_fields": False,
 }
 
+FORM_RENDERER = "django.forms.renderers.TemplatesSetting"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
@@ -394,7 +397,12 @@ OPENID_CONFIG_URI = os.getenv(
 )
 OPENID_CONFIG = {}
 try:
-    OPENID_CONFIG = requests.get(OPENID_CONFIG_URI).json()
+    OPENID_CONFIG = requests.get(
+        OPENID_CONFIG_URI,
+        headers={
+            "user-agent": urllib3.util.SKIP_HEADER,
+        },
+    ).json()
 except Exception as e:
     logger.error(f"OPENID_CONFIG FOUT, url: {OPENID_CONFIG_URI}, error: {e}")
 

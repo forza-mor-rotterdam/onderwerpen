@@ -71,6 +71,11 @@ class OnderwerpAanpassenPermissie(BasisPermissie):
     codenaam = "onderwerp_aanpassen"
 
 
+class OnderwerpAanmakenPermissie(BasisPermissie):
+    naam = "Onderwerp aanmaken"
+    codenaam = "onderwerp_aanmaken"
+
+
 gebruikersgroep_permissies = (
     GebruikerLijstBekijkenPermissie,
     GebruikerAanmakenPermissie,
@@ -80,6 +85,7 @@ gebruikersgroep_permissies = (
     BeheerBekijkenPermissie,
     OnderwerpLijstBekijkenPermissie,
     OnderwerpAanpassenPermissie,
+    OnderwerpAanmakenPermissie,
     RechtengroepLijstBekijkenPermissie,
     RechtengroepAanmakenPermissie,
     RechtengroepBekijkenPermissie,
