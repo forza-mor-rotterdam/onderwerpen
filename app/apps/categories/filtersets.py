@@ -25,6 +25,7 @@ class MultipleValueFilter(filters.Filter):
 
 class CategoryFilter(filters.FilterSet):
     name = MultipleValueFilter(field_class=CharField, method="get_categories_by_name")
+    is_active = filters.BooleanFilter(field_name="is_active")
 
     def get_categories_by_name(self, queryset, name, value):
         if value:
