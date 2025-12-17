@@ -2,6 +2,8 @@ from apps.authentication.views import (
     GebruikerAanmakenView,
     GebruikerAanpassenView,
     GebruikerLijstView,
+    LoginView,
+    LogoutView,
     gebruiker_bulk_import,
 )
 from apps.authorisatie.views import (
@@ -57,6 +59,16 @@ urlpatterns = [
         SpectacularRedocView.as_view(url_name="schema"),
         name="redoc",
     ),
+    path(
+        "login/",
+        LoginView.as_view(),
+        name="login",
+    ),
+    path(
+        "logout/",
+        LogoutView.as_view(),
+        name="logout",
+    ),
     path("beheer/", beheer, name="beheer"),
     path("beheer/gebruiker/", GebruikerLijstView.as_view(), name="gebruiker_lijst"),
     path(
@@ -107,31 +119,28 @@ urlpatterns = [
     ),
 ]
 
-if settings.OIDC_ENABLED:
+if not settings.ENABLE_DJANGO_ADMIN_LOGIN:
     urlpatterns += [
-        path("oidc/", include("mozilla_django_oidc.urls")),
         path(
             "admin/login/",
-            RedirectView.as_view(
-                url="/oidc/authenticate/?next=/admin/",
-                permanent=False,
-            ),
+            RedirectView.as_view(url="/login/?next=/admin/"),
             name="admin_login",
         ),
         path(
             "admin/logout/",
-            RedirectView.as_view(
-                url="/oidc/logout/?next=/admin/",
-                permanent=False,
-            ),
+            RedirectView.as_view(url="/logout/?next=/"),
             name="admin_logout",
         ),
-        path("admin/", admin.site.urls),
     ]
-else:
+
+if settings.OIDC_ENABLED:
     urlpatterns += [
-        path("admin/", admin.site.urls),
+        path("oidc/", include("mozilla_django_oidc.urls")),
     ]
+
+urlpatterns += [
+    path("admin/", admin.site.urls),
+]
 
 if settings.DEBUG:
     urlpatterns += [

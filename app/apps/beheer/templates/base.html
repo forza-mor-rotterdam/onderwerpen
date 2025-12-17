@@ -61,11 +61,13 @@
     </head>
     <body>
         <a href="#id_maincontent" class="skiplink">Ga direct naar de content</a>
-        {% block header %}
-            {% with page_title="Onderwerpen" %}
-                {% include "snippets/pageheader.html" %}
-            {% endwith %}
-        {% endblock header %}
+        {% if request.user.is_authenticated %}
+            {% block header %}
+                {% with page_title="Onderwerpen" %}
+                    {% include "snippets/pageheader.html" %}
+                {% endwith %}
+            {% endblock header %}
+        {% endif %}
         {% block main %}
             <main data-controller="main" data-main-taken-outlet="#taken">
                 <div class="{% block container_class %}container container--unlimited{% endblock container_class %}">
