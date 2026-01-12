@@ -123,7 +123,7 @@ jobs:
           KUBE_CERTIFICATE: ${{ vars.KUBE_CERTIFICATE }}
           KUBE_TOKEN: ${{ secrets.KUBE_TOKEN }}
         with:
-          args: rollout restart deployment/app deployment/worker --namespace=${{ vars.KUBE_NAMESPACE }}
+          args: rollout restart deployment/app --namespace=${{ vars.KUBE_NAMESPACE }}
       - name: Status rollout on k8s platform
         uses: actions-hub/kubectl@master
         env:
@@ -131,7 +131,7 @@ jobs:
           KUBE_CERTIFICATE: ${{ vars.KUBE_CERTIFICATE }}
           KUBE_TOKEN: ${{ secrets.KUBE_TOKEN }}
         with:
-          args: rollout status deployment/app deployment/worker --namespace=${{ vars.KUBE_NAMESPACE }}
+          args: rollout status deployment/app --namespace=${{ vars.KUBE_NAMESPACE }}
 
   deploy_acc:
     name: Deploy acc
@@ -163,7 +163,7 @@ jobs:
           KUBE_CERTIFICATE: ${{ vars.KUBE_CERTIFICATE }}
           KUBE_TOKEN: ${{ secrets.KUBE_TOKEN }}
         with:
-          args: rollout restart deployment/app deployment/worker --namespace=${{ vars.KUBE_NAMESPACE }}
+          args: rollout restart deployment/app --namespace=${{ vars.KUBE_NAMESPACE }}
       - name: Status rollout on k8s platform
         uses: actions-hub/kubectl@master
         env:
@@ -171,7 +171,7 @@ jobs:
           KUBE_CERTIFICATE: ${{ vars.KUBE_CERTIFICATE }}
           KUBE_TOKEN: ${{ secrets.KUBE_TOKEN }}
         with:
-          args: rollout status deployment/app deployment/worker --namespace=${{ vars.KUBE_NAMESPACE }}
+          args: rollout status deployment/app --namespace=${{ vars.KUBE_NAMESPACE }}
 
   deploy_prod:
     name: Deploy prod
@@ -204,7 +204,7 @@ jobs:
           KUBE_CERTIFICATE: ${{ vars.KUBE_CERTIFICATE }}
           KUBE_TOKEN: ${{ secrets.KUBE_TOKEN }}
         with:
-          args: rollout restart deployment/app deployment/worker --namespace=${{ vars.KUBE_NAMESPACE }}
+          args: rollout restart deployment/app --namespace=${{ vars.KUBE_NAMESPACE }}
       - name: Status rollout on k8s platform
         uses: actions-hub/kubectl@master
         env:
@@ -212,4 +212,4 @@ jobs:
           KUBE_CERTIFICATE: ${{ vars.KUBE_CERTIFICATE }}
           KUBE_TOKEN: ${{ secrets.KUBE_TOKEN }}
         with:
-          args: rollout status deployment/app deployment/worker --namespace=${{ vars.KUBE_NAMESPACE }}
+          args: rollout status deployment/app --namespace=${{ vars.KUBE_NAMESPACE }}
