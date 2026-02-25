@@ -17,8 +17,8 @@ echo "Applying migrations..."
 python manage.py migrate --noinput
 
 # Load initial data
-echo Load initial data
-python manage.py loaddata initial_data
+# echo Load initial data
+# python manage.py loaddata initial_data
 
 # Create a superuser (if not already created)
 echo "Creating superuser..."
