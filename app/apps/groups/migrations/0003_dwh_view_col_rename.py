@@ -3,7 +3,7 @@ from django.db import migrations
 
 class Migration(migrations.Migration):
     dependencies = [
-        ("groups", "0001_initial"),
+        ("groups", "0002_dwh_groups_group_view"),
     ]
 
     operations = [
@@ -12,7 +12,7 @@ class Migration(migrations.Migration):
             """CREATE VIEW dwh_groups_group AS
                 SELECT
                     uuid,
-                    name AS naam
+                    name
                 FROM groups_group
             ;"""
         ),
