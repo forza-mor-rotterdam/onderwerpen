@@ -19,7 +19,7 @@ class Migration(migrations.Migration):
                     is_public_accessible,
                     is_active,
                     group_id
-                   FROM categories_category;
+                   FROM categories_category
             ;"""
         ),
     ]
