@@ -1,4 +1,5 @@
-[{
+[
+    {
     "model": "categories.category",
     "pk": "0e04bd7b-cb81-40db-88f8-e7c4e7f63351",
     "fields": {
@@ -657,7 +658,7 @@
         "description_public": null,
         "is_public_accessible": false,
         "is_active": true,
-        "meta": {},
+        "meta": {"priority": 1},
         "group": "41202ca5-929f-423b-9b46-b9127e0a19e0"
     }
 },
