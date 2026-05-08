@@ -36,6 +36,7 @@ from drf_spectacular.views import (
 )
 from rest_framework.authtoken import views
 from rest_framework.routers import DefaultRouter
+from utils.views import test_teams_error_view
 
 router = DefaultRouter()
 router.register(r"group", GroupViewSet, basename="group")
@@ -116,6 +117,11 @@ urlpatterns = [
         "beheer/rechtengroep/<int:pk>/verwijderen/",
         RechtengroepVerwijderenView.as_view(),
         name="rechtengroep_verwijderen",
+    ),
+    path(
+        "beheer/test-teams-foutmelding/",
+        test_teams_error_view,
+        name="test_teams_foutmelding",
     ),
 ]
 
