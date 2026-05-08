@@ -77,10 +77,6 @@ class TeamsWebhookHandler(AdminEmailHandler):
 
 
 def build_adaptive_card(*, subject, level, request, record, traceback_text):
-    """Build the Power Automate Adaptive Card payload for one error event.
-
-    Pure function: never performs I/O, returns a JSON-serializable dict.
-    """
     body = [_header_block(subject=subject, level=level)]
 
     if request is not None:
@@ -99,27 +95,46 @@ def build_adaptive_card(*, subject, level, request, record, traceback_text):
             }
         )
 
+    actions = []
     if traceback_text:
         body.append(
             {
-                "type": "TextBlock",
-                "text": _fenced_code(_truncate(traceback_text)),
-                "wrap": True,
-                "fontType": "Monospace",
+                "type": "Container",
+                "id": "traceback",
+                "isVisible": False,
+                "items": [
+                    {
+                        "type": "TextBlock",
+                        "text": _fenced_code(_truncate(traceback_text)),
+                        "wrap": True,
+                        "fontType": "Monospace",
+                    }
+                ],
             }
         )
+        actions.append(
+            {
+                "type": "Action.ToggleVisibility",
+                "title": "Show traceback",
+                "targetElements": ["traceback"],
+            }
+        )
+
+    content = {
+        "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+        "type": "AdaptiveCard",
+        "version": "1.4",
+        "body": body,
+    }
+    if actions:
+        content["actions"] = actions
 
     return {
         "type": "message",
         "attachments": [
             {
                 "contentType": "application/vnd.microsoft.card.adaptive",
-                "content": {
-                    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
-                    "type": "AdaptiveCard",
-                    "version": "1.4",
-                    "body": body,
-                },
+                "content": content,
             }
         ],
     }
