@@ -37,7 +37,9 @@ class TeamsWebhookHandler(AdminEmailHandler):
                 return
 
             request = getattr(record, "request", None)
-            subject = self.format_subject(record)
+            subject = self.format_subject(
+                "%s: %s" % (record.levelname, record.getMessage())
+            )
 
             traceback_text = ""
             if record.exc_info:
@@ -56,13 +58,20 @@ class TeamsWebhookHandler(AdminEmailHandler):
             )
 
             try:
-                requests.post(url, json=payload, timeout=(3, 5))
+                response = requests.post(url, json=payload, timeout=(3, 5))
+                if response.status_code >= 400:
+                    _logger.warning(
+                        "TeamsWebhookHandler POST to %s returned %d: %s",
+                        url,
+                        response.status_code,
+                        response.text[:500],
+                    )
             except Exception:
                 _logger.warning(
                     "TeamsWebhookHandler POST to %s failed", url, exc_info=True
                 )
         except Exception:
-            pass
+            _logger.exception("TeamsWebhookHandler crashed in emit()")
         finally:
             self._local.in_emit = False
 
