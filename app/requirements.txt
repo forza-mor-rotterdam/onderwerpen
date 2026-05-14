@@ -28,6 +28,7 @@ redis==4.5.5
 mozilla-django-oidc==3.0.0
 PyJWT<2.4.0
 chardet==5.2.0
+git+https://github.com/forza-mor-rotterdam/mor-api-services.git@80ecd379845032dc2c7404397142a25413426409
 
 # development
 django-debug-toolbar==6.0.0

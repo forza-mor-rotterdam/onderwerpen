@@ -27,6 +27,7 @@ GIT_SHA = os.getenv("GIT_SHA")
 DEPLOY_DATE = os.getenv("DEPLOY_DATE", "")
 ENVIRONMENT = os.getenv("ENVIRONMENT")
 TEAMS_WEBHOOK_URL = os.getenv("TEAMS_WEBHOOK_URL", "")
+MOR_SERVICE_NAME = "onderwerpen"
 DEBUG = ENVIRONMENT == "development"
 
 ROOT_URLCONF = "config.urls"
@@ -401,7 +402,7 @@ LOGGING = {
         "teams": {
             "level": "ERROR",
             "filters": ["require_debug_false"],
-            "class": "utils.teams_error_handler.TeamsWebhookHandler",
+            "class": "mor_api_services.teams_logging.TeamsWebhookHandler",
         },
     },
     "loggers": {
